@@ -1,0 +1,59 @@
+<div class="home-page">
+
+  <div class="banner" *appShowAuthed="false">
+    <div class="container">
+      <h1 class="logo-font">Start</h1>
+      <p><em>It might be incomplete, but it is better than not being there</em></p>
+    </div>
+  </div>
+
+  <div class="container page">
+    <div class="row">
+
+      <div class="col-md-9">
+        <div class="feed-toggle">
+          <ul class="nav nav-pills outline-active">
+            <li class="nav-item">
+              <a class="nav-link"
+                 [ngClass]="{'active': homeConfig.display === 'projects'}"
+                 (click)="setListTo('projects')">
+                 Projects
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                 [ngClass]="{'active': homeConfig.display === 'technologies'}"
+                 (click)="setListTo('technologies')">
+                 Technologies
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                 [ngClass]="{'active': homeConfig.display === 'blogs'}"
+                 (click)="setListTo('blogs')">
+                 Blogs
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                 [ngClass]="{'active': homeConfig.display === 'videos'}"
+                 (click)="setListTo('videos')">
+                 Videos
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="col-md-3">
+        <div class="sidebar">
+          <p>Popular Tags</p>
+
+          <p> A place holder to keep something in sidebar</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
