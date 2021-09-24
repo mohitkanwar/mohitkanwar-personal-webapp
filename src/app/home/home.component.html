@@ -12,36 +12,36 @@
 
       <div class="col-md-9">
         <div class="feed-toggle">
-          <ul class="nav nav-pills outline-active">
-            <li class="nav-item">
-              <a class="nav-link"
-                 [ngClass]="{'active': homeConfig.display === 'projects'}"
-                 (click)="setListTo('projects')">
-                 Projects
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"
-                 [ngClass]="{'active': homeConfig.display === 'technologies'}"
-                 (click)="setListTo('technologies')">
-                 Technologies
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"
-                 [ngClass]="{'active': homeConfig.display === 'blogs'}"
-                 (click)="setListTo('blogs')">
-                 Blogs
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"
-                 [ngClass]="{'active': homeConfig.display === 'videos'}"
-                 (click)="setListTo('videos')">
-                 Videos
-              </a>
-            </li>
-          </ul>
+          <mat-tab-group dynamicHeight>
+            <mat-tab label="Trainings">
+              <div class="mat-elevation-z4">
+                <div class="row">
+                  <iframe src="//www.slideshare.net/slideshow/embed_code/key/llNYsQSnZOvNW2" 
+                          width="595" 
+                          height="485"
+                          title="Hibernate"
+                          style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" 
+                          allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab label="Technologies">
+              <div class=" mat-elevation-z4">
+                Large content
+              </div>
+            </mat-tab>
+            <mat-tab label="Blogs">
+              <div class="mat-elevation-z4">
+                Large content
+              </div>
+            </mat-tab>
+            <mat-tab label="Videos">
+              <div class="mat-elevation-z4">
+                Large content
+              </div>
+            </mat-tab>
+          </mat-tab-group>
         </div>
 
       </div>
@@ -54,6 +54,10 @@
         </div>
       </div>
 
+    </div>
+
+    <div class="row">
+      
     </div>
   </div>
 </div>
