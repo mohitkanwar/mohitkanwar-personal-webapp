@@ -1,0 +1,6 @@
+footer {
+    clear: both;
+    position: fixed;
+    height: 50px;
+    margin-top: -50px;
+}
