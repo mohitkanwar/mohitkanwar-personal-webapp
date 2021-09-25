@@ -14,7 +14,7 @@
 }
 dl {
     counter-reset: count;
-    background: linear-gradient(90deg, rgba(0,0,0,0.04) 20%, rgba(255,255,255,0)0%);
+    background: linear-gradient(90deg, rgba(0,0,0,0.04) 10%, rgba(255,255,255,0)0%);
     padding-left: 4vw;
     padding-right: 4vw;
     margin: 0;
