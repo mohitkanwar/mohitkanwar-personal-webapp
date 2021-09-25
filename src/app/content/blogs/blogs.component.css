@@ -1,0 +1,63 @@
+.blogs {
+    margin-left: 15px;
+}
+.blogs p {
+    font-size: large;
+    font-family: "Abril Fatface";
+    padding: 2em;
+}
+.list {
+    display: grid;
+    grid-template-columns: max-content;
+}
+@media (min-width:768px) {
+    .list {
+        grid-template-columns: max-content;
+        gap: 4vw;
+    }
+}
+dl {
+    counter-reset: count;
+    background: linear-gradient(90deg, rgba(0,0,0,0.04) 20%, rgba(255,255,255,0)0%);
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin: 0;
+    margin-bottom: 8vh;
+}
+@media (min-width: 768px) {
+    dl {
+      padding-left: 2vw;
+    }
+  }
+  @media (min-width: 1024px) {
+    dl {
+      padding-top: 3vw;
+      padding-bottom: 3vw;
+    }
+  }
+  
+  dl + dl {
+    counter-reset: counter 4;
+  }
+  
+  dt {
+    counter-increment: count;
+    color: #4f6d7aff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 4;
+    text-transform: uppercase;
+    padding-left: 5vw;
+  }
+  
+  dt::before {
+    content: counter(count, decimal-leading-zero) ".";
+    font-family: "Abril Fatface", cursive;
+    color: #5ea5b8ff;
+    margin-left: -5vw;
+    padding-right: 5vw;
+  }
+  
+  dd {
+    margin-left: 10vw;
+    margin-bottom: 2vh;
+  }
