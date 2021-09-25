@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { PresentationsComponent } from './presentations/presentations.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { BlogsComponent } from './blogs/blogs.component';
+import { VideosComponent } from './videos/videos.component';
 
 
 
@@ -10,12 +11,14 @@ import { BlogsComponent } from './blogs/blogs.component';
   declarations: [
     PresentationsComponent,
     ProjectsComponent,
-    BlogsComponent
+    BlogsComponent,
+    VideosComponent
   ],
   exports: [
     PresentationsComponent,
     ProjectsComponent,
-    BlogsComponent
+    BlogsComponent,
+    VideosComponent
   ],
   imports: [
     CommonModule
