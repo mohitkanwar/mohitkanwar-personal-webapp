@@ -1,4 +1,4 @@
-<div class="trainings">
+<div class="presentationBox">
     <div class="row">
         <iframe 
             [src]="presentationsList[selectedIndex].src" 
@@ -8,5 +8,9 @@
             class="presentationBox" 
             allowfullscreen>
         </iframe>
+    </div>
+    <div class="row">
+        <button (click)=selectPrevious()>Previous</button>
+        <button (click)=selectNext()>Next</button>
     </div>
 </div>

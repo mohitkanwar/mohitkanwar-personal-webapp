@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-
+import config from '../../../assets/data/presentations.json';
 @Component({
   selector: 'app-presentations',
   templateUrl: './presentations.component.html',
@@ -14,10 +14,30 @@ export class PresentationsComponent implements OnInit {
     this.presentationsList = new Array();
   }
   ngOnInit(): void {
-    this.presentationsList.push({src: this.sanitizer.bypassSecurityTrustResourceUrl('https://www.slideshare.net/slideshow/embed_code/key/llNYsQSnZOvNW2'), title : 'Hibernate'});
     this.selectedIndex = 0;
+    config.presentationList.forEach(element => {
+      this.presentationsList.push(
+        {
+          src: this.sanitizer.bypassSecurityTrustResourceUrl(element.url),
+          title : element.title
+        }
+      );
+    });
   }
-
+  selectNext(): void {
+    if (this.selectedIndex === this.presentationsList.length - 1) {
+      this.selectedIndex = 0;
+    } else {
+      this.selectedIndex++;
+    }
+  }
+  selectPrevious(): void {
+    if (this.selectedIndex === 0) {
+      this.selectedIndex = this.presentationsList.length - 1;
+    } else {
+      this.selectedIndex--;
+    }
+  }
 
 }
 
