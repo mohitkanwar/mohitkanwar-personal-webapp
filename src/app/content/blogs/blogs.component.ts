@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SafeResourceUrl } from '@angular/platform-browser';
+import blogs from '../../../assets/data/blogs.json';
 
 @Component({
   selector: 'app-blogs',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogsComponent implements OnInit {
 
-  constructor() { }
+  blogList: Blog[];
+  
 
   ngOnInit(): void {
+    this.blogList = blogs.blogsList;
   }
 
+}
+class Blog {
+  src: SafeResourceUrl;
+  title: string;
+  description: string;
 }

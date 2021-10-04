@@ -13,7 +13,6 @@
 @media (min-width:768px) {
     .list {
         grid-template-columns: max-content;
-        gap: 4vw;
     }
 }
 dl {
@@ -22,17 +21,10 @@ dl {
     padding-left: 4vw;
     padding-right: 4vw;
     margin: 0;
-    margin-bottom: 8vh;
 }
 @media (min-width: 768px) {
     dl {
       padding-left: 2vw;
-    }
-  }
-  @media (min-width: 1024px) {
-    dl {
-      padding-top: 3vw;
-      padding-bottom: 3vw;
     }
   }
   

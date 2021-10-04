@@ -1,0 +1,34 @@
+{
+    "blogsList":[
+        {
+            "src":"https://medium.com/xebia-engineering/letting-customers-reach-out-to-you-e0c9b86813cc",
+            "title":"Letting customers reach out to you!",
+            "description":"My experience on Banking customer services, and opportunities to improve it"
+        },
+        {
+            "src":"https://medium.com/xebia-engineering/xebia-essentials-collaboration-pair-programming-11cf7f31f6f0",
+            "title":"Xebia Essentials| Collaboration — Pair Programming",
+            "description":"My experience on pair programming"
+        },
+        {
+            "src":"https://medium.com/xebia-engineering/xebia-essentials-realisation-develop-for-security-88f5975828c0",
+            "title":"Xebia Essentials | Realisation - Develop for Security",
+            "description":"Secure coding practices"
+        },
+        {
+            "src":"https://medium.com/xebia-engineering/xebia-essentials-craftsmanship-three-strikes-and-you-automate-267193db978a",
+            "title":"Xebia Essentials : Craftsmanship : Three strikes and you automate",
+            "description":"Focus on automation"
+        },
+        {
+            "src":"https://medium.com/xebia-engineering/maven-the-underrated-champion-67c5a056cdc7",
+            "title":"Maven — The underrated champion",
+            "description":"Maven is a powerful tool"
+        },
+        {
+            "src":"https://medium.com/xebia-engineering/life-lessons-to-be-learned-from-programming-92037b00518",
+            "title":"Life Lessons Learnt From Programming",
+            "description":"What did I learnt about life from programming"
+        }
+    ]
+}
