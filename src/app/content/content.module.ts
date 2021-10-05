@@ -5,6 +5,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { VideosComponent } from './videos/videos.component';
 import { QuotesBannerComponent } from './quotes-banner/quotes-banner.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 
@@ -24,7 +25,8 @@ import { QuotesBannerComponent } from './quotes-banner/quotes-banner.component';
     QuotesBannerComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatGridListModule
   ]
 })
 export class ContentModule { }

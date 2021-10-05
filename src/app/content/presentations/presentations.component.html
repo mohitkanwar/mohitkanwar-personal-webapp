@@ -1,6 +1,10 @@
 <div class="presentationBox">
-    <div class="row">
-        <iframe 
+    <mat-grid-list cols="7" rowHeight="500">
+        <mat-grid-tile>
+            <button (click)=selectPrevious() class="previous"><label>{{presentationsList[previousIndex].title}}</label></button>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="5">
+            <iframe 
             [src]="presentationsList[selectedIndex].src" 
             width="595" 
             height="485"
@@ -8,7 +12,9 @@
             class="presentationBox" 
             allowfullscreen>
         </iframe>
-    </div>
+        </mat-grid-tile>
+        <mat-grid-tile><button (click)=selectNext() class="next"><label>{{presentationsList[nextIndex].title}}</label></button></mat-grid-tile>
+      </mat-grid-list>
     <div class="row">
         <button (click)=selectPrevious()>Previous</button>
         <button (click)=selectNext()>Next</button>

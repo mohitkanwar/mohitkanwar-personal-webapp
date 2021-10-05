@@ -6,3 +6,18 @@
     margin-left: 15px;
     max-width: 100%;
 }
+.previous{
+    min-height: 100%;
+    min-width: 100%;
+    
+}
+.previous > label {
+    transform: rotate(-90deg);
+}
+.next{
+    min-height: 100%;
+    min-width: 100%;
+}
+.next > label {
+    transform: rotate(-90deg);
+}

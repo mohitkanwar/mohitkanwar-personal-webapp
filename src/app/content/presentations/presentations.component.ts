@@ -10,6 +10,8 @@ export class PresentationsComponent implements OnInit {
 
   presentationsList: Presentation[];
   selectedIndex;
+  previousIndex;
+  nextIndex;
   constructor(private sanitizer: DomSanitizer) {
     this.presentationsList = new Array();
   }
@@ -23,19 +25,29 @@ export class PresentationsComponent implements OnInit {
         }
       );
     });
+    this.previousIndex = this.presentationsList.length - 1;
+    this.nextIndex = this.selectedIndex + 1;
   }
   selectNext(): void {
     if (this.selectedIndex === this.presentationsList.length - 1) {
       this.selectedIndex = 0;
+      this.previousIndex = this.presentationsList.length - 1;
+      this.nextIndex = this.selectedIndex + 1;
     } else {
       this.selectedIndex++;
+      this.previousIndex = this.selectedIndex - 1;
+      this.nextIndex = this.selectedIndex + 1;
     }
   }
   selectPrevious(): void {
     if (this.selectedIndex === 0) {
       this.selectedIndex = this.presentationsList.length - 1;
+      this.previousIndex = this.selectedIndex - 1;
+      this.nextIndex = 0;
     } else {
       this.selectedIndex--;
+      this.previousIndex = this.selectedIndex - 1;
+      this.nextIndex = this.selectedIndex + 1;
     }
   }
 
