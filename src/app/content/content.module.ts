@@ -4,6 +4,7 @@ import { PresentationsComponent } from './presentations/presentations.component'
 import { ProjectsComponent } from './projects/projects.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { VideosComponent } from './videos/videos.component';
+import { QuotesBannerComponent } from './quotes-banner/quotes-banner.component';
 
 
 
@@ -12,13 +13,15 @@ import { VideosComponent } from './videos/videos.component';
     PresentationsComponent,
     ProjectsComponent,
     BlogsComponent,
-    VideosComponent
+    VideosComponent,
+    QuotesBannerComponent
   ],
   exports: [
     PresentationsComponent,
     ProjectsComponent,
     BlogsComponent,
-    VideosComponent
+    VideosComponent,
+    QuotesBannerComponent
   ],
   imports: [
     CommonModule
