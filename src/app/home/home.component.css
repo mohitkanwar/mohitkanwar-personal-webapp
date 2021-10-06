@@ -8,4 +8,9 @@
 .mat-tab {
   min-height: 100%;
   margin-bottom: 20vw;
+  
+}
+
+.page-container{
+  padding-top: 10px;
 }

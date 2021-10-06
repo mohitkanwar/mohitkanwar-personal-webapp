@@ -32,6 +32,13 @@ export class PresentationsComponent implements OnInit {
     this.nextIndex = this.selectedIndex + 1;
     this.showDeck = true;
   }
+  onSelect(presentationId: number) {
+    if (this.selectedIndex !== presentationId) {
+      this.showDeck = false;
+      this.selectedIndex = presentationId;
+      this.setupPrevAndNext();
+    }
+  }
   selectNext(): void {
     this.showDeck = false;
     this.selectedIndex = this.selectedIndex === this.presentationsList.length - 1 ?

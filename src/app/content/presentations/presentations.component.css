@@ -31,3 +31,11 @@
 .next > label {
     transform: rotate(-90deg);
 }
+.display-item{
+    min-width: 100%;
+    font-size: medium;
+}
+.display-item:hover{
+    background-color: azure;
+    cursor: pointer;
+}
