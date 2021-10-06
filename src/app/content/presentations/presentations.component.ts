@@ -23,8 +23,9 @@ export class PresentationsComponent implements OnInit {
     config.presentationList.forEach(element => {
       this.presentationsList.push(
         {
-          src: this.sanitizer.bypassSecurityTrustResourceUrl(element.url),
-          title : element.title
+          src: this.sanitizer.bypassSecurityTrustResourceUrl(element.src),
+          title : element.title,
+          preview: this.sanitizer.bypassSecurityTrustResourceUrl(element.preview)
         }
       );
     });
@@ -83,4 +84,5 @@ export class PresentationsComponent implements OnInit {
 class Presentation {
   src: SafeResourceUrl;
   title: string;
+  preview: SafeResourceUrl;
 }

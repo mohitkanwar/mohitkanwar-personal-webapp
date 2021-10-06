@@ -1,20 +1,39 @@
 {
     "presentationList":[
         {
-            "url":"https://www.slideshare.net/slideshow/embed_code/key/llNYsQSnZOvNW2",
-            "title":"Hibernate"
+            "src":"https://www.slideshare.net/slideshow/embed_code/key/llNYsQSnZOvNW2",
+            "title":"Hibernate",
+            "preview":"https://design.jboss.org/hibernate/logo/final/hibernate_logo_whitebkg_stacked_256px.gif"
         },
         {
-            "url":"https://www.slideshare.net/slideshow/embed_code/key/jp4MwlKb42cki5",
-            "title":"Spring Boot"
+            "src":"https://www.slideshare.net/slideshow/embed_code/key/jp4MwlKb42cki5",
+            "title":"Spring Boot",
+            "preview":"https://miro.medium.com/max/700/1*-uckV8DOh3l0bCvqZ73zYg.png"
         },
         {
-            "url":"https://www.slideshare.net/slideshow/embed_code/key/uigsR0e3bVnZgu",
-            "title":"Project Lombok"
+            "src":"https://www.slideshare.net/slideshow/embed_code/key/uigsR0e3bVnZgu",
+            "title":"Project Lombok",
+            "preview":"https://pbs.twimg.com/profile_images/975341366665449472/pb_Hp8ci.jpg"
         },
         {
-            "url":"https://www.slideshare.net/slideshow/embed_code/key/d2JMnUtp8Zx3bg",
-            "title":"Clean Coding"
+            "src":"https://www.slideshare.net/slideshow/embed_code/key/d2JMnUtp8Zx3bg",
+            "title":"Clean Coding",
+            "preview":"https://cdn2.iconfinder.com/data/icons/font-awesome/1792/code-512.png"
+        },
+        {
+            "src":"https://docs.google.com/presentation/d/e/2PACX-1vTU0BhyufTv5OLQWl6mwNkZU6qEhovpBkxXyCZ7w4W8okPa1SefOyZA4Q_kSerYocyl25Wxa705Oziy/embed?start=false&loop=false&delayms=3000",
+            "title":"Object Oriented Programming",
+            "preview":"https://cdn4.iconfinder.com/data/icons/technology-83/1000/object_programming_development_oriented_developer_object-oriented_programming_software-512.png"
+        },
+        {
+            "src":"https://www.slideshare.net/slideshow/embed_code/key/upj780CEQt6UuF",
+            "title":"The Immune System of Internet",
+            "preview":"https://cdn2.vectorstock.com/i/1000x1000/00/96/icon-of-hacker-vector-20550096.jpg"
+        },
+        {
+            "src":"https://www.slideshare.net/slideshow/embed_code/key/vpIIjdILRpgOw7",
+            "title":"Software job options",
+            "preview":"https://static.thenounproject.com/png/49773-200.png"
         }
     ]
 }

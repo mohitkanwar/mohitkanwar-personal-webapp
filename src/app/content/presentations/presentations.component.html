@@ -7,9 +7,8 @@
                         <div class="col-md">
                             <iframe [src]="presentationsList[selectedIndex].src" width="595" height="485"
                                 [title]="presentationsList[selectedIndex].title" class="presentationBox"
-                                (load)="onMyFrameLoad(this)" (change)="onMyFrameChange(this)" allowfullscreen
+                                (load)="onMyFrameLoad(this)" (change)="onMyFrameChange(this)" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
                                 [hidden]="!showDeck">
-
                             </iframe>
                             <div [hidden]="showDeck">Loading ...</div>
                         </div>
@@ -31,12 +30,16 @@
                         Below is the list of other trainings that I deliver
                     </p>
                 </div>
-
+                <div class="list">
                 <div class="col display-item" *ngFor="let p of presentationsList; let i=index">
                     <div (click)="onSelect(i)" *ngIf="i!=selectedIndex">
-                        {{p.title}}
+                        <div class="preview-box">
+                            <img [src]="p.preview" width="80px"/>
+                            {{p.title}}
+                        </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>

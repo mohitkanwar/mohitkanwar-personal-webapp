@@ -39,3 +39,16 @@
     background-color: azure;
     cursor: pointer;
 }
+.preview-box{
+    border: 1px solid grey;
+    background-color: azure;
+    min-height: 100px;
+}
+.preview-box:hover{
+    border: 1px solid black;
+    background-color: green;
+}
+.list {
+    overflow: scroll;
+    max-height: 350px;
+}
