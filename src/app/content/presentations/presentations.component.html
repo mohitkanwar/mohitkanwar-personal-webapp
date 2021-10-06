@@ -1,21 +1,26 @@
 <div class="presentationBox">
-    <mat-grid-list cols="7" rowHeight="500">
-        <mat-grid-tile>
+    <mat-grid-list cols="7" rowHeight="500" (window:resize)="onResize($event)">
+        <mat-grid-tile *ngIf="screenSize > 600">
             <button (click)=selectPrevious() class="previous"><label>{{presentationsList[previousIndex].title}}</label></button>
         </mat-grid-tile>
-        <mat-grid-tile colspan="5">
+        <mat-grid-tile [colspan]="screenSize <= 600?7:5">
             <iframe 
             [src]="presentationsList[selectedIndex].src" 
             width="595" 
             height="485"
             [title]="presentationsList[selectedIndex].title" 
             class="presentationBox" 
-            allowfullscreen>
+            (load)="onMyFrameLoad(this)"
+            (change)="onMyFrameChange(this)"
+            allowfullscreen
+            [hidden]="!showDeck">
+            
         </iframe>
+        <div [hidden]="showDeck">Loading ...</div>
         </mat-grid-tile>
-        <mat-grid-tile><button (click)=selectNext() class="next"><label>{{presentationsList[nextIndex].title}}</label></button></mat-grid-tile>
+        <mat-grid-tile *ngIf="screenSize > 600"><button (click)=selectNext() class="next"><label>{{presentationsList[nextIndex].title}}</label></button></mat-grid-tile>
       </mat-grid-list>
-    <div class="row">
+    <div class="row" *ngIf="screenSize <= 600">
         <button (click)=selectPrevious()>Previous</button>
         <button (click)=selectNext()>Next</button>
     </div>

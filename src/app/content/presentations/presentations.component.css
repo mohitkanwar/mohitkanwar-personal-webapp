@@ -1,4 +1,11 @@
-
+@media screen and (min-width: 0px) and (max-width: 400px) {
+    .showOnMobile{ display: none; }
+    .hideOnMobile{ display: block; }
+  }
+  @media screen and (min-width: 401px) and (max-width: 1024px) {
+    .hideOnLarge{ display: block; }   
+    .showOnLarge{ display: none; }   
+  }
 .presentationBox {
     border:0px solid #CCC; 
     margin-bottom:5px; 
@@ -9,7 +16,8 @@
 .previous{
     min-height: 100%;
     min-width: 100%;
-    
+    background-color: white;
+    font-size: large;
 }
 .previous > label {
     transform: rotate(-90deg);
@@ -17,6 +25,8 @@
 .next{
     min-height: 100%;
     min-width: 100%;
+    background-color: white;
+    font-size: large;
 }
 .next > label {
     transform: rotate(-90deg);
