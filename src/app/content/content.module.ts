@@ -6,6 +6,8 @@ import { BlogsComponent } from './blogs/blogs.component';
 import { VideosComponent } from './videos/videos.component';
 import { QuotesBannerComponent } from './quotes-banner/quotes-banner.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { PresentationListComponent } from './presentations/presentation-list/presentation-list.component';
+import { PresentationListItemComponent } from './presentations/presentation-list-item/presentation-list-item.component';
 
 
 
@@ -15,7 +17,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
     ProjectsComponent,
     BlogsComponent,
     VideosComponent,
-    QuotesBannerComponent
+    QuotesBannerComponent,
+    PresentationListComponent,
+    PresentationListItemComponent
   ],
   exports: [
     PresentationsComponent,

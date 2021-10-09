@@ -1,0 +1,11 @@
+<div class="container item" (click)="onSelect()">
+<div class="row">
+    <div class="col-8">
+        <img [src]="presentation.preview" width="168" height="94" [alt]="presentation.title"/>
+    </div>
+    <div class="col-4 notes">
+        <div class="title">{{presentation.title}}</div>
+        <div class="description">{{presentation.description}}</div>
+    </div>
+</div>
+</div>

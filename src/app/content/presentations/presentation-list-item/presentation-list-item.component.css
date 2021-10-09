@@ -1,0 +1,15 @@
+.item {
+    cursor: pointer;
+}
+.notes{
+    padding-left: 15px;
+    word-wrap: break-word;
+    max-width: 175px;
+}
+.title{
+    font-weight: bold;
+}
+.description{
+    padding-left: 15px;
+    color: grey;
+}

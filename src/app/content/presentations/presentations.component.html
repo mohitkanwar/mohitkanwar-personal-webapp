@@ -1,14 +1,14 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-8">
             <div class="presentationBox">
                 <div class="container">
                     <div class="row">
                         <div class="col-md">
-                            <iframe [src]="presentationsList[selectedIndex].src" width="595" height="485"
-                                [title]="presentationsList[selectedIndex].title" class="presentationBox"
-                                (load)="onMyFrameLoad(this)" (change)="onMyFrameChange(this)" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
-                                [hidden]="!showDeck">
+                            <iframe [src]="selectedPresentation.src" width="595" height="485"
+                                [title]="selectedPresentation.title" class="presentationBox"
+                                (load)="onMyFrameLoad(this)" (change)="onMyFrameChange(this)" allowfullscreen="true"
+                                mozallowfullscreen="true" webkitallowfullscreen="true" [hidden]="!showDeck">
                             </iframe>
                             <div [hidden]="showDeck">Loading ...</div>
                         </div>
@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
             <div class="row sidebar">
                 <p>Highlights</p>
 
@@ -31,15 +31,8 @@
                     </p>
                 </div>
                 <div class="list">
-                <div class="col display-item" *ngFor="let p of presentationsList; let i=index">
-                    <div (click)="onSelect(i)" *ngIf="i!=selectedIndex">
-                        <div class="preview-box">
-                            <img [src]="p.preview" width="80px"/>
-                            {{p.title}}
-                        </div>
-                    </div>
+                    <app-presentation-list [list]="presentationsList"></app-presentation-list>
                 </div>
-            </div>
             </div>
         </div>
     </div>

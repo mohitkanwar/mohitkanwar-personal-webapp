@@ -5,7 +5,9 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "baseUrl": "./",
-    "types": []
+    "types": [
+      "node"
+    ]
   },
   "files": [
     "main.ts",

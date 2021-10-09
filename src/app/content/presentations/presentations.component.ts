@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import config from '../../../assets/data/presentations.json';
+import { EventsService } from '../../events/events.service';
+import { Presentation } from './presentation.model';
 @Component({
   selector: 'app-presentations',
   templateUrl: './presentations.component.html',
@@ -10,65 +12,35 @@ export class PresentationsComponent implements OnInit {
 
   presentationsList: Presentation[];
   showDeck = false;
-  selectedIndex;
-  previousIndex;
-  nextIndex;
-  screenSize: number;
-  constructor(private sanitizer: DomSanitizer) {
+  selectedPresentation: Presentation;
+
+  constructor(private sanitizer: DomSanitizer, private events: EventsService) {
     this.presentationsList = new Array();
   }
   ngOnInit(): void {
-    this.screenSize = window.innerWidth;
-    this.selectedIndex = 0;
     config.presentationList.forEach(element => {
       this.presentationsList.push(
         {
+          id: element.id,
           src: this.sanitizer.bypassSecurityTrustResourceUrl(element.src),
-          title : element.title,
-          preview: this.sanitizer.bypassSecurityTrustResourceUrl(element.preview)
+          title: element.title,
+          preview: this.sanitizer.bypassSecurityTrustResourceUrl(element.preview),
+          description: element.description
         }
       );
     });
-    this.previousIndex = this.presentationsList.length - 1;
-    this.nextIndex = this.selectedIndex + 1;
     this.showDeck = true;
+    // subscribe presentation selected event
+    this.events.presentationEvent.subscribe(presentation => {
+      this.onSelect(presentation);
+    });
+    this.selectedPresentation = this.presentationsList[0];
   }
-  onSelect(presentationId: number) {
-    if (this.selectedIndex !== presentationId) {
-      this.showDeck = false;
-      this.selectedIndex = presentationId;
-      this.setupPrevAndNext();
-    }
-  }
-  selectNext(): void {
+  onSelect(presentation: Presentation) {
     this.showDeck = false;
-    this.selectedIndex = this.selectedIndex === this.presentationsList.length - 1 ?
-       0 : this.selectedIndex + 1;
-    this.setupPrevAndNext();
-  }
-  private setupPrevAndNext() {
-    if (this.selectedIndex === 0) {
-      this.previousIndex = this.presentationsList.length - 1;
-      this.nextIndex = this.selectedIndex + 1;
-    } else if (this.selectedIndex === this.presentationsList.length - 1) {
-      this.previousIndex = this.selectedIndex - 1;
-      this.nextIndex = 0;
-    } else {
-      this.previousIndex = this.selectedIndex - 1;
-      this.nextIndex = this.selectedIndex + 1;
-    }
+    this.selectedPresentation = this.presentationsList.find(x => x.id === presentation.id);
   }
 
-  selectPrevious(): void {
-    this.showDeck = false;
-    this.selectedIndex = this.selectedIndex === 0 ?
-      this.presentationsList.length - 1 : this.selectedIndex - 1;
-    this.setupPrevAndNext();
-  }
-  onResize(event) {
-    this.screenSize = event.target.innerWidth;
-    console.log(this.screenSize);
-  }
 
   onMyFrameLoad(event) {
     console.log('Frame loaded');
@@ -79,10 +51,4 @@ export class PresentationsComponent implements OnInit {
     console.log('Frame Changed');
     console.log(event);
   }
-}
-
-class Presentation {
-  src: SafeResourceUrl;
-  title: string;
-  preview: SafeResourceUrl;
 }
