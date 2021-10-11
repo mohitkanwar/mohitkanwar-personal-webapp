@@ -1,23 +1,17 @@
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 col-sm-12">
             <div class="presentationBox">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md">
-                            <iframe [src]="selectedPresentation.src" width="595" height="485"
-                                [title]="selectedPresentation.title" class="presentationBox"
+                            <iframe [src]="selectedPresentation.src" 
+                                [title]="selectedPresentation.title" class="frame-container"
                                 (load)="onMyFrameLoad(this)" (change)="onMyFrameChange(this)" allowfullscreen="true"
                                 mozallowfullscreen="true" webkitallowfullscreen="true" [hidden]="!showDeck">
                             </iframe>
                             <div [hidden]="showDeck">Loading ...</div>
-                        </div>
-                    </div>
-
-                </div>
+                        
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-12">
             <div class="row sidebar">
                 <p>Highlights</p>
 

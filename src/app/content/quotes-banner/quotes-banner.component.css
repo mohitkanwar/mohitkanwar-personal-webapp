@@ -12,6 +12,17 @@ blockquote::before {
     text-align: center;
     font-style: italic;
   }
+  @media (max-width: 575.98px) { 
+    blockquote::before {
+        font-size: large;
+      }
+      blockquote::after {
+        font-size: large;
+      }
+      blockquote {
+        font-size: large;
+      }
+  }
   figcaption::before {
     content: '-';
     padding-inline-end: 5px;
