@@ -6,3 +6,9 @@
     justify-content: left;
     text-align: left;
 }
+.navbar {
+    border-bottom: solid green 2px;
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: unset;
+    margin-bottom: 15px;
+}

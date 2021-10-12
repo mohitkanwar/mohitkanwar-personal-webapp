@@ -9,6 +9,7 @@ import { Presentation } from '../presentation.model';
 })
 export class PresentationListItemComponent implements OnInit {
   @Input() presentation: Presentation;
+  @Input() index?: number;
   constructor(private eventservice: EventsService) { }
 
   ngOnInit(): void {
