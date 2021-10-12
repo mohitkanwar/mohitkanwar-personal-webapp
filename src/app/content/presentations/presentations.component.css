@@ -11,12 +11,12 @@
 }
 @media (min-width: 576px) { 
     .presentationBox {
-        height: 250%;
+        height: 100%;
         width: 100%;
     }
     .frame-container {
         width: 100%;
-        height: 36%
+        height: 60%
     }
 }
 @media (max-width: 575.98px) { 
@@ -68,5 +68,4 @@
 }
 .list {
     overflow: scroll;
-    max-height: 350px;
 }
