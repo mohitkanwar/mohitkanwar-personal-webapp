@@ -1,5 +1,5 @@
 <nav class="navbar navbar-light">
-    <span class="drawer-button" (click)="openNav()">&#9776;</span>
+    <span class="drawer-button" (click)="toggleNav()">&#9776;</span>
     <a class="navbar-brand-logo" routerLink="/">
         <img alt="My Digital Career" src="./assets/images/logo.gif" class="logo">
     </a>
@@ -10,4 +10,15 @@
     <a href="#">Services</a>
     <a href="#">Clients</a>
     <a href="#">Contact</a>
-  </div>
+    <footer>
+        <div class="container">
+          <span class="attribution">
+            &copy; {{ today | date: 'yyyy' }}
+          </span>
+          <span class="version">
+            {{ version }}
+          </span>
+        </div>
+      </footer>
+</div>
+  

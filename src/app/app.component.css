@@ -12,4 +12,7 @@ app-layout-footer{
     app-layout-header {
         display: none;
     }
+    app-layout-footer{
+        display: none;
+    }
  }

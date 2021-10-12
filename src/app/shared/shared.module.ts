@@ -9,6 +9,7 @@ import { FavoriteButtonComponent, FollowButtonComponent } from './buttons';
 import { ListErrorsComponent } from './list-errors.component';
 import { ShowAuthedDirective } from './show-authed.directive';
 import { LayoutMobileHeaderComponent } from './layout/layout-mobile-header/layout-mobile-header.component';
+import { FooterComponent } from './layout/footer.component';
 
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import { LayoutMobileHeaderComponent } from './layout/layout-mobile-header/layou
     FollowButtonComponent,
     ListErrorsComponent,
     ShowAuthedDirective,
-    LayoutMobileHeaderComponent
+    LayoutMobileHeaderComponent,
+    FooterComponent
   ],
   exports: [
     ArticleListComponent,
@@ -41,7 +43,8 @@ import { LayoutMobileHeaderComponent } from './layout/layout-mobile-header/layou
     ListErrorsComponent,
     RouterModule,
     ShowAuthedDirective,
-    LayoutMobileHeaderComponent
+    LayoutMobileHeaderComponent,
+    FooterComponent
   ]
 })
 export class SharedModule {}
