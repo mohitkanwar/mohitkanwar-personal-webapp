@@ -3,3 +3,13 @@ app-layout-footer{
     display: flex;
     height: 150px;
 }
+@media (min-width: 992px) { 
+    app-layout-mobile-header {
+        display: none;
+    }
+ }
+ @media (max-width: 991.98px) { 
+    app-layout-header {
+        display: none;
+    }
+ }

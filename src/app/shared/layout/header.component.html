@@ -1,26 +1,29 @@
 <nav class="navbar navbar-light">
-  <div class="container">
-    <a class="navbar-brand" routerLink="/"><img alt="My Digital Career" src="./assets/images/logo.gif" class="logo"></a>
-
-    <!-- Show this for logged out users -->
-    <ul *appShowAuthed="false"
-      class="nav navbar-nav pull-xs-right">
-
-      <li class="nav-item">
-        <a class="nav-link"
-          routerLink="/">
-          Home
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-1">
+        <a class="navbar-brand" routerLink="/">
+            <img alt="My Digital Career" src="./assets/images/logo.gif" class="logo">
+            Mohit Kanwar
         </a>
-      </li>
+      </div>
+      <div class="col-8">
+        <ul *appShowAuthed="false" class="nav navbar-nav pull-xs-right">
 
-      <li class="nav-item">
-        <a class="nav-link"
-          routerLink="/login"
-          routerLinkActive="active">
-          Contact
-        </a>
-      </li>
-    </ul>
-
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">
+              Home
+            </a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/login" routerLinkActive="active">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
   </div>
 </nav>

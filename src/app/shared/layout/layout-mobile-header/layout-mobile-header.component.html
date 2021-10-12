@@ -1,0 +1,13 @@
+<nav class="navbar navbar-light">
+    <span class="drawer-button" (click)="openNav()">&#9776;</span>
+    <a class="navbar-brand-logo" routerLink="/">
+        <img alt="My Digital Career" src="./assets/images/logo.gif" class="logo">
+    </a>
+</nav>
+<div class="sidenav" [@visibility]="visibilityState">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
