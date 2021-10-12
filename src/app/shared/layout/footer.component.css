@@ -5,3 +5,7 @@ footer {
     margin-top: -50px;
     z-index: 10;
 }
+.version {
+    float: right;
+    color: #bbb;
+}
