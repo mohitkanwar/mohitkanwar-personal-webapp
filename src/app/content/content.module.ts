@@ -8,8 +8,21 @@ import { QuotesBannerComponent } from './quotes-banner/quotes-banner.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { PresentationListComponent } from './presentations/presentation-list/presentation-list.component';
 import { PresentationListItemComponent } from './presentations/presentation-list-item/presentation-list-item.component';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { ContentHomeComponent } from './content-home/content-home.component';
 
-
+export const routes: Routes = [
+  {
+      path: '',
+      component: ContentHomeComponent,
+      children: [
+          { path: 'videos', component: VideosComponent },
+          { path: 'training', component: PresentationsComponent},
+          { path: 'projects', component: ProjectsComponent},
+          { path: 'blogs', component: BlogsComponent}
+      ]
+  }
+];
 
 @NgModule({
   declarations: [
@@ -19,7 +32,8 @@ import { PresentationListItemComponent } from './presentations/presentation-list
     VideosComponent,
     QuotesBannerComponent,
     PresentationListComponent,
-    PresentationListItemComponent
+    PresentationListItemComponent,
+    ContentHomeComponent
   ],
   exports: [
     PresentationsComponent,
@@ -30,7 +44,8 @@ import { PresentationListItemComponent } from './presentations/presentation-list
   ],
   imports: [
     CommonModule,
-    MatGridListModule
+    MatGridListModule,
+    RouterModule.forChild(routes)
   ]
 })
 export class ContentModule { }

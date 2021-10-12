@@ -6,10 +6,10 @@
 </nav>
 <div class="sidenav" [@visibility]="visibilityState">
     <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a class="nav-link" *ngFor="let link of links" [routerLink]="link.url" routerLinkActive="active" (click)="closeNav()">
+        {{link.display}}
+    </a>
+
     <footer>
         <div class="container">
           <span class="attribution">

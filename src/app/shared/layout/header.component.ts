@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { User, UserService } from '../../core';
+import { NavigationService } from '../navigation/navigation.service';
+import { NavigationLink } from '../navigation/navigationlinks.model';
 
 @Component({
   selector: 'app-layout-header',
@@ -9,10 +11,12 @@ import { User, UserService } from '../../core';
 })
 export class HeaderComponent implements OnInit {
   constructor(
-    private userService: UserService
+    private userService: UserService,
+    private navigationService: NavigationService
   ) {}
 
   currentUser: User;
+  links: NavigationLink[];
 
   ngOnInit() {
     this.userService.currentUser.subscribe(
@@ -20,5 +24,6 @@ export class HeaderComponent implements OnInit {
         this.currentUser = userData;
       }
     );
+    this.links = this.navigationService.getLinks();
   }
 }

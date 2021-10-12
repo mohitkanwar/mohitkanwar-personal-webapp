@@ -1,6 +1,8 @@
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { version } from '../../../../../package.json';
+import { NavigationService } from '../../navigation/navigation.service';
+import { NavigationLink } from '../../navigation/navigationlinks.model';
 @Component({
   selector: 'app-layout-mobile-header',
   templateUrl: './layout-mobile-header.component.html',
@@ -20,11 +22,13 @@ import { version } from '../../../../../package.json';
 export class LayoutMobileHeaderComponent implements OnInit {
   today: number = Date.now();
   public version: string = version;
+  links: NavigationLink[];
   visibilityState = 'closed';
-  constructor() { }
+  constructor(private navigationService: NavigationService) { }
 
 
   ngOnInit(): void {
+    this.links = this.navigationService.getLinks();
   }
   toggleNav() {
     this.visibilityState === 'open' ? this.closeNav() : this.openNav();

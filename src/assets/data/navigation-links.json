@@ -1,0 +1,34 @@
+{
+    "links":[
+        {
+            "id":"home",
+            "url":"/",
+            "display":"Home",
+            "help":"The dashboard of specific device"
+        },
+        {
+            "id":"content-blogs",
+            "url":"/content/blogs",
+            "display":"Blogs",
+            "help":"Consolidated view of my blogs aggregated from different sources."
+        },
+        {
+            "id":"content-videos",
+            "url":"/content/videos",
+            "display":"Videos",
+            "help":"Consolidated view of my videos aggregated from different sources."
+        },
+        {
+            "id":"content-training",
+            "url":"/content/training",
+            "display":"Training",
+            "help":"Welcome to my training sessions. Here you can find various presentations that I use in my training sessions."
+        },
+        {
+            "id":"content-projects",
+            "url":"/content/projects",
+            "display":"Projects",
+            "help":"This page consists of different projects that I am working upon."
+        }
+    ]
+}
