@@ -2,14 +2,11 @@
     cursor: pointer;
     border: 2px solid white;
     margin: 2px;
+    opacity: 0.6;
+    transition: 0.5s;
 }
 .item:hover{
-    background-color: green;
-    border: 2px solid green;
-    color:white;
-}
-.item:hover .description{
-    color: white;
+    opacity: 1;
 }
 .notes{
     padding-left: 15px;
