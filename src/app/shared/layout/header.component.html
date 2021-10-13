@@ -10,7 +10,7 @@
         <ul *appShowAuthed="false" class="nav navbar-nav pull-xs-right">
           <li class="nav-item" *ngFor="let link of links">
             <a class="nav-link" [routerLink]="link.url" routerLinkActive="active">
-              {{link.display}}
+              <i class="material-icons">{{link.icon}}</i> {{link.display}}
             </a>
           </li>
         </ul>
