@@ -58,3 +58,17 @@ dl {
     margin-left: 10vw;
     margin-bottom: 2vh;
   }
+
+  @media (max-width: 575.98px) {
+    .list {
+      display: grid;
+      grid-template-columns: auto;
+      max-width: 90%;
+  }
+  dl {
+    width: 100%;
+  }
+  .intro {
+    display: none;
+  }
+}
