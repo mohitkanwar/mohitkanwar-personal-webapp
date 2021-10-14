@@ -39,6 +39,7 @@
         margin: 2px;
         opacity: 1;
         transition: 0.5s;
+        font-size: x-small;
     }
     .notes{
         padding-left: 10px;

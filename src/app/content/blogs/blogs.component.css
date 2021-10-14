@@ -9,6 +9,7 @@
 .list {
     display: grid;
     grid-template-columns: max-content;
+    max-width: 90%;
 }
 @media (min-width:768px) {
     .list {
@@ -53,3 +54,14 @@ dl {
     margin-left: 10vw;
     margin-bottom: 2vh;
   }
+
+  @media (max-width: 575.98px) {
+    .list {
+      display: grid;
+      grid-template-columns: auto;
+      max-width: 90%;
+  }
+  .intro {
+    display: none;
+  }
+}
