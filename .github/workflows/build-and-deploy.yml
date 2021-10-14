@@ -26,8 +26,3 @@ jobs:
         with:
           source: "src/CNAME"
           target: "CNAME"
-      - name: Move index.html to 404.html
-        uses: canastro/copy-file-action@master
-        with:
-          source: "index.html"
-          target: "404.html"
