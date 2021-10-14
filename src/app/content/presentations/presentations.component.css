@@ -28,9 +28,10 @@
         margin:15px;
     }
     .presentationBox {
-        display: flex;
+        display: block;
         position: fixed;
-        height: 300px;
+        height: 250px;
+        width:90%;
         opacity: 1;
         background-color: white;
     }
@@ -41,8 +42,9 @@
         margin:2px;
     }
     .list {
-        overflow: scroll;
-        margin-top:350px;
+        overflow: auto;
+        margin-top:270px;
+        height: 250px;
     }
 }
 

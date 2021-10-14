@@ -28,3 +28,25 @@
     background-color: rgb(231, 255, 231);
     border: 2px solid rgb(231, 255, 231);
 }
+.preview-image {
+    width :168px;
+    height :94px;
+}
+@media (max-width: 575.98px) {
+    .item {
+        cursor: pointer;
+        border: 2px solid white;
+        margin: 2px;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    .notes{
+        padding-left: 10px;
+        word-wrap: break-word;
+        max-width: 140px;
+    }
+    .preview-image {
+        width :150px;
+        height : 84px;
+    }
+}

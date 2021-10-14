@@ -7,7 +7,10 @@
                                 (load)="onMyFrameLoad(this)" (change)="onMyFrameChange(this)" allowfullscreen="true"
                                 mozallowfullscreen="true" webkitallowfullscreen="true" [hidden]="!showDeck">
                             </iframe>
-                            <div [hidden]="showDeck">Loading ...</div>
+                            <div [hidden]="showDeck"
+                            class="frame-container">
+                                <img [src]="selectedPresentation.preview" [alt]="selectedPresentation.title" height="250px" width="100%"/>
+                            </div>
                         
             </div>
         </div>
