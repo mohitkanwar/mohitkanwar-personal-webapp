@@ -10,6 +10,7 @@ import { ListErrorsComponent } from './list-errors.component';
 import { ShowAuthedDirective } from './show-authed.directive';
 import { LayoutMobileHeaderComponent } from './layout/layout-mobile-header/layout-mobile-header.component';
 import { FooterComponent } from './layout/footer.component';
+import { LayoutMobileFooterComponent } from './layout/layout-mobile-footer/layout-mobile-footer.component';
 
 @NgModule({
   imports: [
@@ -28,7 +29,8 @@ import { FooterComponent } from './layout/footer.component';
     ListErrorsComponent,
     ShowAuthedDirective,
     LayoutMobileHeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LayoutMobileFooterComponent
   ],
   exports: [
     ArticleListComponent,
@@ -44,7 +46,8 @@ import { FooterComponent } from './layout/footer.component';
     RouterModule,
     ShowAuthedDirective,
     LayoutMobileHeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LayoutMobileFooterComponent
   ]
 })
 export class SharedModule {}

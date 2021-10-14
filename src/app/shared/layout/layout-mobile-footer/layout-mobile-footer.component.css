@@ -1,0 +1,32 @@
+footer {
+    clear: both;
+    position: fixed;
+    height: 60px;
+    margin-top: 0px;
+    z-index: 10;
+    margin-left:-15px;
+}
+.version {
+    float: right;
+    color: #bbb;
+}
+.material-icons{
+    align-items: center;
+    font-size: xx-large;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+    width: 100%;
+}
+.link-display-name{
+    font-size: xx-small;
+    margin-top: -10px;
+    justify-content: center;
+    display: flex;
+}
+.nav-link {
+    display: flexbox;
+    justify-content: center;
+}
