@@ -1,3 +1,4 @@
+<header>
 <nav class="navbar navbar-light">
     <span class="drawer-button" (click)="toggleNav()">&#9776;</span>
     <a class="navbar-brand-logo" routerLink="/">
@@ -10,15 +11,12 @@
         {{link.display}}
     </a>
 
-    <footer>
+    <div>
         <div class="container">
-          <span class="attribution">
-            &copy; {{ today | date: 'yyyy' }}
-          </span>
           <span class="version">
             {{ version }}
           </span>
         </div>
-      </footer>
+      </div>
 </div>
-  
+</header>

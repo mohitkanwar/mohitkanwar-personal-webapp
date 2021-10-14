@@ -1,3 +1,16 @@
+header {
+  position: fixed;
+  background-color: white;
+  height: 10;
+  top: 5;
+  left: 5;
+  z-index: 10;
+}
+.navbar {
+  padding: 6px 35px 0px 0px;
+  margin: 3px 0px 0px 0px;
+  vertical-align: text-top;
+}
 .logo {
     width: 20%;
     float: right;
@@ -13,14 +26,12 @@
 }
 
 .sidenav {
-    height: 85%;
-    width: 40%;
+    height: 100%;
     position: fixed;
     z-index: 10;
-    top: 10;
     left: 0;
     background-color: #FFF;
-    overflow-x: hidden;
+    overflow-x: scroll;
     transition: 0.5s;
     padding-top: 60px;
   }
@@ -52,6 +63,8 @@
   }
 
   .version {
-    float: right;
+    display: block;
+    float: left;
+    margin-block: 5px;
     color: #bbb;
 }

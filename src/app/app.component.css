@@ -14,4 +14,13 @@
     app-layout-footer{
         display: none;
     }
+    router-outlet {
+        margin-top:45px;
+    }
+    .main {
+        position: relative;
+        top:50px;
+        overflow: scroll;
+        z-index: 0;
+    }
  }
