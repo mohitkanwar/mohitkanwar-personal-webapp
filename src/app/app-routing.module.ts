@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -21,7 +22,8 @@ const routes: Routes = [
   {
     path: 'article',
     loadChildren: () => import('./article/article.module').then(m => m.ArticleModule)
-  }
+  },
+  { path: '**', component: PageNotFoundComponent},
 ];
 
 @NgModule({

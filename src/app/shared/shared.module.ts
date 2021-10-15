@@ -11,6 +11,7 @@ import { ShowAuthedDirective } from './show-authed.directive';
 import { LayoutMobileHeaderComponent } from './layout/layout-mobile-header/layout-mobile-header.component';
 import { FooterComponent } from './layout/footer.component';
 import { LayoutMobileFooterComponent } from './layout/layout-mobile-footer/layout-mobile-footer.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   imports: [
@@ -30,7 +31,8 @@ import { LayoutMobileFooterComponent } from './layout/layout-mobile-footer/layou
     ShowAuthedDirective,
     LayoutMobileHeaderComponent,
     FooterComponent,
-    LayoutMobileFooterComponent
+    LayoutMobileFooterComponent,
+    PageNotFoundComponent
   ],
   exports: [
     ArticleListComponent,
