@@ -1,0 +1,20 @@
+{
+    "name": "Mohit Kanwar - Blog",
+    "short_name":"MK - Blog",
+    "start_url":"/index.html",
+    "scope":".",
+    "display":"standalone",
+    "background_color":"#fff",
+    "theme_color":"#3F51B5",
+    "description":"Details of Mohit Kanwar's activities",
+    "dir":"ltr",
+    "lang":"en_US",
+    "orientation":"portrait-primary",
+    "icons": [
+        {
+            "src":"",
+            "type":"image/png",
+            "sizez":"48x48"
+        }
+    ]
+}

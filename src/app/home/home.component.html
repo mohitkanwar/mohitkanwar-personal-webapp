@@ -4,28 +4,12 @@
     <div class="row">
       <div class="col-md-12">
         <div class="feed-toggle">
-          <mat-tab-group dynamicHeight [selectedIndex]="0">
-            <mat-tab label="Trainings">
-              <div class="page-container">
-                <app-presentations></app-presentations>
-              </div>
-            </mat-tab>
-            <mat-tab label="Projects">
-              <div class="page-container">
-                <app-projects></app-projects>
-              </div>
-            </mat-tab>
-            <mat-tab label="Blogs">
-              <div class="page-container">
-                <app-blogs></app-blogs>
-              </div>
-            </mat-tab>
-            <mat-tab label="Videos">
-              <div class="page-container">
-                <app-videos></app-videos>
-              </div>
-            </mat-tab>
-          </mat-tab-group>
+          <iframe
+          class="presentation-box"
+        src="https://www.youtube.com/embed/yQGUDOGRWrg"
+        title="Applying agility in a bank"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
         </div>
       </div>
     </div>
