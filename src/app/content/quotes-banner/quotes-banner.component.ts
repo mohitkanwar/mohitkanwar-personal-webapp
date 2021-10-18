@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import config from '../../../../src/assets/data/quotes.json';
 @Component({
   selector: 'app-quotes-banner',
   templateUrl: './quotes-banner.component.html',
@@ -10,10 +10,11 @@ export class QuotesBannerComponent implements OnInit {
   constructor() { }
   selectedQuote: Quote;
   ngOnInit(): void {
-    this.selectedQuote = new Quote();
-    this.selectedQuote.heading = 'Start';
-    this.selectedQuote.description = 'It might be incomplete, but it is better than not being there';
-    this.selectedQuote.author = 'Mohit Kanwar';
+    // change foreach to random
+    config.quotes.forEach(element => {
+      this.selectedQuote = element;
+    });
+    console.log(config);
   }
 
 }
@@ -21,4 +22,5 @@ class Quote {
   heading: string;
   description: string;
   author: string;
+  authorprofile: string;
 }
