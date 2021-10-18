@@ -10,11 +10,7 @@ export class QuotesBannerComponent implements OnInit {
   constructor() { }
   selectedQuote: Quote;
   ngOnInit(): void {
-    // change foreach to random
-    config.quotes.forEach(element => {
-      this.selectedQuote = element;
-    });
-    console.log(config);
+    this.selectedQuote = config.quotes[Math.floor(Math.random() * config.quotes.length)];
   }
 
 }
