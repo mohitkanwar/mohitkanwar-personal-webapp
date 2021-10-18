@@ -1,0 +1,16 @@
+{
+    "blogsList":[
+        {
+            "heading":"Start",
+            "description":"It might be incomplete, but it is better than not being there",
+            "author":"Mohit Kanwar",
+            "author-profile":"https://www.linkedin.com/in/mohit-kanwar-7668a211/"
+        },
+        {
+            "heading":"Time",
+            "description":"is always there, we only realize it when it becomes 'time was there'",
+            "author":"Bibhu Prashad Nayak",
+            "author-profile":"https://www.linkedin.com/in/bibhu-prashad-nayak345/"
+        }
+    ]
+}
