@@ -10,7 +10,6 @@ import blogs from '../../../assets/data/blogs.json';
 export class BlogsComponent implements OnInit {
 
   blogList: Blog[];
-  
 
   ngOnInit(): void {
     this.blogList = blogs.blogsList;

@@ -37,7 +37,7 @@ export class PresentationsComponent implements OnInit {
     this.selectedPresentation = this.presentationsList[0];
   }
   onSelect(presentation: Presentation) {
-    if (this.selectedPresentation.id !== presentation.id){
+    if (this.selectedPresentation.id !== presentation.id) {
       this.showDeck = false;
       this.selectedPresentation = this.presentationsList.find(x => x.id === presentation.id);
     }
