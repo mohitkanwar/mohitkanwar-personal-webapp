@@ -1,15 +1,17 @@
 {
   "name": "ang2-mohitkanwar",
-  "version": "4.3.46",
+  "version": "4.3.55",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "prebuild": "npm --no-git-tag-version version patch",
-    "build": "ng build --prod  --base-href ./",
+    "build": "ng build --configuration production  --base-href ./",
     "test": "ng test",
     "lint": "ng lint --force",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "scully": "npx scully --",
+    "scully:serve": "npx scully serve --"
   },
   "pre-commit": [
     "lint"
@@ -26,6 +28,9 @@
     "@angular/platform-browser": "12.2.10",
     "@angular/platform-browser-dynamic": "12.2.10",
     "@angular/router": "12.2.10",
+    "@scullyio/init": "^2.0.1",
+    "@scullyio/ng-lib": "^2.0.0",
+    "@scullyio/scully": "^2.0.0",
     "core-js": "^2.4.1",
     "marked": "^0.3.9",
     "rxjs": "^6.4.0",

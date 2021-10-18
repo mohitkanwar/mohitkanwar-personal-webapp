@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { version } from '../../../../package.json';
+import packageInfo from '../../../../package.json';
 @Component({
   selector: 'app-layout-footer',
   templateUrl: './footer.component.html',
@@ -7,5 +7,5 @@ import { version } from '../../../../package.json';
 })
 export class FooterComponent {
   today: number = Date.now();
-  public version: string = version;
+  public version: string = packageInfo.version;
 }

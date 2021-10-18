@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ang2-conduit": {
+    "ang2-mohitkanwar": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -14,7 +14,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist/public",
             "index": "src/index.html",
             "main": "src/main.ts",
             "tsConfig": "src/tsconfig.app.json",
@@ -59,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ang2-conduit:build"
+            "browserTarget": "ang2-mohitkanwar:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ang2-conduit:build:production"
+              "browserTarget": "ang2-mohitkanwar:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ang2-conduit:build"
+            "browserTarget": "ang2-mohitkanwar:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "ang2-conduit-e2e": {
+    "ang2-mohitkanwar-e2e": {
       "root": "e2e",
       "sourceRoot": "e2e",
       "projectType": "application",
@@ -115,7 +115,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "ang2-conduit:serve"
+            "devServerTarget": "ang2-mohitkanwar:serve"
           }
         },
         "lint": {
@@ -132,7 +132,7 @@
       }
     }
   },
-  "defaultProject": "ang2-conduit",
+  "defaultProject": "ang2-mohitkanwar",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",

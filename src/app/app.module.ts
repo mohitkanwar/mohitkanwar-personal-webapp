@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
@@ -23,7 +24,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     AuthModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatGridListModule
+    MatGridListModule,
+    ScullyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]

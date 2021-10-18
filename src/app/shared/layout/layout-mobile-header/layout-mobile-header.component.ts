@@ -1,6 +1,6 @@
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
-import { version } from '../../../../../package.json';
+import packageInfo from '../../../../../package.json';
 import { NavigationService } from '../../navigation/navigation.service';
 import { NavigationLink } from '../../navigation/navigationlinks.model';
 @Component({
@@ -21,7 +21,7 @@ import { NavigationLink } from '../../navigation/navigationlinks.model';
 })
 export class LayoutMobileHeaderComponent implements OnInit {
   today: number = Date.now();
-  public version: string = version;
+  public version: string = packageInfo.version;
   links: NavigationLink[];
   visibilityState = 'closed';
   constructor(private navigationService: NavigationService) { }
