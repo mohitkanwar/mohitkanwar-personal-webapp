@@ -25,7 +25,8 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatGridListModule,
-    ScullyLibModule
+    ScullyLibModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
