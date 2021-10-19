@@ -1,67 +1,18 @@
-.blogs {
-    margin-left: 15px;
-}
-.blogs p {
-    font-size: large;
-    font-family: "Abril Fatface";
-    padding: 2em;
-}
-.list {
-    display: grid;
-    grid-template-columns: max-content;
-    max-width: 90%;
-}
-@media (min-width:768px) {
-    .list {
-        grid-template-columns: max-content;
-    }
-}
 dl {
-    counter-reset: count;
-    background: linear-gradient(90deg, rgba(0,0,0,0.04) 10%, rgba(255,255,255,0)0%);
-    padding-left: 4vw;
-    padding-right: 4vw;
-    margin: 0;
+  width: 100%;
 }
-@media (min-width: 768px) {
-    dl {
-      padding-left: 2vw;
-    }
-  }
-  
-  dl + dl {
-    counter-reset: counter 4;
-  }
-  
-  dt {
-    counter-increment: count;
-    color: #4f6d7aff;
-    font-family: "Montserrat", sans-serif;
-    font-size: 4;
-    text-transform: uppercase;
-    padding-left: 5vw;
-  }
-  
-  dt::before {
-    content: counter(count, decimal-leading-zero) ".";
-    font-family: "Abril Fatface", cursive;
-    color: #5ea5b8ff;
-    margin-left: -5vw;
-    padding-right: 5vw;
-  }
-  
-  dd {
-    margin-left: 10vw;
-    margin-bottom: 2vh;
-  }
+dt {
+  font-size: 4vh;
+  margin-bottom: 15px;
+}
+img {
+  width: 80%;
+  max-height: 50%;
+}
+img :first{
+  width: 25%;
+}
 
-  @media (max-width: 575.98px) {
-    .list {
-      display: grid;
-      grid-template-columns: auto;
-      max-width: 90%;
-  }
-  .intro {
-    display: none;
-  }
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
