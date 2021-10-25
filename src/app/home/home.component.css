@@ -31,3 +31,17 @@
     height: 500px;
   }
 }
+
+.timeline{
+  margin: 15px;
+  text-align: center;
+}
+.timeline-post {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  font-size: large;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 10px;
+  border-radius: 15px;
+}
