@@ -1,12 +1,24 @@
 <div class="blogs">
     <div class="list">
-            <dl *ngFor="let blog of blogs.items;">
-                <dt>
-                    <a [href]="blog.src" target="_blank">
-                        {{blog.title}}
-                    </a>
-                </dt>
-                <dd [innerHTML]= "blog.description"></dd>
-            </dl>
+            <div class="blogcontainer" *ngFor="let blog of blogs.items;">
+                <div class="blog">
+                    <dl>
+                        <dt>
+                            <a [href]="blog.src" target="_blank">
+                                {{blog.title}}
+                            </a>
+                        </dt>
+                        <dd [innerHTML]= "blog.description"></dd>
+                        <dd>
+                            <ul class="tags">
+                                <li *ngFor="let tag of blog.categories;">
+                                    <a class="tag">{{tag}}</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            
+        </div>
     </div>
 </div>
