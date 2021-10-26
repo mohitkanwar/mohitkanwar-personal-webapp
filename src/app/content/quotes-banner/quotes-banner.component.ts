@@ -11,19 +11,26 @@ export class QuotesBannerComponent implements OnInit {
   constructor() { }
   selectedQuote: Quote;
   fillPercent: number;
+  filler;
   ngOnInit(): void {
-    setInterval(() => {
-      this.refreshQuote();
-    }, 5000);
     this.refreshQuote();
+    setInterval(() => {
+      clearInterval(this.filler);
+      this.filler = setInterval(() => {
+        if (this.fillPercent === 100) {
+          clearInterval(this.filler);
+        } else {
+          this.fillPercent = this.fillPercent + 1;
+        }
+      }, 100);
+      this.refreshQuote();
+    }, 10000);
   }
   refreshQuote() {
     this.fillPercent = 0;
     const random = Math.floor(Math.random() * config.quotes.length);
     this.selectedQuote = config.quotes[random];
-    this.fillPercent = 100;
   }
-
 }
 class Quote {
   heading: string;

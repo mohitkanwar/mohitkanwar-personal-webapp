@@ -8,7 +8,6 @@
 }
 ::ng-deep .mat-progress-bar-fill::after {
   background-color: green!important;
-  transition: width 5s ease;
 }
 blockquote::before {
     content: open-quote;
@@ -46,4 +45,7 @@ blockquote::before {
     font-size: large;
     text-align: center;
     font-style: italic;
+  }
+  mat-progress-bar{
+    margin-bottom: 10px;
   }
