@@ -1,30 +1,37 @@
 import { trigger } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import config from '../../../../src/assets/data/quotes.json';
 @Component({
   selector: 'app-quotes-banner',
   templateUrl: './quotes-banner.component.html',
   styleUrls: ['./quotes-banner.component.css'],
 })
-export class QuotesBannerComponent implements OnInit {
+export class QuotesBannerComponent implements OnInit, OnDestroy {
 
   constructor() { }
+
   selectedQuote: Quote;
   fillPercent: number;
-  filler;
+  fillerInterval;
+  quoteInterval;
   ngOnInit(): void {
     this.refreshQuote();
-    setInterval(() => {
-      clearInterval(this.filler);
-      this.filler = setInterval(() => {
+    this.quoteInterval = setInterval(() => {
+      clearInterval(this.fillerInterval);
+      this.fillerInterval = setInterval(() => {
         if (this.fillPercent === 100) {
-          clearInterval(this.filler);
+          clearInterval(this.fillerInterval);
         } else {
           this.fillPercent = this.fillPercent + 1;
         }
       }, 100);
       this.refreshQuote();
     }, 10000);
+  }
+
+  ngOnDestroy(): void {
+    clearInterval(this.fillerInterval);
+    clearInterval(this.quoteInterval);
   }
   refreshQuote() {
     this.fillPercent = 0;
