@@ -1,6 +1,6 @@
 <div class="banner">
     <div class="container">
-        <div class="logo-font">{{selectedQuote.heading}}</div>
+        <div class="logo-font" [innerHTML]="selectedQuote.heading"></div>
         <figure>
             <blockquote>
                 {{selectedQuote.description}}
@@ -9,3 +9,9 @@
         </figure>
     </div>
 </div>
+<mat-progress-bar 
+mode="determinate" 
+[value]="fillPercent"
+[color]="'green'"
+></mat-progress-bar>
+

@@ -10,7 +10,7 @@ import { PresentationListComponent } from './presentations/presentation-list/pre
 import { PresentationListItemComponent } from './presentations/presentation-list-item/presentation-list-item.component';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { ContentHomeComponent } from './content-home/content-home.component';
-
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 export const routes: Routes = [
   {
       path: '',
@@ -45,6 +45,7 @@ export const routes: Routes = [
   imports: [
     CommonModule,
     MatGridListModule,
+    MatProgressBarModule,
     RouterModule.forChild(routes)
   ]
 })
