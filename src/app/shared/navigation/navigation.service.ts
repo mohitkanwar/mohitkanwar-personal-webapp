@@ -11,4 +11,8 @@ export class NavigationService {
   getLinks(): NavigationLink[] {
     return links.links;
   }
+  getSecondaryLinks(): NavigationLink[] {
+    return links.secondarylinks;
+  }
+
 }
