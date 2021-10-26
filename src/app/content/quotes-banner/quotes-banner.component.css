@@ -1,3 +1,8 @@
+.logo-font{
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
 blockquote::before {
     content: open-quote;
     font-size: xx-large;
@@ -13,6 +18,9 @@ blockquote::before {
     font-style: italic;
   }
   @media (max-width: 575.98px) { 
+    .logo-font{
+      font-size: 1.5rem;
+    }
     blockquote::before {
         font-size: large;
       }
