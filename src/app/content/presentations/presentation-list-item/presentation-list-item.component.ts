@@ -16,6 +16,7 @@ export class PresentationListItemComponent implements OnInit {
   }
 
   onSelect() {
+    window.scroll(0, 0);
     this.eventservice.presentationEvent.emit(this.presentation);
   }
 
