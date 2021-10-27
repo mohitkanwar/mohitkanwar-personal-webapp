@@ -13,6 +13,7 @@ import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ScullyLibModule } from '@scullyio/ng-lib';
+import { ProjectsModule } from './projects/projects.module';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
@@ -27,6 +28,7 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
     MatGridListModule,
     ScullyLibModule,
     HttpClientModule,
+    ProjectsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

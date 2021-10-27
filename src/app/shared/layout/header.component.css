@@ -1,3 +1,11 @@
+header {
+    clear: both;
+    position: fixed;
+    height: 50px;
+    z-index: 10;
+    width: 100%;
+    background-color: white;
+}
 .logo {
     width: 15%;
 }
@@ -7,6 +15,7 @@
     text-align: left;
 }
 .navbar {
+    background-color: white;
     border-bottom: solid green 2px;
     border-bottom-left-radius: unset;
     border-bottom-right-radius: unset;

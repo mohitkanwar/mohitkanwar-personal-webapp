@@ -12,8 +12,8 @@ const routes: Routes = [
     loadChildren: () => import('./content/content.module').then(m => m.ContentModule)
   },
   {
-    path: 'profile',
-    loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule)
+    path: 'projects',
+    loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule)
   },
   {
     path: 'editor',

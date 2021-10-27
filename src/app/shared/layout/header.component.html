@@ -1,20 +1,24 @@
-<nav class="navbar navbar-light">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-1">
-        <a class="navbar-brand" routerLink="/">
-            <img alt="My Digital Career" src="./assets/images/logo.gif" class="logo">
-        </a>
-      </div>
-      <div class="col-8">
-        <ul *appShowAuthed="false" class="nav navbar-nav pull-xs-right">
-          <li class="nav-item" *ngFor="let link of links">
-            <a class="nav-link" [routerLink]="link.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-              <i class="material-icons">{{link.icon}}</i> {{link.display}}
-            </a>
-          </li>
-        </ul>
+<div class="container-fluid">
+<header>
+  <nav class="navbar navbar-light">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-1">
+          <a class="navbar-brand" routerLink="/">
+              <img alt="My Digital Career" src="./assets/images/logo.gif" class="logo">
+          </a>
+        </div>
+        <div class="col-8">
+          <ul *appShowAuthed="false" class="nav navbar-nav pull-xs-right">
+            <li class="nav-item" *ngFor="let link of links">
+              <a class="nav-link" [routerLink]="link.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <i class="material-icons">{{link.icon}}</i> {{link.display}}
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
+</div>
