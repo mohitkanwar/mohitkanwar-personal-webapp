@@ -10,6 +10,8 @@
       font-size: large;
       box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
       padding: 10px;
+      border-radius: 15px;
+      margin-bottom: 15px;
     }
   }
   @media (max-width: 575.98px) {
@@ -18,5 +20,6 @@
       box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
       padding: 10px;
       border-radius: 15px;
+      margin-bottom: 15px;
     }
   }

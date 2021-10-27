@@ -23,6 +23,7 @@ export class Client {
     isSafari;
     isOpera;
     isMobileSafari;
+    isMobileOpera;
     engine;
     engineVersion;
     operatingSystem;
@@ -60,5 +61,10 @@ export class Client {
     timezone;
     language;
     systemlanguage;
-    
+  screenPrint: any;
+  isMimeTypesInstalled: any;
+  mimeTypes: any;
+  isCanvas: any;
+  canvasPrint: any;
+
 }

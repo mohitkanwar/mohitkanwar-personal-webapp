@@ -7,5 +7,24 @@
                 I will start from easy to track things to more difficult items.
             </p>
         </div>
+        <div class="details" *ngIf="client.isMobile">
+            The screen size looks like a mobile phone. You are using a 
+            <span *ngIf="client.isMobileAndroid">Android device</span>
+            <span *ngIf="client.isMobileBlackberry">Blackberry device</span>
+            <span *ngIf="client.isMobileIOS">IOS device</span>
+            <span *ngIf="client.isMobileWindows">Windows device</span>
+            <span *ngIf="!client.isMobileWindows&&!client.isMobileIOS&&!client.isMobileBlackberry&&!client.isMobileAndroid">Device which I wasn't able to identify</span>
+        </div>
+        <div class="details" *ngIf="client.browser">
+            The screen size looks like a Web Browser. You are using a 
+            <span *ngIf="client.isIE">Internet Explorer</span>
+            <span *ngIf="client.isChrome">Chrome</span>
+            <span *ngIf="client.isFirefox">Firefox</span>
+            <span *ngIf="client.isSafari">Safari
+                <span *ngIf="client.isMobileSafari">on Mobile</span>
+            </span>
+            <span *ngIf="client.isOpera">Opera</span>
+            
+        </div>
     </div>
 </div>

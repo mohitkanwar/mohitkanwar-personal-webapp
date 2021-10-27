@@ -19,7 +19,6 @@ dl {
     padding-right: 4vw;
     margin: 0;
     margin-bottom: 8vh;
-    width: 50%;
 }
 @media (min-width: 768px) {
     dl {
