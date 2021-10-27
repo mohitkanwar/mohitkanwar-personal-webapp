@@ -29,8 +29,8 @@
             "help":"Welcome to my training sessions. Here you can find various presentations that I use in my training sessions."
         },
         {
-            "id":"content-projects",
-            "url":"/content/projects",
+            "id":"projects",
+            "url":"/projects",
             "display":"Projects",
             "icon":"work",
             "help":"This page consists of different projects that I am working upon."
@@ -43,34 +43,6 @@
             "display":"Home",
             "icon":"home",
             "help":"The dashboard of specific device"
-        },
-        {
-            "id":"content-blogs",
-            "url":"/content/blogs",
-            "display":"Blogs",
-            "icon":"article",
-            "help":"Consolidated view of my blogs aggregated from different sources."
-        },
-        {
-            "id":"content-videos",
-            "url":"/content/videos",
-            "display":"Videos",
-            "icon":"video_library",
-            "help":"Consolidated view of my videos aggregated from different sources."
-        },
-        {
-            "id":"content-training",
-            "url":"/content/training",
-            "display":"Training",
-            "icon":"co_present",
-            "help":"Welcome to my training sessions. Here you can find various presentations that I use in my training sessions."
-        },
-        {
-            "id":"content-projects",
-            "url":"/content/projects",
-            "display":"Projects",
-            "icon":"work",
-            "help":"This page consists of different projects that I am working upon."
         }
     ]
 }

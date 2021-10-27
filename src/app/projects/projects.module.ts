@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MyPublicInfoComponent } from './my-public-info/my-public-info.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ProjectsContainerComponent } from './projects-container/projects-container.component';
+import { MyBlogComponent } from './my-blog/my-blog.component';
 
 export const routes: Routes = [
   {
@@ -10,6 +11,7 @@ export const routes: Routes = [
       component: ProjectsContainerComponent,
       children: [
           { path: 'my-public-info', component: MyPublicInfoComponent },
+          { path: 'my-blog', component: MyBlogComponent },
       ]
   }
 ];
@@ -17,7 +19,8 @@ export const routes: Routes = [
 @NgModule({
   declarations: [
     MyPublicInfoComponent,
-    ProjectsContainerComponent
+    ProjectsContainerComponent,
+    MyBlogComponent
   ],
   imports: [
     CommonModule,
