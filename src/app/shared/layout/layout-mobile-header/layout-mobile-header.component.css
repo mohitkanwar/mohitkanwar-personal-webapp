@@ -1,10 +1,9 @@
 header {
   position: fixed;
   background-color: white;
-  height: 10;
-  top: 5;
-  left: 5;
+  height: 50px;
   z-index: 10;
+  width: 100%;
 }
 .navbar {
   padding: 6px 35px 0px 0px;
@@ -12,15 +11,16 @@ header {
   vertical-align: text-top;
 }
 .logo {
-    width: 20%;
     float: right;
+    margin-top: -15px;
+    height: calc(25px + 3.5vw);
 }
 .navbar-brand-logo{
     width:90%;
     margin-right: 0;
 }
 .drawer-button {
-    font-size:30px;
+    font-size:calc(25px + 3.5vw);;
     cursor:pointer;
     float: left;
 }
