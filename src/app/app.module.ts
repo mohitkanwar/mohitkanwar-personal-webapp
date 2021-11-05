@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { ProjectsModule } from './projects/projects.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
@@ -28,7 +30,13 @@ import { ProjectsModule } from './projects/projects.module';
     MatGridListModule,
     ScullyLibModule,
     HttpClientModule,
-    ProjectsModule
+    ProjectsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

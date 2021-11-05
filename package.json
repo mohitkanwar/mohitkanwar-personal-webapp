@@ -1,6 +1,6 @@
 {
   "name": "ang2-mohitkanwar",
-  "version": "4.3.58",
+  "version": "4.4.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -28,6 +28,7 @@
     "@angular/platform-browser": "12.2.10",
     "@angular/platform-browser-dynamic": "12.2.10",
     "@angular/router": "12.2.10",
+    "@angular/service-worker": "12.2.10",
     "@scullyio/init": "^2.0.1",
     "@scullyio/ng-lib": "^2.0.0",
     "@scullyio/scully": "^2.0.0",

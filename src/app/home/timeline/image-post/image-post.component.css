@@ -1,0 +1,16 @@
+.img-holder {
+    width : 100%;
+    border-radius: 15px;
+  }
+  @media (max-width: 575.98px) {
+    .timeline-post {
+      margin: auto;
+      width: 100%;
+      text-align: center;
+      font-size: large;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      padding: 10px;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+  }

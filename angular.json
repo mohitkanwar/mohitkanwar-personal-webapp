@@ -23,14 +23,17 @@
               "src/assets",
               "src/favicon.ico",
               "src/404.html",
-              "src/manifest.json"
+              "src/manifest.json",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": [],
-            "aot": true
+            "aot": true,
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {
@@ -88,7 +91,8 @@
               "src/assets",
               "src/favicon.ico",
               "src/404.html",
-              "src/manifest.json"
+              "src/manifest.json",
+              "src/manifest.webmanifest"
             ]
           }
         },

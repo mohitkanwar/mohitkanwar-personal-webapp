@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'article',
     loadChildren: () => import('./article/article.module').then(m => m.ArticleModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./article/article.module').then(m => m.ArticleModule)
+  },
   { path: '**', component: PageNotFoundComponent},
 ];
 

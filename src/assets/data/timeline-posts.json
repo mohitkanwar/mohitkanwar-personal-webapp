@@ -1,0 +1,132 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "date":"2021-09-23",
+            "type":"VIDEO",
+            "host":"youtube",
+            "link":"https://www.youtube.com/embed/yQGUDOGRWrg",
+            "title":"Open Mic: Agile Banking - Developing applications that customers love in a rigid environment!",
+            "description":"How we implemented agile in an aged bank and developed a product which is loved by it's customers"
+        },
+        {
+            "id": 2,
+            "date":"2021-09-23",
+            "type":"IMAGE",
+            "host":"local",
+            "link":"./assets/files/posts/do-a-crappy-jov.gif",
+            "title":"working hard",
+            "description":"It is important to do hard-work if you want to improve and learn"
+        }
+        ,
+        {
+            "id": 3,
+            "date":"2021-09-23",
+            "type":"IMAGE",
+            "host":"local",
+            "link":"./assets/files/posts/india-pakistan.gif",
+            "title":"History doesn't define you",
+            "description":"Everyday is a new day, you need to work hard every day if you want to continue your momentum of victory."
+        }
+        ,
+        {
+            "id": 4,
+            "date":"2021-09-23",
+            "type":"IMAGE",
+            "host":"local",
+            "link":"./assets/files/posts/java-numeric-literals-light.gif",
+            "title":"Numeric literals in Java",
+            "description":"It is easier to read grouped numeric literals in java, if separated via an underscore"
+        },
+        {
+            "id": 5,
+            "date":"2021-09-23",
+            "type":"IMAGE",
+            "host":"local",
+            "link":"./assets/files/posts/java-records.gif",
+            "title":"Records in Java",
+            "description":"Lesser known fact in Java"
+        },
+        {
+            "id": 6,
+            "date":"2021-09-23",
+            "type":"IMAGE",
+            "host":"local",
+            "link":"./assets/files/posts/kaizen.gif",
+            "title":"Continuous improvement",
+            "description":"keep improving"
+        },
+        {
+            "id": 7,
+            "date":"2021-09-23",
+            "type":"IMAGE",
+            "host":"local",
+            "link":"./assets/files/posts/mistakes-light-slow.gif",
+            "title":"Everybody makes mistakes",
+            "description":"and that's okay."
+        },
+        {
+            "id": 8,
+            "date":"2021-09-23",
+            "type":"IMAGE",
+            "host":"local",
+            "link":"./assets/files/posts/perfect-chocolate.gif",
+            "title":"Chocolate is perfect",
+            "description":"but it is also not a fit everywhere"
+        },
+        {
+            "id": 9,
+            "date":"2021-09-23",
+            "type":"IMAGE",
+            "host":"local",
+            "link":"./assets/files/posts/posts.gif",
+            "title":"Chocolate is perfect",
+            "description":"but it is also not a fit everywhere"
+        },
+        {
+            "id": 10,
+            "date":"2021-09-23",
+            "type":"IMAGE",
+            "host":"local",
+            "link":"./assets/files/posts/scalability.gif",
+            "title":"Chocolate is perfect",
+            "description":"but it is also not a fit everywhere"
+        },
+        {
+            "id": 11,
+            "date":"2021-09-23",
+            "type":"IMAGE",
+            "host":"local",
+            "link":"./assets/files/posts/sip-life-plan-light.gif",
+            "title":"Chocolate is perfect",
+            "description":"but it is also not a fit everywhere"
+        },
+        {
+            "id": 12,
+            "date":"2021-09-23",
+            "type":"IMAGE",
+            "host":"local",
+            "link":"./assets/files/posts/tigger-eyore.png",
+            "title":"Chocolate is perfect",
+            "description":"but it is also not a fit everywhere"
+        },
+        {
+            "id": 13,
+            "date":"2021-09-23",
+            "type":"IMAGE",
+            "host":"local",
+            "link":"./assets/files/posts/time.gif",
+            "title":"Chocolate is perfect",
+            "description":"but it is also not a fit everywhere"
+        },
+        {
+            "id": 14,
+            "date":"2021-09-23",
+            "type":"IMAGE",
+            "host":"local",
+            "link":"./assets/files/posts/PII.gif",
+            "title":"Chocolate is perfect",
+            "description":"but it is also not a fit everywhere"
+        }
+    ]
+}

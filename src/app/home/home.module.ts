@@ -5,6 +5,9 @@ import { HomeAuthResolver } from './home-auth-resolver.service';
 import { SharedModule } from '../shared';
 import { HomeRoutingModule } from './home-routing.module';
 import { ContentModule } from '../content/content.module';
+import { TimelineComponent } from './timeline/timeline.component';
+import { VideoPostComponent } from './timeline/video-post/video-post.component';
+import { ImagePostComponent } from './timeline/image-post/image-post.component';
 
 @NgModule({
   imports: [
@@ -14,7 +17,10 @@ import { ContentModule } from '../content/content.module';
     ContentModule
   ],
   declarations: [
-    HomeComponent
+    HomeComponent,
+    TimelineComponent,
+    VideoPostComponent,
+    ImagePostComponent
   ],
   providers: [
     HomeAuthResolver
