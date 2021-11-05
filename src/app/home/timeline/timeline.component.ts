@@ -20,7 +20,7 @@ export class TimelineComponent implements OnInit {
     this.loadPost(1);
   }
   loadPost(indexToBeLoaded) {
-    if (postsdata.posts.length > indexToBeLoaded - 1 ) {
+    if (postsdata.posts.length > indexToBeLoaded ) {
       const timelinePost = new TimelinePost();
       timelinePost.id = postsdata.posts[indexToBeLoaded].id;
       timelinePost.date = new Date(postsdata.posts[indexToBeLoaded].date);
