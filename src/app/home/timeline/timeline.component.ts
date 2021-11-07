@@ -12,6 +12,7 @@ import { TimelinePost } from '../timelinePost.model';
 export class TimelineComponent implements OnInit {
 
   posts: TimelinePost[] = new Array();
+  noMorePosts = false;
   constructor(private sanitizer: DomSanitizer) {
   }
 
@@ -30,6 +31,8 @@ export class TimelineComponent implements OnInit {
       timelinePost.title = postsdata.posts[indexToBeLoaded].title;
       timelinePost.type = (<any>PostType)[postsdata.posts[indexToBeLoaded].type.toUpperCase()];
       this.posts.push(timelinePost);
+    } else {
+      this.noMorePosts = true;
     }
 
   }
@@ -37,7 +40,7 @@ export class TimelineComponent implements OnInit {
   onScroll(event: any) {
     const pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
     const max = document.documentElement.scrollHeight;
-    if (pos === max) {
+    if (pos + 10 >= max) {
       this.loadPost(this.posts.length);
     }
   }

@@ -5,6 +5,7 @@
         <app-image-post *ngIf="post.type=='IMAGE'" [post]="post"></app-image-post>
         <div class="post-footer">{{post.description}}</div>
     </div>
+    <div *ngIf="noMorePosts">Reached the end of timeline</div>
     <!-- <div class="timeline-post">
       <img src="./assets/files/posts/do-a-crappy-jov.gif" class="img-holder"/>
     </div>
