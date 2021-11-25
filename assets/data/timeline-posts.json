@@ -79,54 +79,42 @@
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/posts.gif",
-            "title":"Chocolate is perfect",
-            "description":"but it is also not a fit everywhere"
+            "link":"./assets/files/posts/posts.gif"
         },
         {
             "id": 10,
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/scalability.gif",
-            "title":"Chocolate is perfect",
-            "description":"but it is also not a fit everywhere"
+            "link":"./assets/files/posts/scalability.gif"
         },
         {
             "id": 11,
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/sip-life-plan-light.gif",
-            "title":"Chocolate is perfect",
-            "description":"but it is also not a fit everywhere"
+            "link":"./assets/files/posts/sip-life-plan-light.gif"
         },
         {
             "id": 12,
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/tigger-eyore.png",
-            "title":"Chocolate is perfect",
-            "description":"but it is also not a fit everywhere"
+            "link":"./assets/files/posts/tigger-eyore.png"
         },
         {
             "id": 13,
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/time.gif",
-            "title":"Chocolate is perfect",
-            "description":"but it is also not a fit everywhere"
+            "link":"./assets/files/posts/time.gif"
         },
         {
             "id": 14,
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/PII.gif",
-            "title":"Chocolate is perfect",
-            "description":"but it is also not a fit everywhere"
+            "link":"./assets/files/posts/PII.gif"
         }
     ]
 }
