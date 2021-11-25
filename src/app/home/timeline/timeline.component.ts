@@ -25,10 +25,10 @@ export class TimelineComponent implements OnInit {
       const timelinePost = new TimelinePost();
       timelinePost.id = postsdata.posts[indexToBeLoaded].id;
       timelinePost.date = new Date(postsdata.posts[indexToBeLoaded].date);
-      timelinePost.description = postsdata.posts[indexToBeLoaded].description;
+      timelinePost.description = postsdata.posts[indexToBeLoaded].description || '';
       timelinePost.host = postsdata.posts[indexToBeLoaded].host;
       timelinePost.link = this.sanitizer.bypassSecurityTrustResourceUrl(postsdata.posts[indexToBeLoaded].link);
-      timelinePost.title = postsdata.posts[indexToBeLoaded].title;
+      timelinePost.title = postsdata.posts[indexToBeLoaded].title || '';
       timelinePost.type = (<any>PostType)[postsdata.posts[indexToBeLoaded].type.toUpperCase()];
       this.posts.push(timelinePost);
     } else {

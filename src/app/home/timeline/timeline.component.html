@@ -1,6 +1,6 @@
 <div class="timeline" (scroll)="onScroll($event)">
     <div class="timeline-post" *ngFor="let post of posts">
-        <div class="post-header"><span class="date">{{post.date|date:'dd-MMM-yyyy'}}</span> - {{post.title}}</div>
+        <div class="post-header"><span class="date">{{post.date|date:'dd-MMM-yyyy'}}</span> <span *ngIf="post.title"> - </span>{{post.title}}</div>
         <app-video-post *ngIf="post.type=='VIDEO'" [post]="post"></app-video-post>
         <app-image-post *ngIf="post.type=='IMAGE'" [post]="post"></app-image-post>
         <div class="post-footer">{{post.description}}</div>
