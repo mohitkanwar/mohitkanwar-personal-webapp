@@ -1,8 +1,6 @@
 <div>
-    <!-- <img [src]="post.link" class="img-holder"/> -->
     <picture>
-        <!-- <source type=”video/mp4” srcset=”cats.mp4”>
-        <source type=”image/webp” srcset=”cats.webp”> -->
-        <img [src]="post.link[0]" [alt]="post.title" class="img-holder">
+        <source type="image/webp" [srcset]="post.link[1]" *ngIf="post.link.length>1"/>
+        <img [src]="post.link[0]" [alt]="post.title" class="img-holder"/>
       </picture>
 </div>
