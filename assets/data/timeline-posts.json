@@ -5,7 +5,7 @@
             "date":"2021-09-23",
             "type":"VIDEO",
             "host":"youtube",
-            "link":"https://www.youtube.com/embed/yQGUDOGRWrg",
+            "link":["https://www.youtube.com/embed/yQGUDOGRWrg"],
             "title":"Open Mic: Agile Banking - Developing applications that customers love in a rigid environment!",
             "description":"How we implemented agile in an aged bank and developed a product which is loved by it's customers"
         },
@@ -14,7 +14,10 @@
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/do-a-crappy-jov.gif",
+            "link":[
+                    "./assets/files/posts/do-a-crappy-jov.gif",
+                    "./assets/files/posts/do-a-crappy-jov.webp"
+                ],
             "title":"working hard",
             "description":"It is important to do hard-work if you want to improve and learn"
         }
@@ -24,7 +27,7 @@
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/india-pakistan.gif",
+            "link":["./assets/files/posts/india-pakistan.gif"],
             "title":"History doesn't define you",
             "description":"Everyday is a new day, you need to work hard every day if you want to continue your momentum of victory."
         }
@@ -34,7 +37,7 @@
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/java-numeric-literals-light.gif",
+            "link":["./assets/files/posts/java-numeric-literals-light.gif"],
             "title":"Numeric literals in Java",
             "description":"It is easier to read grouped numeric literals in java, if separated via an underscore"
         },
@@ -43,7 +46,7 @@
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/java-records.gif",
+            "link":["./assets/files/posts/java-records.gif"],
             "title":"Records in Java",
             "description":"Lesser known fact in Java"
         },
@@ -52,7 +55,7 @@
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/kaizen.gif",
+            "link":["./assets/files/posts/kaizen.gif"],
             "title":"Continuous improvement",
             "description":"keep improving"
         },
@@ -61,7 +64,7 @@
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/mistakes-light-slow.gif",
+            "link":["./assets/files/posts/mistakes-light-slow.gif"],
             "title":"Everybody makes mistakes",
             "description":"and that's okay."
         },
@@ -70,7 +73,7 @@
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/perfect-chocolate.gif",
+            "link":["./assets/files/posts/perfect-chocolate.gif"],
             "title":"Chocolate is perfect",
             "description":"but it is also not a fit everywhere"
         },
@@ -79,42 +82,42 @@
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/posts.gif"
+            "link":["./assets/files/posts/posts.gif"]
         },
         {
             "id": 10,
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/scalability.gif"
+            "link":["./assets/files/posts/scalability.gif"]
         },
         {
             "id": 11,
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/sip-life-plan-light.gif"
+            "link":["./assets/files/posts/sip-life-plan-light.gif"]
         },
         {
             "id": 12,
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/tigger-eyore.png"
+            "link":["./assets/files/posts/tigger-eyore.png"]
         },
         {
             "id": 13,
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/time.gif"
+            "link":["./assets/files/posts/time.gif"]
         },
         {
             "id": 14,
             "date":"2021-09-23",
             "type":"IMAGE",
             "host":"local",
-            "link":"./assets/files/posts/PII.gif"
+            "link":["./assets/files/posts/PII.gif"]
         }
     ]
 }
