@@ -7,7 +7,7 @@ export class TimelinePost {
     date: Date;
     type: PostType;
     host: string;
-    link: SafeResourceUrl;
+    link: SafeResourceUrl[];
     title: string;
     description: string;
 }
