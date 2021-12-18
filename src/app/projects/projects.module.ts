@@ -4,6 +4,7 @@ import { MyPublicInfoComponent } from './my-public-info/my-public-info.component
 import { Routes, RouterModule } from '@angular/router';
 import { ProjectsContainerComponent } from './projects-container/projects-container.component';
 import { MyBlogComponent } from './my-blog/my-blog.component';
+import { MoneyModule } from '../money/money.module';
 
 export const routes: Routes = [
   {
@@ -24,6 +25,7 @@ export const routes: Routes = [
   ],
   imports: [
     CommonModule,
+    MoneyModule,
     RouterModule.forChild(routes)
   ]
 })

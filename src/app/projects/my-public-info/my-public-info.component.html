@@ -1,30 +1,46 @@
-<div class="project">
-    <div class="projectcontainer">
-        <div class="details">
-            <h1>My Public Information</h1>
-            <p>This project aims at identifying different public information of the user.
-                As a non-technical user we do not realize how much information we release into public without realizing. As a developer and explorer, I would like to collate all the ways of getting that information and sharing the ways of identifying and tracking it.
-                I will start from easy to track things to more difficult items.
-            </p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 col-sm-12">
+            <div class="project">
+                <div class="projectcontainer">
+                    <div class="details">
+                        <h1>My Public Information</h1>
+                        <p>This project aims at identifying different public information of the user.
+                            As a non-technical user we do not realize how much information we release into public
+                            without realizing. As a developer and explorer, I would like to collate all the ways of
+                            getting that information and sharing the ways of identifying and tracking it.
+                            I will start from easy to track things to more difficult items.
+                        </p>
+                    </div>
+                    <div class="details" *ngIf="client.isMobile">
+                        The screen size looks like a mobile phone. You are using a
+                        <span *ngIf="client.isMobileAndroid">Android device</span>
+                        <span *ngIf="client.isMobileBlackberry">Blackberry device</span>
+                        <span *ngIf="client.isMobileIOS">IOS device</span>
+                        <span *ngIf="client.isMobileWindows">Windows device</span>
+                        <span
+                            *ngIf="!client.isMobileWindows&&!client.isMobileIOS&&!client.isMobileBlackberry&&!client.isMobileAndroid">Device
+                            which I wasn't able to identify</span>
+                    </div>
+                    <div class="details" *ngIf="client.browser">
+                        The screen size looks like a Web Browser. You are using a
+                        <span *ngIf="client.isIE">Internet Explorer</span>
+                        <span *ngIf="client.isChrome">Chrome</span>
+                        <span *ngIf="client.isFirefox">Firefox</span>
+                        <span *ngIf="client.isSafari">Safari
+                            <span *ngIf="client.isMobileSafari">on Mobile</span>
+                        </span>
+                        <span *ngIf="client.isOpera">Opera</span>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="details" *ngIf="client.isMobile">
-            The screen size looks like a mobile phone. You are using a 
-            <span *ngIf="client.isMobileAndroid">Android device</span>
-            <span *ngIf="client.isMobileBlackberry">Blackberry device</span>
-            <span *ngIf="client.isMobileIOS">IOS device</span>
-            <span *ngIf="client.isMobileWindows">Windows device</span>
-            <span *ngIf="!client.isMobileWindows&&!client.isMobileIOS&&!client.isMobileBlackberry&&!client.isMobileAndroid">Device which I wasn't able to identify</span>
-        </div>
-        <div class="details" *ngIf="client.browser">
-            The screen size looks like a Web Browser. You are using a 
-            <span *ngIf="client.isIE">Internet Explorer</span>
-            <span *ngIf="client.isChrome">Chrome</span>
-            <span *ngIf="client.isFirefox">Firefox</span>
-            <span *ngIf="client.isSafari">Safari
-                <span *ngIf="client.isMobileSafari">on Mobile</span>
-            </span>
-            <span *ngIf="client.isOpera">Opera</span>
-            
+        <div class="col-md-4 col-sm-12">
+            <div class="donation-box">
+                <app-donation-box></app-donation-box>
+            </div>
         </div>
     </div>
 </div>
