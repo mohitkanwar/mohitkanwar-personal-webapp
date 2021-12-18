@@ -11,5 +11,7 @@ export class DonationBoxComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  goToPaymentsPage() {
+    window.location.href = 'https://pages.razorpay.com/pl_IYpeDTXDxgIxu0/view';
+  }
 }
