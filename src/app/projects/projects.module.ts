@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProjectsContainerComponent } from './projects-container/projects-container.component';
 import { MyBlogComponent } from './my-blog/my-blog.component';
 import { MoneyModule } from '../money/money.module';
+import { JeevanRatansComponent } from './jeevan-ratans/jeevan-ratans.component';
 
 export const routes: Routes = [
   {
@@ -13,6 +14,7 @@ export const routes: Routes = [
       children: [
           { path: 'my-public-info', component: MyPublicInfoComponent },
           { path: 'my-blog', component: MyBlogComponent },
+          { path: 'jeevan-ratna', component: JeevanRatansComponent },
       ]
   }
 ];
@@ -21,7 +23,8 @@ export const routes: Routes = [
   declarations: [
     MyPublicInfoComponent,
     ProjectsContainerComponent,
-    MyBlogComponent
+    MyBlogComponent,
+    JeevanRatansComponent
   ],
   imports: [
     CommonModule,
