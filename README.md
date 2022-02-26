@@ -11,3 +11,5 @@ To run this application
 5. npm audit fix
 6. install angular npm install -g @angular/cli
 7. Run the application using ng serve -o
+8. npm run build
+9. npx scully
