@@ -1,0 +1,20 @@
+ul {
+    display: block;
+    overflow: hidden;
+}
+li {
+    border: 1px solid whitesmoke;
+    max-width: 250px;
+    padding: 10px;
+    list-style: none;
+    background-color: antiquewhite;
+    margin: 10px;
+}
+li:before {
+    content: "\1F947";
+    margin: 0 1em;
+    font-size: large;
+}
+li:hover {
+    box-shadow: 5px 5px 10px 1px #aaa;
+}

@@ -13,3 +13,4 @@ To run this application
 7. Run the application using ng serve -o
 8. npm run build
 9. npx scully
+10. git commit and push
