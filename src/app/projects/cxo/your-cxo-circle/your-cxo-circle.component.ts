@@ -25,7 +25,6 @@ export class YourCxoCircleComponent implements OnInit {
   evisibility = 0;
   vertical = false;
   tickInterval = 1;
-
  
   // Radar
   public radarChartOptions: ChartConfiguration['options'] = {
@@ -62,7 +61,7 @@ export class YourCxoCircleComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-   
+
   }
   getSliderTickInterval(): number | 'auto' {
     if (this.showTicks) {
