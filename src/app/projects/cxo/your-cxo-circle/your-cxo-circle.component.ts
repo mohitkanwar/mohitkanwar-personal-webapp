@@ -25,7 +25,7 @@ export class YourCxoCircleComponent implements OnInit {
   evisibility = 0;
   vertical = false;
   tickInterval = 1;
- 
+
   // Radar
   public radarChartOptions: ChartConfiguration['options'] = {
     responsive: true,
