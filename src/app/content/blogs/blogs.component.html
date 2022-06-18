@@ -1,24 +1,9 @@
 <div class="blogs">
-    <div class="list">
-            <div class="blogcontainer" *ngFor="let blog of blogs.items;">
-                <div class="blog">
-                    <dl>
-                        <dt>
-                            <a [href]="blog.src" target="_blank">
-                                {{blog.title}}
-                            </a>
-                        </dt>
-                        <dd [innerHTML]= "blog.description"></dd>
-                        <dd>
-                            <ul class="tags">
-                                <li *ngFor="let tag of blog.categories;">
-                                    <a class="tag">{{tag}}</a>
-                                </li>
-                            </ul>
-                        </dd>
-                    </dl>
-                </div>
-            
-        </div>
+    <div >
+        I write blogs on various platforms here is the list
+            <li class="list">
+                <a href="https://mohitkanwar.notion.site/d088bbcee5774effa8b289e8538a585b?v=af640f34cecc46d5afb8bf384888df5e"><ul class="blog">The notion blog</ul></a>
+                <a href="https://medium.com/@mmkanwar"><ul class="blog">The medium blog</ul></a>
+            </li>
     </div>
 </div>

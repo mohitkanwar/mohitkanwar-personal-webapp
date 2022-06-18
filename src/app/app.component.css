@@ -41,8 +41,8 @@
     }
  }
  .bottom-empty{
-    min-height: 50px;
+    min-height: 75px;
   }
   .top-empty{
-    min-height: 50px;
-    }
+    min-height: 75px;
+}

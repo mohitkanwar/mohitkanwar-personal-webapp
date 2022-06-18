@@ -5,6 +5,8 @@ header {
     z-index: 10;
     width: 100%;
     background-color: white;
+    margin-bottom: 10px;
+    
 }
 .logo {
     width: 15%;
@@ -16,10 +18,11 @@ header {
 }
 .navbar {
     background-color: white;
-    border-bottom: solid green 2px;
+    border-bottom: solid lightgrey 1px;
     border-bottom-left-radius: unset;
     border-bottom-right-radius: unset;
     margin-bottom: 15px;
+    box-shadow: 1px 4px 5px lightgrey;
 }
 .nav-link{
         display: flex;
