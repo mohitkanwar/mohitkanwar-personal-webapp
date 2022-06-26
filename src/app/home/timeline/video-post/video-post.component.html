@@ -1,4 +1,7 @@
+<div *ngIf="isLoading">Loading ...</div>
 <iframe
+(load)="isLoading=false"
+[class.d-none]="isLoading"
 class="presentation-box img-holder"
 [src]="post.link[0]"
 [title]="post.title"

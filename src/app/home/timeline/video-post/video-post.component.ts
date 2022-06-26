@@ -9,6 +9,7 @@ import { TimelinePost } from '../../timelinePost.model';
 export class VideoPostComponent implements OnInit {
 
   @Input() post: TimelinePost;
+  isLoading = true;
   constructor() { }
 
   ngOnInit(): void {
