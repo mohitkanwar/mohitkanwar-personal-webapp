@@ -15,7 +15,7 @@ jobs:
         with: 
           node-version: "16.x"
       - run: npm install
-      - run: npm run build
+      - run: npm run build --prod
       - run: npm run scully -- --scanRoutes
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
