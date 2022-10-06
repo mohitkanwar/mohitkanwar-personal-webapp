@@ -9,14 +9,14 @@
         },
         {
             "id":"content-blogs",
-            "url":"/content/blogs",
+            "url":"https://medium.com/@mmkanwar",
             "display":"Blogs",
             "icon":"article",
             "help":"Consolidated view of my blogs aggregated from different sources."
         },
         {
             "id":"content-videos",
-            "url":"/content/videos",
+            "url":"https://www.youtube.com/channel/UCOhe425h7O5a7jO6O2Sswug",
             "display":"Videos",
             "icon":"video_library",
             "help":"Consolidated view of my videos aggregated from different sources."

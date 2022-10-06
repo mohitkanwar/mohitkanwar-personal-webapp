@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1657777059789,
+  "timestamp": 1665055708899,
   "index": "./index.html",
   "assetGroups": [
     {
@@ -16,7 +16,7 @@
         "./949.14f2b8394cfeaa72.js",
         "./favicon.ico",
         "./index.html",
-        "./main.2ba76d57e41435d1.js",
+        "./main.da5c6a0828125563.js",
         "./manifest.webmanifest",
         "./polyfills.1c6c89f22bb4765d.js",
         "./runtime.c44a762d6a7676b9.js",
@@ -77,6 +77,7 @@
         "./assets/images/presentations/oop.png",
         "./assets/images/presentations/software.png",
         "./assets/images/presentations/spring.png",
+        "./assets/images/shared/coming-soon.jpeg",
         "./assets/scully-routes.json"
       ],
       "patterns": []
@@ -89,7 +90,7 @@
     "./949.14f2b8394cfeaa72.js": "96db227fc18c323987966a52bfc0f6e53b54fb57",
     "./assets/.npmignore": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
     "./assets/data/blogs.json": "e08831e649425148cb999fe7b690d6a689459d66",
-    "./assets/data/navigation-links.json": "e95a9e55f50500af5670b90b9e988bebca7dfd50",
+    "./assets/data/navigation-links.json": "67a979de39fe6aab9b1dc0e906ba3a25fd08ba39",
     "./assets/data/presentations.json": "2e4a6f8532d73d88463e50c4440958a698386c4a",
     "./assets/data/quotes.json": "7def453ef0b1c53b02b53c79cc2db5c40e12d23f",
     "./assets/data/timeline-posts.json": "e12e2cb37d57e9ea503808de595b010fb58ba6ec",
@@ -132,10 +133,11 @@
     "./assets/images/presentations/oop.png": "5b1a8e365976d6a54c69aa03e4e986809d343bf2",
     "./assets/images/presentations/software.png": "77c4e851bee895df31892eccb4990696d87453f4",
     "./assets/images/presentations/spring.png": "0742a62f1e543bc5c3abb0c9f8e90d5e6db2add2",
+    "./assets/images/shared/coming-soon.jpeg": "29a066ea4ccb0f0e92ad037aaf235e510a8ea66e",
     "./assets/scully-routes.json": "6e3a681c9e7e0c6a79729de36e4310006bd43fd3",
     "./favicon.ico": "85ec29fde9e7bfc70847a172bda39d6401252a70",
-    "./index.html": "66344ffa9f7a7c7a11a1e297078993c8a15988e2",
-    "./main.2ba76d57e41435d1.js": "6550eb67b6c9d2de2273ace68d6a6d78bd5f2270",
+    "./index.html": "7e66e0fe815c15a9b44f4b2c6c8c7ed937bae738",
+    "./main.da5c6a0828125563.js": "fe482878ca4d7550efbb74a71fc8f29fcf1a8671",
     "./manifest.webmanifest": "cb7cf2863d1bf8994937b1350f6d07caa3a65d01",
     "./polyfills.1c6c89f22bb4765d.js": "ccd97a6bb5b9c7e49fbce84cc07a7ba601e57478",
     "./runtime.c44a762d6a7676b9.js": "b5fd577864ca9cefddc73f903562da2d92fdfcbf",
