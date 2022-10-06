@@ -12,6 +12,7 @@ import { LayoutMobileHeaderComponent } from './layout/layout-mobile-header/layou
 import { FooterComponent } from './layout/footer.component';
 import { LayoutMobileFooterComponent } from './layout/layout-mobile-footer/layout-mobile-footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LinkComponent } from './layout/link/link.component';
 
 @NgModule({
   imports: [
@@ -32,7 +33,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     LayoutMobileHeaderComponent,
     FooterComponent,
     LayoutMobileFooterComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LinkComponent
   ],
   exports: [
     ArticleListComponent,
@@ -49,7 +51,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ShowAuthedDirective,
     LayoutMobileHeaderComponent,
     FooterComponent,
-    LayoutMobileFooterComponent
+    LayoutMobileFooterComponent,
+    LinkComponent
   ]
 })
 export class SharedModule {}

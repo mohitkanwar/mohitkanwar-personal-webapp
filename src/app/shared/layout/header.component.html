@@ -11,9 +11,10 @@
         <div class="col-8">
           <ul *appShowAuthed="false" class="nav navbar-nav pull-xs-right">
             <li class="nav-item" *ngFor="let link of links">
-              <a class="nav-link" [routerLink]="link.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+              <app-link [cssClasses]="nav-link" [url]="link.url" [icon]="link.icon" [text]="link.display"></app-link>
+              <!-- <a class="nav-link" [routerLink]="link.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <i class="material-icons">{{link.icon}}</i> {{link.display}}
-              </a>
+              </a> -->
             </li>
           </ul>
         </div>
