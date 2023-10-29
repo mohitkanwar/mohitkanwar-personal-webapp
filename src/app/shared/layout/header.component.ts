@@ -24,6 +24,6 @@ export class HeaderComponent implements OnInit {
         this.currentUser = userData;
       }
     );
-    this.links = this.navigationService.getLinks();
+    this.links = this.navigationService.getLinks("main-navigation");
   }
 }

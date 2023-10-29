@@ -13,7 +13,7 @@ export class LayoutMobileFooterComponent implements OnInit {
   constructor(private navigationService: NavigationService) { }
   links: NavigationLink[];
   ngOnInit(): void {
-    this.links = this.navigationService.getLinks();
+    this.links = this.navigationService.getLinks("main-navigation");
   }
 
 }

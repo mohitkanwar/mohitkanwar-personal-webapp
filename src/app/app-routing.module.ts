@@ -7,7 +7,12 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./app.module').then(m => m.AppModule),
     pathMatch: 'full'
-  },  {
+  }, 
+  {
+    path: 'technology',
+    loadChildren: () => import('./page-technology/page-technology.module').then(m => m.PageTechnologyModule)
+  }, 
+  {
     path: 'content',
     loadChildren: () => import('./content/content.module').then(m => m.ContentModule)
   },

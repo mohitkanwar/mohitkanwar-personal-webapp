@@ -8,11 +8,7 @@ import { NavigationLink } from './navigationlinks.model';
 export class NavigationService {
 
   constructor() { }
-  getLinks(): NavigationLink[] {
-    return links.links;
+  getLinks(category: string): NavigationLink[] {
+    return links.links[category];
   }
-  getSecondaryLinks(): NavigationLink[] {
-    return links.secondarylinks;
-  }
-
 }

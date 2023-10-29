@@ -28,7 +28,7 @@ export class LayoutMobileHeaderComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.links = this.navigationService.getSecondaryLinks();
+    this.links = this.navigationService.getLinks("mobile-header");
   }
   toggleNav() {
     this.visibilityState === 'open' ? this.closeNav() : this.openNav();

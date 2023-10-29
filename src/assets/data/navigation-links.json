@@ -1,5 +1,7 @@
 {
-    "links":[
+    "links":
+    {
+        "main-navigation" :[
         {
             "id":"home",
             "url":"/",
@@ -8,11 +10,11 @@
             "help":"The dashboard of specific device"
         },
         {
-            "id":"content-blogs",
-            "url":"https://medium.com/@mmkanwar",
-            "display":"Blogs",
-            "icon":"article",
-            "help":"Consolidated view of my blogs aggregated from different sources."
+            "id":"link-tech",
+            "url":"/technology",
+            "display":"Technology",
+            "icon":"data_object",
+            "help":"Technologies that I look upto"
         },
         {
             "id":"content-videos",
@@ -35,8 +37,7 @@
             "icon":"work",
             "help":"This page consists of different projects that I am working upon."
         }
-    ],
-    "secondarylinks":[
+    ], "mobile-header" : [
         {
             "id":"home",
             "url":"/",
@@ -44,5 +45,13 @@
             "icon":"home",
             "help":"The dashboard of specific device"
         }
-    ]
+    ], "archive": [
+        {
+            "id":"content-blogs",
+            "url":"https://medium.com/@mmkanwar",
+            "display":"Blogs",
+            "icon":"article",
+            "help":"Consolidated view of my blogs aggregated from different sources."
+        }
+    ]}
 }
