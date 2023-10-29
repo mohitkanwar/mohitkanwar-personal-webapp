@@ -53,3 +53,9 @@ Your local development environment should now be set up, and you can access the 
 Feel free to explore, customize, and contribute to the project. If you encounter any issues or have questions, please don't hesitate to get in touch.
 
 Happy coding! 🚀
+
+For detailed documentation run the following command :
+```shell
+compodoc -p tsconfig.doc.json -s
+```
+and then open http://127.0.0.1:8080/

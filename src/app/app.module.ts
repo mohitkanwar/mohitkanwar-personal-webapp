@@ -16,7 +16,10 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 import { ProjectsModule } from './projects/projects.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-
+/**
+ * This is the main module for the application.
+ * It consists of the starting components and global module dependencies.
+ */
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
   imports: [
