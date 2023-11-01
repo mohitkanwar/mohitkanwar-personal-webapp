@@ -13,6 +13,10 @@ const routes: Routes = [
     loadChildren: () => import('./page-technology/page-technology.module').then(m => m.PageTechnologyModule)
   }, 
   {
+    path: 'finance',
+    loadChildren: () => import('./page-finance/page-finance.module').then(m => m.PageFinanceModule)
+  }, 
+  {
     path: 'content',
     loadChildren: () => import('./content/content.module').then(m => m.ContentModule)
   },
