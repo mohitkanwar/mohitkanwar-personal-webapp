@@ -28,14 +28,6 @@ const routes: Routes = [
     path: 'editor',
     loadChildren: () => import('./editor/editor.module').then(m => m.EditorModule)
   },
-  {
-    path: 'article',
-    loadChildren: () => import('./article/article.module').then(m => m.ArticleModule)
-  },
-  {
-    path: 'login',
-    loadChildren: () => import('./article/article.module').then(m => m.ArticleModule)
-  },
   { path: '**', component: PageNotFoundComponent},
 ];
 
@@ -44,9 +36,8 @@ const routes: Routes = [
     // preload all modules; optionally we could
     // implement a custom preloading strategy for just some
     // of the modules (PRs welcome 😉)
-    preloadingStrategy: PreloadAllModules,
-    relativeLinkResolution: 'legacy'
-})],
+    preloadingStrategy: PreloadAllModules
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

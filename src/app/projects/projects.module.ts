@@ -15,10 +15,6 @@ export const routes: Routes = [
           { path: 'my-public-info', component: MyPublicInfoComponent },
           { path: 'my-blog', component: MyBlogComponent },
           { path: 'jeevan-ratna', component: JeevanRatansComponent },
-          {
-            path: 'cxo',
-            loadChildren: () => import('./cxo/cxo.module').then(m => m.CxoModule)
-          },
       ]
   }
 ];
