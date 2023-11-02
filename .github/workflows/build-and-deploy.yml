@@ -28,3 +28,4 @@ jobs:
         with:
           source: "src/CNAME"
           target: "CNAME"
+        if: success()

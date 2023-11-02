@@ -113,7 +113,6 @@
       }
     }
   },
-  "defaultProject": "ang2-mohitkanwar",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
