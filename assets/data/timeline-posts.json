@@ -1,0 +1,13 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "date":"2021-09-23",
+            "type":"VIDEO",
+            "host":"youtube",
+            "link":["https://www.youtube.com/embed/yQGUDOGRWrg"],
+            "title":"Open Mic: Agile Banking - Developing applications that customers love in a rigid environment!",
+            "description":"How we implemented agile in an aged bank and developed a product which is loved by it's customers"
+        }
+    ]
+}
