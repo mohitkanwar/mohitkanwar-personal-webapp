@@ -1,4 +1,5 @@
 # MohitkanwarApp
+[![Build and Deploy Status](https://github.com/mohitkanwar/mohitkanwar-personal-webapp/actions/workflows/build-and-deploy.yml/badge.svg?branch=main)](https://github.com/mohitkanwar/mohitkanwar-personal-webapp/actions/workflows/build-and-deploy.yml)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
 
