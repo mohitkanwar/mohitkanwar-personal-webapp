@@ -1,28 +1,39 @@
 # This is a basic workflow that is automatically triggered on push
 
 name: Build and Deploy
+
 on:
   push:
-   branches:
-    - main
+    branches:
+      - main
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@main
-      - uses: actions/setup-node@main
-        with: 
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
           node-version: "16.x"
-      - run: npm install
-      - run: npm run build --prod
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Application
+        run: npm run build --prod
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: dist/mohitkanwar-app # The folder the action should deploy.
+          branch: gh-pages
+          folder: dist/mohitkanwar-app
         if: success()  # Only deploy if the previous steps were successful
-      - name: Move CNAME file for custom domain
+
+      - name: Move CNAME File for Custom Domain
         uses: canastro/copy-file-action@master
         with:
           source: "src/CNAME"

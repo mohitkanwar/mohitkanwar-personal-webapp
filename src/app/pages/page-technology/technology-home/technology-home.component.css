@@ -1,0 +1,34 @@
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+  }
+  
+  .blog-post {
+    width: 100%; /* Takes full width on mobile */
+    margin-bottom: 20px; /* Add some space between posts */
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive Styles for Web */
+  @media (min-width: 768px) {
+    .blog-post {
+      width: 48%; /* Takes 48% width on screens wider than 768px */
+    }
+  }
+  
+  /* Responsive Styles for Mobile */
+  @media (max-width: 767px) {
+    .blog-post {
+      width: 100%; /* Takes full width on screens up to 767px (mobile) */
+    }
+  }
+  
