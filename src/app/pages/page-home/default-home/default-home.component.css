@@ -1,0 +1,149 @@
+/**
+Quotes Section
+**/
+.banner {
+    background-image: url('/assets/images/homepage/DSC02210_result.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner-content {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .banner-quote {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .banner-author {
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  /**
+  Intro section
+  **/
+/* Original Approach for Web */
+.introduction-section {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+}
+
+.introduction-content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.introduction-text {
+  width: 70%;
+  padding-right: 40px;
+  margin: 40px;
+}
+
+.introduction-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.introduction-description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.introduction-photo {
+  width: 30%;
+  text-align: right;
+}
+
+.introduction-photo img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .introduction-photo img {
+    border-radius: 50%;
+  }
+}
+/* New Approach for Mobile */
+@media (max-width: 767px) {
+  .introduction-section {
+      padding: 20px; /* Adjusted padding for mobile */
+  }
+
+  .introduction-content {
+      flex-direction: column; /* Column layout for mobile */
+      align-items: center; /* Centered for mobile */
+  }
+
+  .introduction-text {
+      width: 100%; /* Full width for mobile */
+      padding-right: 0; /* No right padding for mobile */
+      margin: 20px; /* Adjusted margin for mobile */
+  }
+
+  .introduction-heading {
+      font-size: 24px; /* Font size adjustment for mobile */
+  }
+
+  .introduction-description {
+      font-size: 16px; /* Font size adjustment for mobile */
+  }
+
+  .introduction-photo {
+      width: 100%; /* Full width for mobile */
+      text-align: center; /* Centered for mobile */
+      border-radius: 0; /* Rectangular shape for mobile */
+  }
+}
+
+
+  /**
+  Reach out to me section
+  **/
+
+  .reach-out-section {
+    background-color: #f2f2f2;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .reach-out-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .social-media-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-media-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #333333;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-media-link:hover {
+    background-color: #1a237e;
+    color: #ffffff;
+  }
+  
+  .social-media-link i {
+    font-size: 20px;
+  }
