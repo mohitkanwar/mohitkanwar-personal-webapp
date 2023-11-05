@@ -1,5 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
+import { MdReadService } from './md-read.service';
+import { Blog } from './blog.model';
 
 @Component({
   selector: 'app-md-read',
@@ -8,14 +9,16 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MdReadComponent implements OnInit{
   markdownContent : string = '';
-  @Input()
-  path!: string;
-  constructor(private httpClient : HttpClient) {
+  @Input() path!: string;
+  @Input() showSummary: boolean = false;
+
+  constructor(private blogReadService: MdReadService) {
 
   }
   ngOnInit(): void {
-    this.httpClient.get('assets/md/' + this.path + '.md', {responseType: 'text'})
-    .subscribe((data)=> this.markdownContent = data);
+    this.blogReadService.readBlog(this.path).subscribe((blog: Blog) => {
+      this.markdownContent = blog.title + "\n\n" + blog.content;
+    });
   }
 
 }

@@ -1,0 +1,35 @@
+.blog-post {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto; /* Auto margins for horizontal centering */
+    width: 70%; /* Adjust the width as needed */
+  }
+  
+  @media (max-width: 768px) {
+    .blog-post {
+        width: 90%; /* Change the width for screens with a max-width of 768px (e.g., mobile) */
+    }
+  }
+  .blog-title {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .blog-author {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .blog-date {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .blog-content {
+    font-size: 16px;
+    color: #333;
+  }
+  

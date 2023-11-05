@@ -1,0 +1,15 @@
+<!-- <div class="blog-thumbnail">
+    <img src="blog-thumbnail.jpg" alt="Blog Thumbnail" />
+  </div> -->
+<div class="blog-info">
+    <a class="read-more-link" [routerLink]="['/tech', url]">
+        <div>
+
+
+            <h3 class="blog-title">{{title}}</h3>
+            <p class="blog-date">Published on {{publishedDate}}</p>
+            <p class="blog-excerpt" [innerHTML]="excerpt | markdown">
+            </p>
+        </div>
+    </a>
+</div>
