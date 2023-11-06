@@ -1,0 +1,16 @@
+flowchart TD
+    Users["fa:fa-user Users"]
+    Consumer["fa:fa-network-wired System"]
+    UserInterface[fa:fa-tv user interface]
+    Language-Model["fa:fa-language Language Model"]
+    Database["fa:fa-database  Data Storage"]
+    APIs[fa:fa-cogs APIs ]
+    Data[fa:fa-paste Input Data]
+    Plugins[fa:fa-plug plugins]
+    Users -->|Interact| UserInterface
+    Consumer -->|Automated integrations|APIs
+    UserInterface --> |REST|APIs
+    APIs --> Language-Model
+    APIs --> Database
+    Data --> Language-Model
+    APIs --> Plugins
