@@ -36,8 +36,8 @@ export class BlogTechItemComponent implements OnInit {
     this.meta.updateTag({ name: 'twitter:title', content: this.blog.title });
     this.meta.updateTag({ name: 'twitter:description', content: this.blog.metaDescription });
     if (this.blog.metaImagePath) {
-      this.meta.updateTag({ name: 'twitter:image', content: this.blog.metaImagePath });
-      this.meta.updateTag({ name: 'og:image', content: this.blog.metaImagePath });
+      this.meta.updateTag({ name: 'twitter:image', content: 'https://mohitkanwar.com/'+ this.blog.metaImagePath });
+      this.meta.updateTag({ name: 'og:image', content: 'https://mohitkanwar.com/'+this.blog.metaImagePath });
     }
     console.log(this.blog);
     });
