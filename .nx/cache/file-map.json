@@ -1,0 +1,384 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.0.3",
+  "deps": {
+    "@angular/animations": "^16.2.0",
+    "@angular/common": "^16.2.0",
+    "@angular/compiler": "^16.2.0",
+    "@angular/core": "^16.2.0",
+    "@angular/forms": "^16.2.0",
+    "@angular/platform-browser": "^16.2.0",
+    "@angular/platform-browser-dynamic": "^16.2.0",
+    "@angular/router": "^16.2.0",
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@scullyio/init": "^2.1.41",
+    "marked": "^4.3.0",
+    "ngx-markdown": "^16.0.0",
+    "nx": "^17.0.3",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.13.0",
+    "@angular-devkit/build-angular": "^16.2.9",
+    "@angular/cli": "^16.2.9",
+    "@angular/compiler-cli": "^16.2.0",
+    "@types/jasmine": "~4.3.0",
+    "jasmine-core": "~4.6.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "^5.2.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "6686520031028425313"
+      },
+      {
+        "file": ".github/workflows/build-and-deploy.yml",
+        "hash": "2628310706227625044"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "5722297488560437575"
+      },
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "3238757409548269613"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "8817457840300956550"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "776478276877031481"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "5841149763996592373"
+      },
+      {
+        "file": "README.md",
+        "hash": "18230800890497797221"
+      },
+      {
+        "file": "angular.json",
+        "hash": "4013759546345937580"
+      },
+      {
+        "file": "increment-version.js",
+        "hash": "18082208918039786304"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "10896810080767209414"
+      },
+      {
+        "file": "package.json",
+        "hash": "782027268447187698"
+      },
+      {
+        "file": "src/CNAME",
+        "hash": "1298371784853182168"
+      },
+      {
+        "file": "src/app/app-routing.module.ts",
+        "hash": "17097443357594814673"
+      },
+      {
+        "file": "src/app/app.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "15414193875258119940"
+      },
+      {
+        "file": "src/app/app.component.spec.ts",
+        "hash": "10545809560756745441"
+      },
+      {
+        "file": "src/app/app.component.ts",
+        "hash": "10263012245151765958"
+      },
+      {
+        "file": "src/app/app.module.ts",
+        "hash": "2786121485064377844"
+      },
+      {
+        "file": "src/app/layout/web-layout/web-layout.component.css",
+        "hash": "2821808848058952264"
+      },
+      {
+        "file": "src/app/layout/web-layout/web-layout.component.html",
+        "hash": "16135260944123016176"
+      },
+      {
+        "file": "src/app/layout/web-layout/web-layout.component.spec.ts",
+        "hash": "17825126010368464520"
+      },
+      {
+        "file": "src/app/layout/web-layout/web-layout.component.ts",
+        "hash": "3386960532852139114"
+      },
+      {
+        "file": "src/app/pages/page-general/page-general.module.ts",
+        "hash": "10730569208177141995"
+      },
+      {
+        "file": "src/app/pages/page-general/privacy-policy/privacy-policy.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/page-general/privacy-policy/privacy-policy.component.html",
+        "hash": "6662789920818560247"
+      },
+      {
+        "file": "src/app/pages/page-general/privacy-policy/privacy-policy.component.spec.ts",
+        "hash": "1648117796575799356"
+      },
+      {
+        "file": "src/app/pages/page-general/privacy-policy/privacy-policy.component.ts",
+        "hash": "14914022943977493552"
+      },
+      {
+        "file": "src/app/pages/page-general/terms-of-service/terms-of-service.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/page-general/terms-of-service/terms-of-service.component.html",
+        "hash": "15476198041944029525"
+      },
+      {
+        "file": "src/app/pages/page-general/terms-of-service/terms-of-service.component.spec.ts",
+        "hash": "11303356501991567206"
+      },
+      {
+        "file": "src/app/pages/page-general/terms-of-service/terms-of-service.component.ts",
+        "hash": "11233901695752710709"
+      },
+      {
+        "file": "src/app/pages/page-home/default-home/default-home.component.css",
+        "hash": "1708311160669068210"
+      },
+      {
+        "file": "src/app/pages/page-home/default-home/default-home.component.html",
+        "hash": "17481770691580131421"
+      },
+      {
+        "file": "src/app/pages/page-home/default-home/default-home.component.spec.ts",
+        "hash": "9986036925400203351"
+      },
+      {
+        "file": "src/app/pages/page-home/default-home/default-home.component.ts",
+        "hash": "7333204721754165167"
+      },
+      {
+        "file": "src/app/pages/page-home/page-home.module.ts",
+        "hash": "1099694395595672555"
+      },
+      {
+        "file": "src/app/pages/page-technology/blog-summary-item/blog-summary-item.component.css",
+        "hash": "10813921175401442527"
+      },
+      {
+        "file": "src/app/pages/page-technology/blog-summary-item/blog-summary-item.component.html",
+        "hash": "8550441669498207022"
+      },
+      {
+        "file": "src/app/pages/page-technology/blog-summary-item/blog-summary-item.component.spec.ts",
+        "hash": "16881896147863217750"
+      },
+      {
+        "file": "src/app/pages/page-technology/blog-summary-item/blog-summary-item.component.ts",
+        "hash": "14226656935533918192"
+      },
+      {
+        "file": "src/app/pages/page-technology/blog-tech-item/blog-tech-item.component.css",
+        "hash": "5244333972330551685"
+      },
+      {
+        "file": "src/app/pages/page-technology/blog-tech-item/blog-tech-item.component.html",
+        "hash": "17794947825800442226"
+      },
+      {
+        "file": "src/app/pages/page-technology/blog-tech-item/blog-tech-item.component.spec.ts",
+        "hash": "8705904866730981564"
+      },
+      {
+        "file": "src/app/pages/page-technology/blog-tech-item/blog-tech-item.component.ts",
+        "hash": "12528224141275416537"
+      },
+      {
+        "file": "src/app/pages/page-technology/page-technology.module.ts",
+        "hash": "7388680011139658680"
+      },
+      {
+        "file": "src/app/pages/page-technology/technology-home/technology-home.component.css",
+        "hash": "17310495555259100609"
+      },
+      {
+        "file": "src/app/pages/page-technology/technology-home/technology-home.component.html",
+        "hash": "13902972328612461665"
+      },
+      {
+        "file": "src/app/pages/page-technology/technology-home/technology-home.component.spec.ts",
+        "hash": "6557429668816953751"
+      },
+      {
+        "file": "src/app/pages/page-technology/technology-home/technology-home.component.ts",
+        "hash": "14713744217372849858"
+      },
+      {
+        "file": "src/app/shared/md-read/blog.model.ts",
+        "hash": "9979720978054903809"
+      },
+      {
+        "file": "src/app/shared/md-read/md-read.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/shared/md-read/md-read.component.html",
+        "hash": "1109499024329809346"
+      },
+      {
+        "file": "src/app/shared/md-read/md-read.component.spec.ts",
+        "hash": "16201754180789088614"
+      },
+      {
+        "file": "src/app/shared/md-read/md-read.component.ts",
+        "hash": "4167516177115848235"
+      },
+      {
+        "file": "src/app/shared/md-read/md-read.service.spec.ts",
+        "hash": "1658490189447774184"
+      },
+      {
+        "file": "src/app/shared/md-read/md-read.service.ts",
+        "hash": "5950660852819639716"
+      },
+      {
+        "file": "src/app/shared/page-not-found/page-not-found.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/shared/page-not-found/page-not-found.component.html",
+        "hash": "9015626821334097068"
+      },
+      {
+        "file": "src/app/shared/page-not-found/page-not-found.component.spec.ts",
+        "hash": "4266285370415485741"
+      },
+      {
+        "file": "src/app/shared/page-not-found/page-not-found.component.ts",
+        "hash": "17712784644802133836"
+      },
+      {
+        "file": "src/app/shared/shared.module.ts",
+        "hash": "879881335791520998"
+      },
+      {
+        "file": "src/assets/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/assets/images/homepage/DSC02210_result.JPG",
+        "hash": "14475480721239244976"
+      },
+      {
+        "file": "src/assets/images/homepage/DSC02223_result.JPG",
+        "hash": "9411189237214406015"
+      },
+      {
+        "file": "src/assets/images/homepage/quote.png",
+        "hash": "17907487511837632118"
+      },
+      {
+        "file": "src/assets/images/logo.gif",
+        "hash": "1880393521604320682"
+      },
+      {
+        "file": "src/assets/md/general/privacy-policy.md",
+        "hash": "1519856960522875443"
+      },
+      {
+        "file": "src/assets/md/general/terms-of-service.md",
+        "hash": "9654732762867674731"
+      },
+      {
+        "file": "src/assets/md/technology/large-language-models.md",
+        "hash": "13759933304329174855"
+      },
+      {
+        "file": "src/assets/md/technology/technologies.md",
+        "hash": "6329840754065919027"
+      },
+      {
+        "file": "src/assets/md/technology/the-technology-of-modern-banks.md",
+        "hash": "6975109178746537798"
+      },
+      {
+        "file": "src/assets/mmd/tech/home.mmd",
+        "hash": "1603122164695768749"
+      },
+      {
+        "file": "src/assets/mmd/tech/home.png",
+        "hash": "8833124228878200139"
+      },
+      {
+        "file": "src/assets/mmd/tech/large-language-models.mmd",
+        "hash": "10091757368099993632"
+      },
+      {
+        "file": "src/assets/mmd/tech/large-language-models.png",
+        "hash": "12700463402574829372"
+      },
+      {
+        "file": "src/assets/mmd/tech/the-technology-of-modern-bank.mmd",
+        "hash": "17322241668540675771"
+      },
+      {
+        "file": "src/assets/mmd/tech/the-technology-of-modern-bank.png",
+        "hash": "16470056355636266565"
+      },
+      {
+        "file": "src/environments/environment.ts",
+        "hash": "8860186202332315171"
+      },
+      {
+        "file": "src/favicon.ico",
+        "hash": "1942212340875321844"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "13863849245360912194"
+      },
+      {
+        "file": "src/main.ts",
+        "hash": "12246588107753938993"
+      },
+      {
+        "file": "src/styles.css",
+        "hash": "17656814410316395953"
+      },
+      {
+        "file": "tsconfig.app.json",
+        "hash": "17337579397915052279"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "1047940026627514556"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "15575553540147145788"
+      }
+    ]
+  }
+}
