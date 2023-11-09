@@ -122,3 +122,6 @@ main {
     }
   }
   
+  .version:hover {
+    background-color: antiquewhite;
+  }
