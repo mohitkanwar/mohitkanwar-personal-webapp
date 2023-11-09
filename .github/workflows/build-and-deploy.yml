@@ -25,12 +25,13 @@ jobs:
 
       - name: Build Application
         run: npm run build --prod
-
+      - name: Build Statics
+        run: npm run scully
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           branch: gh-pages
-          folder: dist/mohitkanwar-app
+          folder: dist/static
         if: success()  # Only deploy if the previous steps were successful
 
       - name: Move CNAME File for Custom Domain
