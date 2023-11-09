@@ -1,5 +1,9 @@
-title: Unlocking the Power of Large Language Models in the World of IT: Embracing ChatGPT
+title: Unlocking the Power of Large Language Models in the World of IT
 date: 2023-11-05
+metadescription: As technology continues to evolve, the integration of artificial intelligence has become a game-changer in both the software and banking industries. One remarkable development in this AI landscape is the advent of Large Language Models (LLMs), which are transforming the way we interact with computers and data.
+keywords: FinTech, Language Models, ChatGPT, LLM, Artificial Intelligence, Computer, Data, AI,
+metaimage: assets/mmd/tech/large-language-models.png
+
 ---
 # Unlocking the Power of Large Language Models in the World of IT: Embracing ChatGPT
 

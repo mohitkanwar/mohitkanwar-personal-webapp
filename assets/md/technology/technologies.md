@@ -1,5 +1,8 @@
 title: Unveiling the Tech Ecosystem - A Techie's Take on Software Development
 date: 2023-11-01
+metadescription: In today's world, software is the beating heart of virtually every industry. It's what empowers businesses to connect with their audience, streamline operations, and explore new horizons. In this article, we're going to dive into the core pillars of our technology stack, giving special attention to the web, mobile, services, and DevOps domains. Let's journey through these technologies and explore how they're shaping the present and future of software development.
+metaimage: assets/mmd/tech/home.png
+keywords: software development, technologies
 ---
 
 As a technology enthusiast, I've had the honor of witnessing the ever-evolving landscape of software development. In today's world, software is the beating heart of virtually every industry. It's what empowers businesses to connect with their audience, streamline operations, and explore new horizons. In this article, we're going to dive into the core pillars of our technology stack, giving special attention to the web, mobile, services, and DevOps domains. Let's journey through these technologies and explore how they're shaping the present and future of software development.  
