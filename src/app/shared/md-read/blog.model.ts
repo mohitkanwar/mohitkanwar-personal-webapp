@@ -5,6 +5,8 @@ export class Blog {
     author: string; // Blog author
     publishDate: Date; // Date when the blog was published
     summary: string;
+    metaDescription: string ;
+    metaImagePath: string;
   
     constructor(
       id: number,
@@ -12,7 +14,9 @@ export class Blog {
       content: string,
       author: string,
       publishDate: Date,
-      summary: string
+      summary: string,
+      metaDescription: string,
+      metaImagePath: string
     ) {
       this.id = id;
       this.title = title;
@@ -20,5 +24,7 @@ export class Blog {
       this.author = author;
       this.publishDate = publishDate;
       this.summary = summary;
+      this.metaDescription = metaDescription;
+      this.metaImagePath = metaImagePath;
     }
 }

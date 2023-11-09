@@ -15,8 +15,11 @@ export class MdReadService {
         const blogContent = data.split('---')[1];
         const paragraphs = blogContent.split('\n\n');
         let content = this.extractContent(paragraphs);
+        let metaDescription = meta['metadescription'];
+        let metaImage = meta['metaimage'];
+
         let author =  meta['author'] ?? 'Mohit Kanwar';
-        return new Blog(0, meta['title'], content, author, meta['date'], paragraphs[1]);
+        return new Blog(0, meta['title'], content, author, meta['date'], paragraphs[1],metaDescription,metaImage);
       })
     );
   }
@@ -24,8 +27,11 @@ export class MdReadService {
     const keyValuePairs = data.split("\n");
     const jsonObject : { [key: string]: any } = {};
       keyValuePairs.forEach((pair) => {
-        const [key, value] = pair.split(":");
-        jsonObject[key] = value;
+        if(pair.indexOf(":")>1) {
+          const [key, value] = pair.split(":");
+          jsonObject[key] = value.trim();
+        }
+        
       });
       return jsonObject;
   }
