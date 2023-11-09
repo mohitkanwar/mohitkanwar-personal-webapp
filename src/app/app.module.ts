@@ -18,7 +18,6 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     HttpClientModule
   ],
   providers: [
-    { provide: LocationStrategy, useClass: HashLocationStrategy },
   ],
   bootstrap: [AppComponent]
 })
