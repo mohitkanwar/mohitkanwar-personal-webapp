@@ -17,7 +17,11 @@ export class BlogSummaryItemComponent implements OnInit{
     this.blogReadService.readBlog(this.path).subscribe((blog)=> {
       this.title = blog.title;
       this.publishedDate = blog.publishDate;
-      this.excerpt = blog.summary;
+      const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+
+      // Replace all Markdown links with their associated text
+      const textWithoutLinks = blog.summary.replace(markdownLinkRegex, (match, text) => text);
+      this.excerpt = textWithoutLinks;
       this.url = this.path.split('/')[1];
     })
   }
