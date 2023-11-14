@@ -11,7 +11,7 @@ import { Meta } from '@angular/platform-browser';
 })
 export class BlogTechItemComponent implements OnInit {
   path!: string;
-  blog: Blog = new Blog(0, "", "", "", new Date(), "", "", "");
+  blog: Blog = new Blog(0, "", "", "", new Date(), "", "", "", "");
   constructor(
     private route: ActivatedRoute,
     private meta: Meta,

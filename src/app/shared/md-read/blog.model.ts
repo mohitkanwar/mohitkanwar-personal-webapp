@@ -7,7 +7,8 @@ export class Blog {
     summary: string;
     metaDescription: string ;
     metaImagePath: string;
-  
+    tldr: string;
+    
     constructor(
       id: number,
       title: string,
@@ -16,7 +17,8 @@ export class Blog {
       publishDate: Date,
       summary: string,
       metaDescription: string,
-      metaImagePath: string
+      metaImagePath: string,
+      tldr: string
     ) {
       this.id = id;
       this.title = title;
@@ -26,5 +28,6 @@ export class Blog {
       this.summary = summary;
       this.metaDescription = metaDescription;
       this.metaImagePath = metaImagePath;
+      this.tldr = tldr;
     }
 }

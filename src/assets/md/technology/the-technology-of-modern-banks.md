@@ -3,6 +3,7 @@ date: 2023-11-08
 metadescription: In the digital age, modern banks have become more than just places to store money; they are dynamic hubs of financial innovation. In this article, we delve deep into the technologies that are reshaping the modern banking landscape.
 metaimage: assets/mmd/tech/the-technology-of-modern-bank.png
 keywords: FinTech, Technologies, Financial Technologies, Innovations
+tldr: In today's banking, technological advancements redefine operations across various fronts. Online banking extends to wearables and home speakers, while mobile payments transform transactions. Core banking systems boast modularity and cloud-native architectures, enhancing real-time operations and scalability. Tailored customer experiences are driven by personalization, AI, and ML interventions. Big data fuels predictive analytics and risk management. RegTech ensures compliance and cybersecurity. Open banking fosters innovation, and blockchain reshapes transactions. Overall, staying ahead technologically remains pivotal in meeting evolving customer needs and redefining the banking landscape.
 ---
 # The Technology of Modern Banks: Innovations Shaping the Financial Landscape
 

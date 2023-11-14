@@ -19,7 +19,8 @@ export class MdReadService {
         let metaImage = meta['metaimage'];
 
         let author =  meta['author'] ?? 'Mohit Kanwar';
-        return new Blog(0, meta['title'], content, author, meta['date'], paragraphs[1],metaDescription,metaImage);
+        let tldr = meta['tldr'];
+        return new Blog(0, meta['title'], content, author, meta['date'], paragraphs[1],metaDescription,metaImage, tldr);
       })
     );
   }
