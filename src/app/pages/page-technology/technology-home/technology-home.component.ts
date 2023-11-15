@@ -19,12 +19,18 @@ techblogs : string[] = [
 constructor(private http: HttpClient) {}
 
 ngOnInit(): void {
-  this.http.get<BlogData>('assets/md/technology/home.json').subscribe(
+  this.http.get<BlogData>('../../../assets/md/technology/home.json').subscribe(
     (data) => {
       this.techblogs = data.blogs;
+      console.log(data);
     },
     (error) => {
       console.error('Error fetching JSON file', error);
+      this.techblogs = [
+        "technology/the-technology-of-modern-banks",
+        "technology/large-language-models",
+        "technology/technologies"
+      ]
     }
   );
 }

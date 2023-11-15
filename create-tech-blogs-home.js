@@ -32,7 +32,7 @@ fs.readdir(directoryPath, (err, files) => {
     
       // Process each file
       sortedFiles.forEach((file) => {
-        const filePath = path.join(directoryPath, file);
+        const filePath = path.join('technology/', file);
         fileData.push(filePath.split('.')[0]);
       });
     
