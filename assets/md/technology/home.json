@@ -1,9 +1,9 @@
 {
   "blogs": [
-    "src/assets/md/technology/crafting-api-magic",
-    "src/assets/md/technology/large-language-models",
-    "src/assets/md/technology/technologies",
-    "src/assets/md/technology/the-technology-of-modern-banks"
+    "technology/crafting-api-magic",
+    "technology/large-language-models",
+    "technology/technologies",
+    "technology/the-technology-of-modern-banks"
   ],
-  "timestamp": "2023-11-15T05:50:28.088Z"
+  "timestamp": "2023-11-15T08:13:44.046Z"
 }
