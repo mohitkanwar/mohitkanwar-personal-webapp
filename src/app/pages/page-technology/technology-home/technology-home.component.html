@@ -1,13 +1,3 @@
-<div class="blog-summary">
-  <app-blog-summary-item [path]="'technology/crafting-api-magic'"></app-blog-summary-item>
+<div class="blog-summary" *ngFor="let path of techblogs">
+  <app-blog-summary-item [path]="path"></app-blog-summary-item>
 </div>
-<div class="blog-summary">
-  <app-blog-summary-item [path]="'technology/the-technology-of-modern-banks'"></app-blog-summary-item>
-</div>
-<div class="blog-summary">
-  <app-blog-summary-item [path]="'technology/large-language-models'"></app-blog-summary-item>
-</div>
-<div class="blog-summary">
-  <app-blog-summary-item [path]="'technology/technologies'"></app-blog-summary-item>
-</div>
-
