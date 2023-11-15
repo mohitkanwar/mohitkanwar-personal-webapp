@@ -36,21 +36,24 @@
     font-size: 16px;
     color: #333;
   }
-  
-  .side-component {
+  .side {
     display: block; 
+    width: 30%; /* Adjust the width as needed */
+    margin: 20px 10px; /* Add space between the blog post and the side component */
+  }
+  .component {
+    padding: 10px; /* Adjust the padding as needed */
     background-color: #fff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px; /* Adjust the padding as needed */
-    width: 30%; /* Adjust the width as needed */
-    margin: 20px 10px; /* Add space between the blog post and the side component */
-    /* You can also add other styles or positioning as needed */
+    height: fit-content; 
+    margin-bottom: 10px; /* Add space between the blog post and the side component */
+
   }
 
   @media (max-width: 768px) {
-    .side-component {
+    .side {
       display: none; 
     }
   }

@@ -27,9 +27,16 @@
       </script>
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>   </div>
   </div>
-  <div class="side-component" *ngIf="blog.tldr.length>0"> 
+  <div class="side" *ngIf="blog.tldr.length>0"> 
+   <div class="component">
     <h3>TL;DR</h3>
     <div class="blog-content" [innerHTML]="blog.tldr | markdown">
     </div>
+   </div> 
+   <!-- <div class="component">
+    <h3>TL;DR</h3>
+    <div class="blog-content" [innerHTML]="blog.tldr | markdown">
+    </div>
+   </div>  -->
   </div>
 </div>
