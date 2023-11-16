@@ -3,6 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Blog } from 'src/app/shared/md-read/blog.model';
 import { MdReadService } from 'src/app/shared/md-read/md-read.service';
 import { Meta } from '@angular/platform-browser';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { MarkdownService } from 'ngx-markdown';
 
 @Component({
   selector: 'app-blog-tech-item',
@@ -12,10 +14,13 @@ import { Meta } from '@angular/platform-browser';
 export class BlogTechItemComponent implements OnInit {
   path!: string;
   blog: Blog = new Blog(0, "", "", "", new Date(), "", "", "", "");
+  trustedHtml: SafeHtml | undefined; // Hold the sanitized HTML
   constructor(
     private route: ActivatedRoute,
     private meta: Meta,
-    private blogReadService: MdReadService) {
+    private blogReadService: MdReadService,
+    private sanitizer: DomSanitizer,
+    private markdownService: MarkdownService) {
 
   }
   ngOnInit(): void {
@@ -24,6 +29,9 @@ export class BlogTechItemComponent implements OnInit {
     this.path = 'technology/' + routerParamPath;
     this.blogReadService.readBlog(this.path).subscribe((blog: Blog) => {
       this.blog = blog;
+      const parsedHTML = this.markdownService.parse(blog.content);
+    // Sanitize the HTML content to allow iframes
+    this.trustedHtml = this.sanitizer.bypassSecurityTrustHtml(parsedHTML);
       this.meta.updateTag({ name: 'title', content: this.blog.title + ' |FinTech | Mohit Kanwar' });
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
 
@@ -44,6 +52,7 @@ export class BlogTechItemComponent implements OnInit {
 
     
   }
+
 }
 
  

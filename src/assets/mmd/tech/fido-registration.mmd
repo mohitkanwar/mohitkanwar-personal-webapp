@@ -1,0 +1,12 @@
+sequenceDiagram
+    actor User
+    participant Client
+    participant Authenticator
+    participant Server
+    participant FIDO_Server
+
+    User ->> Client: Initiates Registration
+    Client -->> Authenticator: Requests Registration
+    Authenticator -->> Client: Generates Public Key
+    Client ->> Server: Sends Public Key
+    Server -->> FIDO_Server: Stores Public Key
