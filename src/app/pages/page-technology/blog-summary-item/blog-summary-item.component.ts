@@ -12,17 +12,22 @@ export class BlogSummaryItemComponent implements OnInit{
   publishedDate: Date = new Date();
   excerpt: string = '';
   url: string = '';
+  image: string = ''
   constructor(private blogReadService: MdReadService) {}
   ngOnInit(): void {
     this.blogReadService.readBlog(this.path).subscribe((blog)=> {
       this.title = blog.title;
       this.publishedDate = blog.publishDate;
       const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
-
+      let summary = blog.summary;
+      if (summary ==  null) {
+        summary = blog.metaDescription;
+      }
       // Replace all Markdown links with their associated text
-      const textWithoutLinks = blog.summary.replace(markdownLinkRegex, (match, text) => text);
+      const textWithoutLinks = summary.replace(markdownLinkRegex, (match, text) => text);
       this.excerpt = textWithoutLinks;
       this.url = this.path.split('/')[1];
+      this.image = blog.metaImagePath;
     })
   }
 }

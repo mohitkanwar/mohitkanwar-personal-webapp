@@ -19,7 +19,7 @@ techblogs : string[] = [
 constructor(private http: HttpClient) {}
 
 ngOnInit(): void {
-  this.http.get<BlogData>('../../../assets/md/technology/home.json').subscribe(
+  this.http.get<BlogData>('../../../assets/blogs/technology/home.json').subscribe(
     (data) => {
       this.techblogs = data.blogs;
       console.log(data);

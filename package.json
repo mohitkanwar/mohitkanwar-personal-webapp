@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "create-tech-blogs-home": "node create-tech-blogs-home.js",
+    "create-tech-blogs": "node create-tech-blogs.js",
     "increment-version": "node increment-version.js",
     "build": "npm run create-tech-blogs-home && npm run increment-version && ng build",
     "scully": "npx scully --project=\"mohitkanwar-app\"",
