@@ -1,13 +1,11 @@
+--- meta 
 title: Embracing Passwordless Authentication with FIDO: A Secure and Seamless Future
 date: 2023-11-15
-metadescription: FIDO, short for Fast Identity Online, represents a paradigm shift in authentication methods, offering a more secure, seamless, and user-centric approach to safeguarding our digital lives. This groundbreaking technology is reshaping the landscape of digital security, promising to retire the age-old reliance on passwords and granting users a new frontier of secure authentication methods.
-
-In this comprehensive exploration, we embark on a journey through the intricate world of FIDO-based authentication. We'll delve deep into its mechanisms, understand its underlying principles, and explore how it reshapes our perception of authentication. Join us as we uncover the principles, advantages, and applications of FIDO authentication, paving the way for a more secure and user-friendly digital future.
+metadescription: FIDO, short for Fast Identity Online, represents a paradigm shift in authentication methods, offering a more secure, seamless, and user-centric approach to safeguarding our digital lives. This groundbreaking technology is reshaping the landscape of digital security, promising to retire the age-old reliance on passwords and granting users a new frontier of secure authentication methods. In this comprehensive exploration, we embark on a journey through the intricate world of FIDO-based authentication. We'll delve deep into its mechanisms, understand its underlying principles, and explore how it reshapes our perception of authentication. Join us as we uncover the principles, advantages, and applications of FIDO authentication, paving the way for a more secure and user-friendly digital future.
 keywords: 
 metaimage: 
-tldr: 
----
-
+--- tldr 
+--- content 
 Sometime back, I created [this post](https://www.linkedin.com/posts/mohit-kanwar-7668a211_passwordless-authentication-activity-6926093155184320512-Nnhu?utm_source=share&utm_medium=member_desktop) on linked-in on explainig how passwords are not a good fit for authentication. In continuation to that, I would like to talk about FIDO Alliance.
 In the ever-evolving landscape of cybersecurity, the traditional method of password-based authentication has long been at the forefront of both convenience and vulnerability.  
 Enter FIDO, an innovative and transformative technology that revolutionizes the way we verify identity and secure access to digital systems.
@@ -85,6 +83,7 @@ The authenticator creates the credentials and returns a public key to the client
 
 The client sends the public key and additional registration data to the server.
 The server verifies the data and registers the user, associating the public key with the user's account.
+
 ##### Authentication
 When authentication is required, the client requests authentication from the authenticator.
 The authenticator verifies the user's identity using stored credentials and generates an authentication assertion.

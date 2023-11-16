@@ -1,10 +1,10 @@
 {
   "blogs": [
-    "technology/the-technology-of-modern-banks",
     "technology/crafting-api-magic",
     "technology/fido",
     "technology/large-language-models",
-    "technology/technologies"
+    "technology/technologies",
+    "technology/the-technology-of-modern-banks"
   ],
-  "timestamp": "2023-11-16T09:56:29.693Z"
+  "timestamp": "2023-11-16T13:09:58.719Z"
 }
