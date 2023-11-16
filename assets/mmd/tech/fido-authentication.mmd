@@ -1,0 +1,14 @@
+sequenceDiagram
+    actor User
+    participant Client
+    participant Authenticator
+    participant Server
+    participant FIDO_Server
+
+    User ->> Client: Requests Authentication
+    Client -->> Authenticator: Starts Authentication
+    Authenticator -->> Client: Validates Credentials
+    Client ->> Server: Sends Authentication Request
+    Server -->> FIDO_Server: Authenticates with FIDO
+    FIDO_Server -->> Server: Authentication Confirmation
+    Server -->> Client: Sends Authentication Response
