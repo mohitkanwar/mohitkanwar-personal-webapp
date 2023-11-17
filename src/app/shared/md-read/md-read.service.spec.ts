@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MdReadService } from './md-read.service';
+import { MdReadService } from '../services/md-read.service';
 
 describe('MdReadService', () => {
   let service: MdReadService;

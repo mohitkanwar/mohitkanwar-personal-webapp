@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Blog } from './blog.model';
+import { Blog } from '../md-read/blog.model';
 import { Observable, map } from 'rxjs';
 
 @Injectable({

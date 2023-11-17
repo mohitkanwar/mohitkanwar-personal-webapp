@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MdReadService } from './md-read.service';
+import { MdReadService } from '../services/md-read.service';
 import { Blog } from './blog.model';
 
 @Component({

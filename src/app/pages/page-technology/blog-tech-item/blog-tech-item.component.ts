@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Blog } from 'src/app/shared/md-read/blog.model';
-import { MdReadService } from 'src/app/shared/md-read/md-read.service';
+import { MdReadService } from 'src/app/shared/services/md-read.service';
 import { Meta } from '@angular/platform-browser';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { MarkdownService } from 'ngx-markdown';

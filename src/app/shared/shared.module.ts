@@ -4,13 +4,15 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { MdReadComponent } from './md-read/md-read.component';
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClientModule } from '@angular/common/http';
+import { SpeechComponent } from './speech/speech.component';
 
 
 
 @NgModule({
   declarations: [
     PageNotFoundComponent,
-    MdReadComponent
+    MdReadComponent,
+    SpeechComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     MarkdownModule.forRoot()
   ],
   exports: [
-    MdReadComponent
+    MdReadComponent,
+    SpeechComponent
   ]
 })
 export class SharedModule { }
