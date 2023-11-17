@@ -23,11 +23,15 @@ export class BlogSummaryItemComponent implements OnInit{
       if (summary ==  null) {
         summary = blog.metaDescription;
       }
+      console.log(this.title)
+      console.log(this.url)
+      console.log(summary)
       // Replace all Markdown links with their associated text
       const textWithoutLinks = summary.replace(markdownLinkRegex, (match, text) => text);
       this.excerpt = textWithoutLinks;
       this.url = this.path.split('/')[1];
       this.image = blog.metaImagePath;
+      
     })
   }
 }

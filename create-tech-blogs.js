@@ -77,8 +77,16 @@ function parseBlogFile(filePath) {
       console.log("Received empty line");
     }
   });
-
-  return blog;
+   blog.author == null? blog.author = "Mohit Kanwar" : blog.author;
+   if(blog.title == null) {
+    console.log("Please provide blog title :", filePath)
+    exit(1);
+   }
+   if(blog.summary == null && blog.metaDescription == null) {
+    console.log("Please provide summary or metadescription: ", filePath)
+    exit(1);
+   }
+   return blog;
 }
 
 function writeToJsonFile(filePath, data) {

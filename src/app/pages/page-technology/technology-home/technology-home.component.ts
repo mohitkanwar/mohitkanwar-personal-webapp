@@ -12,9 +12,12 @@ interface BlogData {
 })
 export class TechnologyHomeComponent implements OnInit{
 techblogs : string[] = [
+  "technology/working-with-global-teams",
+  "technology/fido",
   "technology/the-technology-of-modern-banks",
+  "technology/technologies",
   "technology/large-language-models",
-  "technology/technologies"
+  "technology/crafting-api-magic"
 ]
 constructor(private http: HttpClient) {}
 
@@ -22,14 +25,16 @@ ngOnInit(): void {
   this.http.get<BlogData>('../../../assets/blogs/technology/home.json').subscribe(
     (data) => {
       this.techblogs = data.blogs;
-      console.log(data);
     },
     (error) => {
       console.error('Error fetching JSON file', error);
       this.techblogs = [
+        "technology/working-with-global-teams",
+        "technology/fido",
         "technology/the-technology-of-modern-banks",
+        "technology/technologies",
         "technology/large-language-models",
-        "technology/technologies"
+        "technology/crafting-api-magic"
       ]
     }
   );
