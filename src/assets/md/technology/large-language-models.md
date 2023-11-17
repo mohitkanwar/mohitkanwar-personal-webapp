@@ -6,7 +6,12 @@ keywords: FinTech, Language Models, ChatGPT, LLM, Artificial Intelligence, Compu
 metaimage: assets/mmd/tech/large-language-models.png
 
 --- tldr 
-**Large Language Models (LLMs)** are revolutionizing technology, particularly in software and banking industries, enabling human-like interactions with computers. - LLMs, such as **Generative Pre-trained Transformers (GPT)**, excel at text generation, language translation, question-answering, text summarization, and creative content creation.   - Notable LLMs include **ChatGPT**, **Bard**, **Google Translate**, **Grammarly**, and **Bing**, each with distinct functionalities.   - **GPT models** are versatile, adaptable, and come in different sizes (e.g., GPT-3), offering human-like text generation, language understanding, translation, and text summarization capabilities.  - The architecture of LLMs involves extensive training on text data, user interaction via a chat-like interface, communication with APIs for data retrieval, and plugins for expanding functionalities.   - LLMs like GPT are reshaping human-computer interactions, offering versatile capabilities that drive innovation in various industries. Embracing LLMs is a strategic advantage in the IT world.
+- **Large Language Models (LLMs)** are revolutionizing technology, particularly in software and banking industries, enabling human-like interactions with computers.
+- LLMs, such as **Generative Pre-trained Transformers (GPT)**, excel at text generation, language translation, question-answering, text summarization, and creative content creation.   
+- Notable LLMs include **ChatGPT**, **Bard**, **Google Translate**, **Grammarly**, and **Bing**, each with distinct functionalities.   
+- **GPT models** are versatile, adaptable, and come in different sizes (e.g., GPT-3), offering human-like text generation, language understanding, translation, and text summarization capabilities. 
+- The architecture of LLMs involves extensive training on text data, user interaction via a chat-like interface, communication with APIs for data retrieval, and plugins for expanding functionalities.   
+- LLMs like GPT are reshaping human-computer interactions, offering versatile capabilities that drive innovation in various industries. Embracing LLMs is a strategic advantage in the IT world.
 --- content 
 # Unlocking the Power of Large Language Models in the World of IT: Embracing ChatGPT
 

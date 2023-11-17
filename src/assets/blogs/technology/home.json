@@ -1,11 +1,11 @@
 {
   "blogs": [
-    "technology/working-with-global-teams",
-    "technology/fido",
-    "technology/the-technology-of-modern-banks",
     "technology/technologies",
     "technology/large-language-models",
-    "technology/crafting-api-magic"
+    "technology/crafting-api-magic",
+    "technology/working-with-global-teams",
+    "technology/fido",
+    "technology/the-technology-of-modern-banks"
   ],
-  "timestamp": "2023-11-17T08:45:56.168Z"
+  "timestamp": "2023-11-17T11:20:09.706Z"
 }

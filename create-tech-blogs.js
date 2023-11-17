@@ -66,11 +66,11 @@ function parseBlogFile(filePath) {
               }
           });
       } else if (lines[0].toLowerCase().startsWith('tldr')) {
-          blog.tldr = lines.slice(1).join('\n');
+          blog.tldr = lines.slice(1).join('\n\n');
       } else if (lines[0].toLowerCase().startsWith('content')) {
           blog.content = lines.slice(1).join('\n\n');
       } else if (lines[0].toLowerCase().startsWith('summary')) {
-          blog.summary = lines.slice(1).join('\n');
+          blog.summary = lines.slice(1).join('\n\n');
       }
     } else {
       

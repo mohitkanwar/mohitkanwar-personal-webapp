@@ -11,7 +11,8 @@
     "scully": "npx scully --project=\"mohitkanwar-app\"",
     "scully:serve": "npx scully serve --project=\"mohitkanwar-app\"",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build-start": "npm run build && npm run start"
   },
   "private": true,
   "dependencies": {
