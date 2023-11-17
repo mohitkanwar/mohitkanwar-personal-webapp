@@ -1,7 +1,7 @@
 const fs = require('fs-extra');
 const path = require('path');
 
-const directoryPath = 'src/assets/md/technology'; // Replace this with your directory path
+const directoryPath = 'src/assets/blogs/technology/'; // Replace this with your directory path
 const jsonFilePath = 'src/assets/blogs/technology/home.json'; // Replace this with your desired output JSON file path
 
 // Check if the JSON file exists and delete it if it does
@@ -10,35 +10,33 @@ if (fs.existsSync(jsonFilePath)) {
   console.log('Deleted existing JSON file');
 }
 
-// Read files in the directory
-fs.readdir(directoryPath, (err, files) => {
-    if (err) {
-        console.error('Error reading directory:', err);
-        return;
-      }
-    
-      const fileData = [];
-    
-      // Get file stats and sort by modification time
-      const filesWithStats = files.map((file) => {
-        const filePath = path.join(directoryPath, file);
-        const stats = fs.statSync(filePath);
-        return { name: file, time: stats.mtime.getTime() };
-      });
-    
-      const sortedFiles = filesWithStats
-        .sort((a, b) => b.time - a.time)
-        .map((file) => file.name);
-    
-      // Process each file
-      sortedFiles.forEach((file) => {
-        const filePath = path.join('technology/', file);
-        fileData.push(filePath.split('.')[0]);
-      });
-    
-      const blogs = { blogs: fileData, timestamp: new Date() };
-    
-  // Write data to JSON file
-  fs.writeFileSync(jsonFilePath, JSON.stringify(blogs, null, 2));
-  console.log('JSON file created with file data');
-});
+async function readFiles() {
+  const files = await fs.readdir(directoryPath);
+  let blogsFromFiles = [];
+
+  for (const file of files) {
+    const filePath = path.join(directoryPath, file);
+    try {
+      const data = await fs.readFile(filePath, 'utf8');
+      const jsonData = JSON.parse(data);
+      const { publishDate } = jsonData;
+      const fileName = file.split('.')[0];
+      blogsFromFiles.push({ fileName, publishDate });
+    } catch (error) {
+      console.error('Error processing file:', file, error);
+    }
+  }
+
+  blogsFromFiles.sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
+
+  const blogs = { blogs: blogsFromFiles, timestamp: new Date() };
+
+  try {
+    await fs.outputJson(jsonFilePath, blogs, { spaces: 2 });
+    console.log('JSON file created with sorted file data');
+  } catch (error) {
+    console.error('Error writing JSON file:', error);
+  }
+}
+
+readFiles();

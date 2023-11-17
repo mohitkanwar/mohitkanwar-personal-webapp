@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 interface BlogData {
-  blogs: string[];
+  blogs: [{ fileName: "string", publishDate: Date}];
 }
 
 @Component({
@@ -24,7 +24,9 @@ constructor(private http: HttpClient) {}
 ngOnInit(): void {
   this.http.get<BlogData>('../../../assets/blogs/technology/home.json').subscribe(
     (data) => {
-      this.techblogs = data.blogs;
+      this.techblogs = data.blogs.map(blogItem => {
+        return "technology/"+ blogItem.fileName
+      });
     },
     (error) => {
       console.error('Error fetching JSON file', error);
