@@ -4,38 +4,6 @@ date: 2023-11-17
 metadescription: At the onset of my career, the allure of working "On-Site" was a shared aspiration among my peers and me. The prospect of immersing ourselves in diverse cultures, collaborating closely with customers, and gaining insights into varied business operations was enticing. On-site assignments promised not just professional growth but also a glimpse into a world previously beyond our reach.
 keywords: 
 metaimage: 
---- tldr 
-# Experience
-I have had the experience of working with customers across the globe. I have worked with teams in India, U.S.A, Canada, Africa, Australia, Middle East, Europe, East Asia. That covers pretty much the whole globe.
-
-Working with diverse cultures help you understand the different cultures and how the different traditions evolved. 
-I have realized that we are so different, yet so same at the core.
-
-some shocking incidents - In India, the third genders are generally quite repressed. but I observed their indulgence in normal life as bus operators, as bankers in other countries. 
-
-dependency on electricity - In India, we have a lot of manual things, that we don't realize. Once in europe, there was a problem with electricity, and people inside mall were stuck. no-one could go in, no one could come out because there was a power cut.
-
-Speaking same language is more important than political relations. India and Pakistan do not have good relations. India is so diverse, that my friend from tamil nadu didn't understood hindi, that is my mothertongue. so I was speaking to him in english. while the pakistani guy and myself bonded well due to both being affluent in hindi/punjabi.
-The onlookers were confused because with the person from my own country, I was using english, but with the person from an enemy country I was using my mothertongue.
-
-poorness is not limited to India
-When I was kid, i was told that foreign countries are so rich that they build roads with marbles. The houses are made up of gold and what not. 
-All this bhrams were broken when I travelled across the globe. Problems are similar across the world.
-
-Food
-The food choices vary according to the different conditions. Non-veg food is prevalant. Even Indian food doesn't tastes the same across. The palates of people outside is also different, they actually do not like the Indian food as Indians do. Dutch people like to have cold food, which is very odd to my tongue. Thailand people do have non-veg even in breakfasts.
-
-Advantages of working with different cultures
-- Understanding of global traditions
-- better understanding of human psychology
-- Gaining empathy
-- Learning and adopting the things that I can improve
-
-Disadvantages
-- working with people who do not have a common language is very difficult
-- while none of us is being rude, the language and culture differences might feel that the other person is rude. and that may lead to conflicts
-- lot of time spent in discussing very simple things. Translators do not work well.
-
 --- content 
 
 # Embracing Global Diversity: Insights from a World of Experiences
