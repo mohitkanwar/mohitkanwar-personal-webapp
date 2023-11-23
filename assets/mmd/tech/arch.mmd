@@ -1,0 +1,22 @@
+flowchart LR
+
+subgraph "Web Component (Angular)"
+    WC[Web Component]
+end
+
+subgraph "API Gateway (Mulesoft)"
+    GW[API Gateway]
+end
+
+subgraph "Identity Provider (Keycloak)"
+    IDP[Identity Provider]
+end
+
+subgraph "Other Microservices (SpringBoot)"
+    MS[Microservices]
+end
+
+WC -- Authenticate --> GW
+GW -- Authenticate --> IDP
+IDP -- Token --> WC
+WC -- Token --> MS

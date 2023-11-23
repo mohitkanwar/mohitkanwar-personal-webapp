@@ -1,0 +1,17 @@
+C4Context
+  title System Context diagram for Your System
+
+  Enterprise_Boundary(system, "Your System") {
+    Person(customer, "Web User", "Uses the system")
+
+    System(Web, "Web Component (Angular)", "Developed using Angular")
+    System(Gateway, "API Gateway (Mulesoft)")
+    System(Identity, "Identity Provider (Keycloak)")
+    System(Microservices, "Other Microservices (SpringBoot)")
+  }
+
+  Rel(customer, Web, "Uses")
+  Rel(Web, Gateway, "Invokes REST API")
+  Rel(Gateway, Identity, "Passes authentication")
+  Rel(Identity, Web, "Provides token")
+  Rel(Web, Microservices, "Invokes with token")
