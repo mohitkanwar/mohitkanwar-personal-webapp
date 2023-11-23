@@ -1,6 +1,10 @@
 {
   "blogs": [
     {
+      "fileName": "prompt-engineering",
+      "publishDate": "2023-11-19T00:00:00.000Z"
+    },
+    {
       "fileName": "working-with-global-teams",
       "publishDate": "2023-11-17T00:00:00.000Z"
     },
@@ -25,5 +29,5 @@
       "publishDate": "2023-11-01T00:00:00.000Z"
     }
   ],
-  "timestamp": "2023-11-18T12:48:56.763Z"
+  "timestamp": "2023-11-23T16:08:53.819Z"
 }

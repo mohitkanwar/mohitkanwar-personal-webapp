@@ -1,6 +1,5 @@
-.container {
-  display: flex;
-}
+
+
 .blog-post {
     background-color: #fff;
     border: 1px solid #e0e0e0;
@@ -56,4 +55,8 @@
     .side {
       display: none; 
     }
+  }
+
+  .width50 {
+    width: 50%;
   }
