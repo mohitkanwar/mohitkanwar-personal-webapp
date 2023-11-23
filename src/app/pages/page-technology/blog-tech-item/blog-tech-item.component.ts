@@ -33,12 +33,19 @@ export class BlogTechItemComponent implements OnInit {
     // Sanitize the HTML content to allow iframes
     this.trustedHtml = this.sanitizer.bypassSecurityTrustHtml(parsedHTML);
       this.meta.updateTag({ name: 'title', content: this.blog.title + ' |FinTech | Mohit Kanwar' });
+      this.meta.updateTag({ property: 'og:title', content: this.blog.title});
+      this.meta.updateTag({ name: 'og:title', content: this.blog.title });
+
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
 
     this.meta.updateTag({ name: 'description', content: this.blog.metaDescription });
-
-    this.meta.updateTag({ name: 'og:title', content: this.blog.title });
     this.meta.updateTag({ name: 'og:description', content: this.blog.metaDescription });
+    this.meta.updateTag({ property: 'og:description', content: this.blog.metaDescription });
+    this.meta.updateTag({ property: 'og:type', content: "article" });
+    this.meta.updateTag({ property: 'og:site_name', content: "Mohit Kanwar's Blog" });
+    this.meta.updateTag({ property: 'og:locale', content: "en_US" });
+    this.meta.updateTag({ property: 'og:article:published_time', content: blog.publishDate.toISOString() });
+    this.meta.updateTag({ property: 'og:article:author', content: blog.author });
 
     this.meta.updateTag({ name: 'twitter:card', content: this.blog.metaImagePath ? 'summary_large_image' : 'summary' });
     this.meta.updateTag({ name: 'twitter:title', content: this.blog.title });
@@ -51,8 +58,6 @@ export class BlogTechItemComponent implements OnInit {
     }
     console.log(this.blog);
     });
-
-    
   }
 
 }
