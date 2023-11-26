@@ -1,18 +1,18 @@
 <!--With Thumbnail-->
-
+<a class="read-more-link" [routerLink]="['/tech', url]">
     <div class="blog-summary-container">
         <span class="blog-excerpt">
             <div class="blog-info" *ngIf="url!=''">
-                <a class="read-more-link" [routerLink]="['/tech', url]">
-                    <div>
-                        <h3 class="blog-title">{{title}}</h3>
-                        <p class="blog-date">Published on {{publishedDate | date: 'dd MMM yyyy'}}</p>
-                        <p class="blog-excerpt" [innerHTML]="excerpt | markdown">
-                        </p>
-                    </div>
-                </a>
+                <div>
+                    <h3 class="blog-title">{{title}}</h3>
+                    <p class="blog-date">Published on {{publishedDate | date: 'dd MMM yyyy'}}</p>
+                    <p class="blog-excerpt" [innerHTML]="excerpt | markdown">
+                    </p>
+                </div>
                 <app-speech [textToSpeak]="excerpt"></app-speech>
             </div>
         </span>
         <img [src]="image" class="responsive-image-bounded" />
+        
     </div>
+</a>

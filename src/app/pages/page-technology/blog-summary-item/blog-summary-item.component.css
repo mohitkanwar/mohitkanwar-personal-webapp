@@ -1,6 +1,11 @@
 .blog-summary-container {
   display: flex;
 }
+@media (max-width: 767px) {
+  .blog-summary-container {
+    display: block;
+  }
+}
 .blog-thumbnail {
     max-width: 50%;
     overflow: hidden;
