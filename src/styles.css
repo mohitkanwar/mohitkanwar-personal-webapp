@@ -52,6 +52,14 @@
     margin: 5px auto;  /* Center the image horizontally in its container (optional) */
     border-radius: 10px;
   }
+  .responsive-image-bounded {
+    max-width: 50%; /* Ensure the image does not exceed its container width */
+    height: auto;    /* Allow the image to maintain its aspect ratio */
+    display: block;  /* Remove any unwanted spacing or alignment issues */
+    margin: 5px auto;  /* Center the image horizontally in its container (optional) */
+    max-height: 400px;
+    border-radius: 10px;
+  }
   .responsive-image-400 {
     max-width: 100%; /* Ensure the image does not exceed its container width */
     height: auto;    /* Allow the image to maintain its aspect ratio */
@@ -66,6 +74,9 @@
     }
     .responsive-image-400 {
        margin: 5px 2px;  /* Center the image horizontally in its container (optional) */
+    }
+    .responsive-image-bounded {
+      max-width: 90%;
     }
   }
   .inline-block-text {
