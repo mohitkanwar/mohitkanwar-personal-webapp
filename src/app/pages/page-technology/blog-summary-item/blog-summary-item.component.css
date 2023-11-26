@@ -1,7 +1,8 @@
-
+.blog-summary-container {
+  display: flex;
+}
 .blog-thumbnail {
-    width: 100%;
-    max-height: 200px;
+    max-width: 50%;
     overflow: hidden;
     flex: 1;
     display: flex;
@@ -9,11 +10,6 @@
     align-items: center;
   }
   
-  .blog-thumbnail img {
-    max-width: 60%;
-    max-height: 60%;
-    object-fit: cover;
-  }
   
   .blog-info {
     padding: 10px;
