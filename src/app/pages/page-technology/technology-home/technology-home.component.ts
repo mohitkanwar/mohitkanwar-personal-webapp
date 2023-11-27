@@ -46,12 +46,11 @@ export class TechnologyHomeComponent implements OnInit {
     );
   }
   loadMore(): void {
-    console.log("load more")
     if (this.techblogs.length < this.allBlogs.length) {
+      console.log("loading...")
       const currentlyDisplayed = this.techblogs.length;
       const remainingData = this.allBlogs.slice(currentlyDisplayed, currentlyDisplayed + this.loadCount);
       this.techblogs = this.techblogs.concat(remainingData);
-
     }
   }
 

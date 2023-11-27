@@ -24,7 +24,7 @@ export class Blog {
       this.title = title;
       this.content = content;
       this.author = author;
-      this.publishDate = publishDate;
+      this.publishDate = new Date(publishDate);
       this.summary = summary;
       this.metaDescription = metaDescription;
       this.metaImagePath = metaImagePath;
