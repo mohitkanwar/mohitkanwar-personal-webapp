@@ -15,6 +15,11 @@ const routes: Routes = [
   { 
     path: 'tech',
     loadChildren: () => import('./pages/page-technology/page-technology.module').then(m => m.PageTechnologyModule)
+  }
+,
+  { 
+    path: 'books',
+    loadChildren: () => import('./pages/page-books/page-books.module').then(m => m.PageBooksModule)
   },
 
   { path: '**', component: PageNotFoundComponent},
