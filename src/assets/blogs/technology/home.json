@@ -1,6 +1,10 @@
 {
   "blogs": [
     {
+      "fileName": "gift-city",
+      "publishDate": "2023-12-04T18:30:00.000Z"
+    },
+    {
       "fileName": "logging-architecture",
       "publishDate": "2023-11-26T00:00:00.000Z"
     },
@@ -33,5 +37,5 @@
       "publishDate": "2023-11-01T00:00:00.000Z"
     }
   ],
-  "timestamp": "2023-11-26T15:04:41.610Z"
+  "timestamp": "2023-12-27T17:17:08.863Z"
 }
