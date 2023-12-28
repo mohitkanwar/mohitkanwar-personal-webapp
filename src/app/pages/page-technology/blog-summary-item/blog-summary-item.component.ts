@@ -8,11 +8,13 @@ import { MdReadService } from 'src/app/shared/services/md-read.service';
 })
 export class BlogSummaryItemComponent implements OnInit{
   @Input() path!: string;
+  @Input() index!: number;
   title: string = '';
   publishedDate: Date = new Date();
   excerpt: string = '';
   url: string = '';
   image: string = ''
+  template: string = 'even'
   constructor(private blogReadService: MdReadService) {}
   ngOnInit(): void {
     this.blogReadService.readBlog(this.path).subscribe((blog)=> {
@@ -30,5 +32,6 @@ export class BlogSummaryItemComponent implements OnInit{
       this.image = blog.metaImagePath;
       
     })
+    this.template = this.index%2==0?'even':'odd';
   }
 }

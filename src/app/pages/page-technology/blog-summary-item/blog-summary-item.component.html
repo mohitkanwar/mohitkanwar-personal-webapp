@@ -1,5 +1,5 @@
 <!--With Thumbnail-->
-<a class="read-more-link" [routerLink]="['/tech', url]">
+<a class="read-more-link" [routerLink]="['/tech', url]" *ngIf="template=='even'; else oddTemplate">
     <div class="blog-summary-container">
         <span class="blog-excerpt">
             <div class="blog-info" *ngIf="url!=''">
@@ -16,3 +16,23 @@
         
     </div>
 </a>
+<ng-template #oddTemplate>
+<a class="read-more-link" [routerLink]="['/tech', url]">
+    <div class="blog-summary-container">
+        <img [src]="image" class="responsive-image-bounded" />
+        <span class="blog-excerpt">
+            <div class="blog-info" *ngIf="url!=''">
+                <div>
+                    <h3 class="blog-title">{{title}}</h3>
+                    <p class="blog-date">Published on {{publishedDate | date: 'dd MMM yyyy'}}</p>
+                    <p class="blog-excerpt" [innerHTML]="excerpt | markdown">
+                    </p>
+                </div>
+                <app-speech [textToSpeak]="excerpt"></app-speech>
+            </div>
+        </span>
+        
+        
+    </div>
+</a>
+</ng-template>
