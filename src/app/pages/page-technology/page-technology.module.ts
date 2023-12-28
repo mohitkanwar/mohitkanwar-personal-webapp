@@ -22,17 +22,14 @@ export const routes : Routes = [
     BlogSummaryItemComponent
   ],
   providers: [
-    // provideMarkdown(
-    //   {
-    //     sanitize: SecurityContext.NONE
-    //   }
-    // ),
   ],
   imports: [
     CommonModule,
     SharedModule,
     RouterModule.forChild(routes),
-    MarkdownModule.forRoot()
+    MarkdownModule.forRoot({
+          sanitize: SecurityContext.NONE
+        })
   ]
 })
 export class PageTechnologyModule { }

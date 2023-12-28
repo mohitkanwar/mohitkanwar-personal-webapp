@@ -12,7 +12,9 @@ metaimage:
 --- content 
 
 Situated between Ahmedabad and Gandhinagar, along the Sabarmati river, GIFT City (Gujarat International Finance Tec-City) emerges as India's beacon of global business excellence. The city's futuristic infrastructure, coupled with its strategic location, sets the stage for a transformative business environment.
-
+<div class="map-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58688.8183877461!2d72.63974276055461!3d23.16833320432678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8019d43730db%3A0x7044e9a2cb290ed!2sGujarat%20International%20Finance%20Tec-City%2C%20Gujarat%20382355!5e0!3m2!1sen!2sin!4v1703757182932!5m2!1sen!2sin" width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 Within the boundaries of GIFT City, banks are pioneering the concept of IFSC Banking Units (IBUs). These units, akin to offshore branches within the IFSC zone, play a pivotal role in shaping India's global financial connectivity.
 
 ## Empowering Global Business
