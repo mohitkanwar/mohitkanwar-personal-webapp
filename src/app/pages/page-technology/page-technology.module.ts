@@ -6,7 +6,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { BlogTechItemComponent } from './blog-tech-item/blog-tech-item.component';
 import { BlogSummaryItemComponent } from './blog-summary-item/blog-summary-item.component';
 import { MarkdownModule } from 'ngx-markdown';
-
+import { SecurityContext } from '@angular/core';
 /**
  * The module path '/tech/' will be prepended to following routes
  */
@@ -20,6 +20,13 @@ export const routes : Routes = [
     TechnologyHomeComponent,
     BlogTechItemComponent,
     BlogSummaryItemComponent
+  ],
+  providers: [
+    // provideMarkdown(
+    //   {
+    //     sanitize: SecurityContext.NONE
+    //   }
+    // ),
   ],
   imports: [
     CommonModule,
