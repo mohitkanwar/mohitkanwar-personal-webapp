@@ -1,7 +1,7 @@
 <div class="container">
   <div class="blog-post">
     <h1 class="blog-title">{{ blog.title }}</h1>
-    <app-speech [textToSpeak]="blog.title + '. By'+ blog.author + '.'+ blog.content"></app-speech>
+    <app-speech [textToSpeak]="blog.speechText"></app-speech>
     <p class="blog-author">By {{ blog.author }}</p>
     <p class="blog-date">Published on {{ blog.publishDate | date: 'dd MMM yyyy' }}</p>
     <scully-content></scully-content>

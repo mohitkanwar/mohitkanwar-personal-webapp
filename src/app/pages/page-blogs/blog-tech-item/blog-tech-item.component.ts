@@ -13,7 +13,7 @@ import { MarkdownService } from 'ngx-markdown';
 })
 export class BlogTechItemComponent implements OnInit, AfterViewInit {
   path!: string;
-  blog: Blog = new Blog(0, "", "", "", new Date(), "", "", "", "");
+  blog: Blog = new Blog();
   trustedHtml: SafeHtml | undefined; // Hold the sanitized HTML
   constructor(
     private route: ActivatedRoute,

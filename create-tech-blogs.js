@@ -17,6 +17,7 @@ class Blog {
       this.metaDescription = null;
       this.metaImagePath = null;
       this.tldr = null;
+      this.speechText = null;
   }
 }
 
@@ -69,6 +70,7 @@ function parseBlogFile(filePath) {
           blog.tldr = lines.slice(1).join('\n\n');
       } else if (lines[0].toLowerCase().startsWith('content')) {
           blog.content = lines.slice(1).join('\n\n');
+          blog.speechText = blog.content;
       } else if (lines[0].toLowerCase().startsWith('summary')) {
           blog.summary = lines.slice(1).join('\n\n');
       }
