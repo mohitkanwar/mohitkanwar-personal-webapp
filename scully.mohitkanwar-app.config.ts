@@ -9,7 +9,7 @@ export const config: ScullyConfig = {
     '/tech/:blogId': {
       type: 'contentFolder',
       blogId: {
-        folder: './src/assets/md/technology',
+        folder: './src/assets/md',
       },
     },
   },
