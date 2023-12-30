@@ -1,8 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 
+const args = process.argv.slice(2);
+console.log('Command line arguments:', args);
+const env = args[0];
 // Read the current version
-const configFile = path.join(__dirname, 'src/environments/environment.ts');
+const configFile = (env.length==0) ? path.join(__dirname, 'src/environments/environment.ts'):path.join(__dirname, 'src/environments/environment.'+env+'.ts');
 const data = fs.readFileSync(configFile, 'utf8');
 const lines = data.split('\n');
 let versionLine = '';
