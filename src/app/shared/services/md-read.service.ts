@@ -8,6 +8,7 @@ import { Observable, map } from 'rxjs';
 })
 export class MdReadService {
   constructor(private httpClient : HttpClient) { }
+  
   readBlog(path: string): Observable<Blog> {
     return this.httpClient.get<Blog>('assets/blogs/' + path + '.json', { responseType: 'json' });
   }

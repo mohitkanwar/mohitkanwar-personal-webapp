@@ -4,6 +4,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.component';
+import { MarkdownModule } from 'ngx-markdown';
 
 export const routes: Routes = [
   {
@@ -24,11 +25,12 @@ export const routes: Routes = [
 @NgModule({
   declarations: [
     PrivacyPolicyComponent,
-    TermsOfServiceComponent
+    TermsOfServiceComponent,
   ],
   imports: [
     CommonModule,
     SharedModule,
+    MarkdownModule,
     RouterModule.forChild(routes)
   ]
 })

@@ -1,5 +1,5 @@
   export const environment = {
     production: true,
-  version: '5.24.519',
+  version: '5.24.527',
   testValue: 'default'
   };

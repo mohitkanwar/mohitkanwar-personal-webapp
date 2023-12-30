@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { AfterViewInit, Component, Input, OnInit, Renderer2 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Blog } from 'src/app/shared/md-read/blog.model';
 import { MdReadService } from 'src/app/shared/services/md-read.service';
@@ -11,7 +11,7 @@ import { MarkdownService } from 'ngx-markdown';
   templateUrl: './blog-tech-item.component.html',
   styleUrls: ['./blog-tech-item.component.css']
 })
-export class BlogTechItemComponent implements OnInit {
+export class BlogTechItemComponent implements OnInit, AfterViewInit {
   path!: string;
   blog: Blog = new Blog(0, "", "", "", new Date(), "", "", "", "");
   trustedHtml: SafeHtml | undefined; // Hold the sanitized HTML
@@ -20,7 +20,8 @@ export class BlogTechItemComponent implements OnInit {
     private meta: Meta,
     private blogReadService: MdReadService,
     private sanitizer: DomSanitizer,
-    private markdownService: MarkdownService) {
+    private markdownService: MarkdownService,
+    private renderer: Renderer2) {
 
   }
   ngOnInit(): void {
@@ -65,6 +66,13 @@ export class BlogTechItemComponent implements OnInit {
       this.meta.updateTag({ property: 'og:image', content: metaImagePath});
     }
     });
+  }
+  ngAfterViewInit() {
+    const scullyContent = this.renderer.createElement('scully-content');
+    const parentElement = document.querySelector('body');
+    this.renderer.appendChild(parentElement, scullyContent);
+    const childText = this.renderer.createText(this.blog.content);
+    this.renderer.appendChild(scullyContent, childText);
   }
   padZero(num: number): string {
     return num.toString().padStart(2, '0');

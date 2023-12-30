@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TechnologyHomeComponent } from './technology-home/technology-home.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -30,6 +30,7 @@ export const routes : Routes = [
     MarkdownModule.forRoot({
           sanitize: SecurityContext.NONE
         })
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class PageTechnologyModule { }

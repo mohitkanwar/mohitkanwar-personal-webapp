@@ -4,6 +4,7 @@
     <app-speech [textToSpeak]="blog.title + '. By'+ blog.author + '.'+ blog.content"></app-speech>
     <p class="blog-author">By {{ blog.author }}</p>
     <p class="blog-date">Published on {{ blog.publishDate | date: 'dd MMM yyyy' }}</p>
+    <scully-content></scully-content>
     <div class="blog-content" [innerHTML]="trustedHtml">
     </div>
     <div>
