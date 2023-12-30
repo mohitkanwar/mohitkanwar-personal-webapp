@@ -14,7 +14,7 @@ const routes: Routes = [
   },
   { 
     path: 'tech',
-    loadChildren: () => import('./pages/page-technology/page-technology.module').then(m => m.PageTechnologyModule)
+    loadChildren: () => import('./pages/page-blogs/page-blogs.module').then(m => m.PageBlogsModule)
   }
 ,
   { 

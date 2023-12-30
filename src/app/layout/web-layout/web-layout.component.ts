@@ -17,7 +17,7 @@ export class WebLayoutComponent implements OnInit{
    }
 
   ngOnInit(): void {
-    console.log(environment.testValue)
+    
   }
   
 

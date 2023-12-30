@@ -6,11 +6,11 @@ interface BlogData {
 }
 
 @Component({
-  selector: 'app-technology-home',
-  templateUrl: './technology-home.component.html',
-  styleUrls: ['./technology-home.component.css']
+  selector: 'app-blogs-home',
+  templateUrl: './blogs-home.component.html',
+  styleUrls: ['./blogs-home.component.css']
 })
-export class TechnologyHomeComponent implements OnInit {
+export class BlogsHomeComponent implements OnInit {
   initialDisplayCount = 5;
   loadCount = 5;
   techblogs: string[] = [
