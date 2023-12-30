@@ -3,8 +3,8 @@ const fs = require('fs-extra');
 const path = require('path');
 const { exit } = require('process');
 
-const directoryPath = 'src/assets/md/technology'; 
-const jsonFilePath = 'src/assets/blogs/technology/'; 
+const directoryPath = 'src/assets/md/blogs'; 
+const jsonFilePath = 'src/assets/blogs/'; 
 
 class Blog {
   constructor() {

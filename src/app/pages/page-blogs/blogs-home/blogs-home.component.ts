@@ -14,35 +14,36 @@ export class BlogsHomeComponent implements OnInit {
   initialDisplayCount = 5;
   loadCount = 5;
   techblogs: string[] = [
-    "technology/working-with-global-teams",
-    "technology/fido",
-    "technology/the-technology-of-modern-banks",
-    "technology/technologies",
-    "technology/large-language-models",
-    "technology/crafting-api-magic"
+    "working-with-global-teams",
+    "fido",
+    "the-technology-of-modern-banks",
+    "technologies",
+    "large-language-models",
+    "crafting-api-magic"
   ]
   allBlogs: string[] = [];
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get<BlogData>('../../../assets/blogs/technology/home.json').subscribe(
-      (data) => {
+  this.http.get<BlogData>('../../../assets/blogs/home.json').subscribe({
+      next: (data) => {
         this.allBlogs = data.blogs.map(blogItem => {
-          return "technology/" + blogItem.fileName
+          return   blogItem.fileName
         });
         this.techblogs = this.allBlogs.slice(0, this.initialDisplayCount);
       },
-      (error) => {
+      error: (error) => {
         console.error('Error fetching JSON file', error);
         this.techblogs = [
-          "technology/working-with-global-teams",
-          "technology/fido",
-          "technology/the-technology-of-modern-banks",
-          "technology/technologies",
-          "technology/large-language-models",
-          "technology/crafting-api-magic"
+          "working-with-global-teams",
+          "fido",
+          "the-technology-of-modern-banks",
+          "technologies",
+          "large-language-models",
+          "crafting-api-magic"
         ]
       }
+    }
     );
   }
   loadMore(): void {

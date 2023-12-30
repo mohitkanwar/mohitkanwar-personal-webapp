@@ -28,7 +28,7 @@ export class BlogSummaryItemComponent implements OnInit{
       // Replace all Markdown links with their associated text
       const textWithoutLinks = summary.replace(markdownLinkRegex, (match, text) => text);
       this.excerpt = textWithoutLinks;
-      this.url = this.path.split('/')[1];
+      this.url = this.path;
       this.image = blog.metaImagePath;
       
     })

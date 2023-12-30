@@ -1,8 +1,8 @@
 const fs = require('fs-extra');
 const path = require('path');
 
-const directoryPath = 'src/assets/blogs/technology/'; // Replace this with your directory path
-const jsonFilePath = 'src/assets/blogs/technology/home.json'; // Replace this with your desired output JSON file path
+const directoryPath = 'src/assets/blogs/'; // Replace this with your directory path
+const jsonFilePath = 'src/assets/blogs/home.json'; // Replace this with your desired output JSON file path
 
 // Check if the JSON file exists and delete it if it does
 if (fs.existsSync(jsonFilePath)) {

@@ -27,7 +27,7 @@ export class BlogTechItemComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     const routerParamPath = this.route.snapshot.paramMap.get('blogId');
 
-    this.path = 'technology/' + routerParamPath;
+    this.path = '' + routerParamPath;
     this.blogReadService.readBlog(this.path).subscribe((blog: Blog) => {
       this.blog = blog;
       const parsedHTML = this.markdownService.parse(blog.content);
