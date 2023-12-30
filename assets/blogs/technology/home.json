@@ -1,6 +1,10 @@
 {
   "blogs": [
     {
+      "fileName": "gamification",
+      "publishDate": "2023-12-30T00:00:00.000Z"
+    },
+    {
       "fileName": "gift-city",
       "publishDate": "2023-12-05T00:00:00.000Z"
     },
@@ -37,5 +41,5 @@
       "publishDate": "2023-11-01T00:00:00.000Z"
     }
   ],
-  "timestamp": "2023-12-28T12:17:04.070Z"
+  "timestamp": "2023-12-30T09:08:11.465Z"
 }
