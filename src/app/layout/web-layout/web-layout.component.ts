@@ -5,7 +5,7 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-web-layout',
   templateUrl: './web-layout.component.html',
-  styleUrls: ['./web-layout.component.css'],
+  styleUrls: ['./web-layout.component.scss'],
   providers: [DatePipe]
 })
 export class WebLayoutComponent implements OnInit{

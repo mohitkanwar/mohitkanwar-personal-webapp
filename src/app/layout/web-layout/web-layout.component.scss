@@ -1,6 +1,5 @@
-/* Web Header */
+
 .menu-header {
-  background-color: #f2f2f2; /* Subtle gray background color */
   padding: 20px 0;
   position: fixed;
   top: 0;
@@ -24,7 +23,7 @@
 }
 
 .logo img {
-  width: 40px; /* Adjust the width as needed */
+  width: 40px; 
   height: auto;
 }
 
@@ -39,32 +38,24 @@
 
 .menu-item a {
   text-decoration: none;
-  color: #333333; /* Subtle dark gray text color */
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.menu-item a:hover {
-  color: #1a237e;
-}
-
 main {
-  padding-top: 80px; /* Adjust the value based on the height of your header */
+  padding-top: 80px; 
   margin-bottom: 60px;
 }
 
-  /*Footer*/
+
   .menu-footer {
-    background-color: #f2f2f2;
-    color: #333333;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     opacity: 0.3;
     transition: opacity 0.3s ease;
-    border-top: 1px solid #ccc; /* Add a subtle top border */
-    box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    
   }
   .menu-footer:hover {
     opacity: 1;
@@ -93,12 +84,7 @@ main {
   
   .footer-links-web a {
     text-decoration: none;
-    color: #333333;
     transition: color 0.3s ease;
-  }
-  
-  .footer-links-web a:hover {
-    color: #1a237e;
   }
   
   @media (min-width: 768px) {
@@ -122,6 +108,4 @@ main {
     }
   }
   
-  .version:hover {
-    background-color: antiquewhite;
-  }
+  

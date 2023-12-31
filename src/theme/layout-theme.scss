@@ -1,0 +1,40 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+@mixin color($theme) {
+  .menu-header {
+    background-color: mat.get-theme-color($theme, primary, 200);
+  }
+  .menu-item a {
+    color: #333333; 
+  }
+  
+  .menu-item a:hover {
+    color: #1a237e;
+  }
+  .menu-footer {
+    background-color: #f2f2f2;
+    color: #333333;
+    border-top: 1px solid #ccc; 
+    box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.1); 
+  }
+  .footer-links-web a {
+    color: #333333;
+  }
+  
+  .footer-links-web a:hover {
+    color: #1a237e;
+  }
+  .version:hover {
+    background-color: antiquewhite;
+  }
+}
+@mixin theme($theme) {
+  @if mat.theme-has($theme, color) {
+    @include color($theme);
+  }
+
+//   @if mat.theme-has($theme, typography) {
+//     @include typography($theme);
+//   }
+}

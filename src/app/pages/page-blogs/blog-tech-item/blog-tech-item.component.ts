@@ -70,7 +70,12 @@ export class BlogTechItemComponent implements OnInit {
   }
 
   addScullyContent() {
-    const scullyContent = this.renderer.createElement('scully-content');
+    let scullyContent = this.renderer.selectRootElement('scully-content');
+
+    if (!scullyContent) {
+      scullyContent = this.renderer.createElement('scully-content');
+      this.renderer.addClass(scullyContent, 'hidden');
+    }
     const parentElement = document.querySelector('body');
     this.renderer.appendChild(parentElement, scullyContent);
     const childText = this.renderer.createText(this.blog.content);
