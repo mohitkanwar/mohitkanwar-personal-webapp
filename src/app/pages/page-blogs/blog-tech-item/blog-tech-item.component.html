@@ -4,7 +4,6 @@
     <app-speech [textToSpeak]="blog.speechText"></app-speech>
     <p class="blog-author">By {{ blog.author }}</p>
     <p class="blog-date">Published on {{ blog.publishDate | date: 'dd MMM yyyy' }}</p>
-    <scully-content></scully-content>
     <div class="blog-content" [innerHTML]="trustedHtml">
     </div>
     <div>
@@ -31,13 +30,11 @@
   <div class="side" *ngIf="blog.tldr && blog.tldr.length>0"> 
    <div class="component">
     <h3>TL;DR</h3>
-    <div class="blog-content" [innerHTML]="blog.tldr | markdown">
+    <div class="blog-content">
+      <markdown>
+        {{blog.tldr}}
+      </markdown>
     </div>
    </div> 
-   <!-- <div class="component">
-    <h3>TL;DR</h3>
-    <div class="blog-content" [innerHTML]="blog.tldr | markdown">
-    </div>
-   </div>  -->
   </div>
 </div>

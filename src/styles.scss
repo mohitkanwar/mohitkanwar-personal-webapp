@@ -1,0 +1,119 @@
+
+html, body { height: 100%; }
+body { margin: 0; font-family:  auto }
+// Define variables for reusability and easier maintenance
+$scrollbar-width: 4px;
+$scrollbar-thumb-color: #888888;
+$scrollbar-track-color: #f0f0f0;
+$border-radius: 10px;
+
+// Base styles
+.container {
+  display: flex;
+}
+
+.flex-container {
+  // Common styles for flex containers
+  display: flex;
+  overflow-x: auto;
+  width: 90%;
+  white-space: nowrap;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: $scrollbar-thumb-color $scrollbar-track-color;
+  border-radius: $border-radius;
+
+  // Apply scrollbar styles for Webkit browsers
+  &::-webkit-scrollbar {
+    width: $scrollbar-width;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-thumb-color;
+    border-radius: $border-radius;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $scrollbar-track-color;
+  }
+}
+
+// Responsive container with additional alignment
+.responsive-container {
+  @extend .flex-container; // Extend common styles from .flex-container
+  align-items: center;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+// Responsive images
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 5px auto;
+  border-radius: $border-radius;
+
+  @media (max-width: 767px) {
+    margin: 5px 2px;
+  }
+}
+
+.responsive-image-bounded {
+  max-width: 50%;
+  max-height: 400px;
+
+  @extend .responsive-image; // Extend common styles from .responsive-image
+
+  @media (max-width: 767px) {
+    max-width: 90%;
+  }
+}
+
+.responsive-image-400 {
+  max-height: 400px;
+
+  @extend .responsive-image; // Extend common styles from .responsive-image
+}
+
+// Inline block text
+.inline-block-text {
+  display: inline-block;
+  word-wrap: break-word;
+  text-wrap: pretty;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+// Blog and blog posts styles
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-post {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 48%;
+  }
+}
+
+// Map container
+.map-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
