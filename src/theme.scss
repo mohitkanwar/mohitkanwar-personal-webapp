@@ -1,0 +1,136 @@
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+// Define your custom theme
+$my-theme-primary: mat-palette($mat-indigo);
+$my-theme-accent: mat-palette($mat-pink, A200, A100, A400);
+$my-theme-warn: mat-palette($mat-red);
+$my-theme: mat-light-theme($my-theme-primary, $my-theme-accent, $my-theme-warn);
+
+// Apply the theme to Angular Material components
+@include angular-material-theme($my-theme);
+
+// Override the styles for specific components
+.container {
+  display: flex;
+}
+
+.flex-container {
+  @include mat-elevation(2);
+  overflow-x: auto;
+  width: 90%;
+  white-space: nowrap;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #888888 #f0f0f0;
+  border-radius: 10px;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #888888;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+  }
+}
+
+.responsive-container {
+  display: flex;
+  overflow-x: auto;
+  width: 90%;
+  white-space: nowrap;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #888888 #f0f0f0;
+  border-radius: 10px;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 5px auto;
+  border-radius: 10px;
+
+  @media (max-width: 767px) {
+    margin: 5px 2px;
+  }
+}
+
+.responsive-image-bounded {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 5px auto;
+  max-height: 400px;
+  border-radius: 10px;
+
+  @media (max-width: 767px) {
+    max-width: 90%;
+  }
+}
+
+.responsive-image-400 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 5px auto;
+  max-height: 400px;
+  border-radius: 10px;
+
+  @media (max-width: 767px) {
+    margin: 5px 2px;
+  }
+}
+
+.inline-block-text {
+  display: inline-block;
+  word-wrap: break-word;
+  text-wrap: pretty;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-post {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 48%;
+  }
+}
+
+.map-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767px) {
+  .blog-post {
+    width: 100%;
+  }
+}

@@ -69,3 +69,7 @@ This section contains the components that can be used across the modules. e.g.
    * This component has the ability to read a markdown file and display it on the page as HTML
 1. page-not-found
     * This component is the default component when a given page is not found.
+
+
+## Upgrade all dependencies
+ncu -u && npm install
