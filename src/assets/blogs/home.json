@@ -1,6 +1,10 @@
 {
   "blogs": [
     {
+      "fileName": "cost-of-software",
+      "publishDate": "2024-01-01T00:00:00.000Z"
+    },
+    {
       "fileName": "gamification",
       "publishDate": "2023-12-30T00:00:00.000Z"
     },
@@ -41,5 +45,5 @@
       "publishDate": "2023-11-01T00:00:00.000Z"
     }
   ],
-  "timestamp": "2023-12-31T12:13:51.248Z"
+  "timestamp": "2024-01-06T06:19:00.549Z"
 }

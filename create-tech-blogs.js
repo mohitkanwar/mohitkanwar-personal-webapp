@@ -5,6 +5,9 @@ const { exit } = require('process');
 
 const directoryPath = 'src/assets/md/blogs'; 
 const jsonFilePath = 'src/assets/blogs/'; 
+const args = process.argv.slice(2);
+console.log('Command line arguments:', args);
+const env = args[0];
 
 class Blog {
   constructor() {
@@ -29,11 +32,38 @@ fs.readdir(directoryPath, (err, files) => {
         return;
       }
     
-      const fileData = [];
-    
+      const gitIgnorePath ='.gitignore';
+      let gitIgnoreFiles;
+      if (fs.existsSync(gitIgnorePath)) {
+        const gitIgnoreContent = fs.readFileSync(gitIgnorePath, 'utf8');
+         gitIgnoreFiles = gitIgnoreContent.split('\n');
+      }
+      if (fs.existsSync(jsonFilePath)) {
+        const files = fs.readdirSync(jsonFilePath);
+        if (files.length === 0) {
+          console.log('Directory exists and is empty.');
+        } else {
+          // Delete all files within the directory
+          files.forEach((file) => {
+            fs.removeSync(`${jsonFilePath}/${file}`);
+          });
+          console.log('All files within the directory deleted.');
+        }
+      } else {
+        // Create the directory
+        fs.ensureDirSync(jsonFilePath);
+        console.log('Directory created.');
+      }
       // Get file stats and sort by modification time
       const filesWithStats = files.map((file) => {
-
+        if (gitIgnoreFiles.includes(file)) {
+          console.log(`Ignoring file: ${file}`);
+          return;
+        }
+        if (env=='prod' && file.startsWith('draft-')){
+          console.log(`Ignoring draft file for prod: ${file}`);
+          return;
+        } 
         const filePath = path.join(directoryPath, file);
         console.log(file);
         blog = parseBlogFile(filePath);

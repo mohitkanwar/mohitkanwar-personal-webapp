@@ -3,9 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm run preprocess && ng serve",
-    "create-tech-blogs-home": "node create-tech-blogs-home.js",
-    "create-tech-blogs": "node create-tech-blogs.js",
+    "start": "npm run preprocess-dev && ng serve && node blog-watcher.js",
+    "create-tech-blogs-home": "node create-tech-blogs-home.js prod",
+    "create-tech-blogs-home-dev": "node create-tech-blogs-home.js dev",
+    "create-tech-blogs": "node create-tech-blogs.js prod",
+    "create-tech-blogs-dev": "node create-tech-blogs.js dev",
     "increment-version": "node increment-version.js",
     "build": "npm run preprocess && ng build --configuration production",
     "build-dev": "npm run preprocess && npm run increment-version && ng build --configuration development",
@@ -13,7 +15,9 @@
     "scully:serve": "npx scully serve --project=\"mohitkanwar-app\"",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "preprocess": "npm run create-tech-blogs && npm run create-tech-blogs-home"
+    "preprocess": "npm run create-tech-blogs && npm run create-tech-blogs-home",
+    "preprocess-dev": "npm run create-tech-blogs-dev && npm run create-tech-blogs-home-dev"
+
   },
   "private": true,
   "dependencies": {

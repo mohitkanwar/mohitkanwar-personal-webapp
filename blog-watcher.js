@@ -10,7 +10,7 @@ function runBuildScript() {
     isBuilding = true;
     console.log('Building...');
     // Replace 'your-build-script-command' with your actual build script command
-    exec('npm run preprocess', (error, stdout, stderr) => {
+    exec('npm run preprocess-dev', (error, stdout, stderr) => {
       if (error) {
         console.error(`Error: ${error.message}`);
       }
