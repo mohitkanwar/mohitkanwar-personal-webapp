@@ -7,6 +7,9 @@ import { BlogTechItemComponent as BlogDetailedItemComponent } from './blog-tech-
 import { BlogSummaryItemComponent } from './blog-summary-item/blog-summary-item.component';
 import { MarkdownModule } from 'ngx-markdown';
 import { SecurityContext } from '@angular/core';
+import { MatTreeModule} from '@angular/material/tree';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 /**
  * The module path '/tech/' will be prepended to following routes
  */
@@ -27,6 +30,9 @@ export const routes : Routes = [
     CommonModule,
     SharedModule,
     RouterModule.forChild(routes),
+    MatTreeModule,
+    MatIconModule,
+    MatButtonModule,
     MarkdownModule.forRoot({
           sanitize: SecurityContext.NONE
         })

@@ -1,4 +1,10 @@
 
+.blogs-list {
+  width: 70%;
+}
+.side {
+  width: 20%;
+}
 .blog-summary {
   margin: 5px auto 0;/* Center align the component */
   max-width: 70%; /* Set the initial width for larger screens */
@@ -23,3 +29,29 @@
   }
 }
 
+.example-tree-invisible {
+  display: none;
+}
+
+.blog-tree ul,
+.blog-tree li {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+/*
+ * This padding sets alignment of the nested nodes.
+ */
+.blog-tree .mat-nested-tree-node div[role=group] {
+  padding-left: 40px;
+}
+
+/*
+ * Padding for leaf nodes.
+ * Leaf nodes need to have padding so as to align with other non-leaf nodes
+ * under the same parent.
+ */
+.blog-tree div[role=group] > .mat-tree-node {
+  padding-left: 40px;
+}

@@ -17,7 +17,6 @@
     "test": "ng test",
     "preprocess": "npm run create-tech-blogs && npm run create-tech-blogs-home",
     "preprocess-dev": "npm run create-tech-blogs-dev && npm run create-tech-blogs-home-dev"
-
   },
   "private": true,
   "dependencies": {
@@ -26,6 +25,7 @@
     "@angular/common": "^17.0.8",
     "@angular/compiler": "^17.0.8",
     "@angular/core": "^17.0.8",
+    "@angular/flex-layout": "^15.0.0-beta.42",
     "@angular/forms": "^17.0.8",
     "@angular/material": "^17.0.4",
     "@angular/platform-browser": "^17.0.8",

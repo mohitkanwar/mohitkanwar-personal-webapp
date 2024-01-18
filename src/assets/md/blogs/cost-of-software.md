@@ -143,3 +143,4 @@ In conclusion, there are many costs involved to develop and maintain a software,
 This does not mean that developing software is easy and we should not belittle the software developers, just because some free alternatives are available. 
 
 
+

@@ -1,46 +1,5 @@
 
-.menu-header {
-  padding: 20px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-  backdrop-filter: blur(5px); /* Create a frosted glass effect */
-}
 
-.menu-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  margin-right: 20px;
-  flex: 1;
-}
-
-.logo img {
-  width: 40px; 
-  height: auto;
-}
-
-.menu-list {
-  list-style: none;
-  display: flex;
-}
-
-.menu-item {
-  margin-right: 20px;
-}
-
-.menu-item a {
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
 
 main {
   padding-top: 80px; 

@@ -1,6 +1,7 @@
 
 @use '@angular/material' as mat;
 @use 'theme/layout-theme.scss' as layout;
+@import url(theme.scss);
 
 html, body { height: 100%; }
 body { margin: 0; font-family:  auto }
@@ -16,33 +17,60 @@ $border-radius: 10px;
 
 $dark-theme: mat.define-dark-theme((
  color: (
-   primary: mat.define-palette(mat.$lime-palette),
-   accent: mat.define-palette(mat.$blue-grey-palette),
+   primary: mat.define-palette(mat.$blue-grey-palette),
+   accent: mat.define-palette(mat.$pink-palette),
+   warn: mat.define-palette(mat.$orange-palette)
  ),
   // Only include `typography` and `density` in the default dark theme.
   typography: mat.define-typography-config(),
-  density: 0,
+  density: -1,
 ));
 
 
 $light-theme: mat.define-light-theme((
  color: (
-   primary: mat.define-palette(mat.$indigo-palette),
+   primary: mat.define-palette(mat.$deep-purple-palette),
    accent: mat.define-palette(mat.$pink-palette),
+   warn: mat.define-palette(mat.$red-palette)
  ),
 ));
 
 
+@include mat.core-theme($dark-theme);
 @include mat.all-component-themes($dark-theme);
+@include mat.sidenav-theme($dark-theme);
+@include mat.tree-theme($dark-theme);
+
 @include layout.theme($dark-theme);
 
 @media (prefers-color-scheme: light) {
- @include mat.all-component-themes($light-theme);
- @include layout.theme($light-theme)
+  @include mat.all-component-colors($light-theme);
+
+ 
+ @include layout.theme($light-theme);
 }
 
+// Define a custom mixin that takes in the current theme
+@mixin theme-color-grabber($theme) {
+  // Parse the theme and create variables for each color in the pallete
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  // Create theme specfic styles
+  .primaryColorBG {
+    background-color: mat-color($primary);
+  }
+  .accentColorBG {
+    background-color: mat-color($accent);
+  }
+  .warnColorBG {
+    background-color: mat-color($warn);
+  }
+}
 
-
+.main {
+  margin-top: 25px;
+}
 
 // Base styles
 .container {
