@@ -1,0 +1,71 @@
+[
+  {
+    "name": "2024",
+    "children": [
+      {
+        "name": "Jan",
+        "children": [
+          {
+            "name": "Cost of developing a software",
+            "link": "cost-of-software"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "2023",
+    "children": [
+      {
+        "name": "Dec",
+        "children": [
+          {
+            "name": "Gamification - Make it interesting",
+            "link": "gamification"
+          },
+          {
+            "name": "GIFT City- India's Gateway to Global Business Excellence",
+            "link": "gift-city"
+          }
+        ]
+      },
+      {
+        "name": "Nov",
+        "children": [
+          {
+            "name": "Understanding the logging architecture",
+            "link": "logging-architecture"
+          },
+          {
+            "name": "The Art and Science of Prompt Engineering",
+            "link": "prompt-engineering"
+          },
+          {
+            "name": "Embracing Global Diversity",
+            "link": "working-with-global-teams"
+          },
+          {
+            "name": "Embracing Passwordless Authentication with FIDO",
+            "link": "fido"
+          },
+          {
+            "name": "Unveiling the Art and Essentials of API Design",
+            "link": "crafting-api-magic"
+          },
+          {
+            "name": "The technology of modern banks",
+            "link": "the-technology-of-modern-banks"
+          },
+          {
+            "name": "Unlocking the Power of Large Language Models in the World of IT",
+            "link": "large-language-models"
+          },
+          {
+            "name": "Unveiling the Tech Ecosystem - A Techie's Take on Software Development",
+            "link": "technologies"
+          }
+        ]
+      }
+    ]
+  }
+]

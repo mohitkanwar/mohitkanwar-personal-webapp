@@ -2,48 +2,59 @@
   "blogs": [
     {
       "fileName": "cost-of-software",
-      "publishDate": "2024-01-01T00:00:00.000Z"
+      "publishDate": "2024-01-01T00:00:00.000Z",
+      "title": "Cost of developing a software"
     },
     {
       "fileName": "gamification",
-      "publishDate": "2023-12-30T00:00:00.000Z"
+      "publishDate": "2023-12-30T00:00:00.000Z",
+      "title": "Gamification - Make it interesting"
     },
     {
       "fileName": "gift-city",
-      "publishDate": "2023-12-05T00:00:00.000Z"
+      "publishDate": "2023-12-05T00:00:00.000Z",
+      "title": "GIFT City- India's Gateway to Global Business Excellence"
     },
     {
       "fileName": "logging-architecture",
-      "publishDate": "2023-11-26T00:00:00.000Z"
+      "publishDate": "2023-11-26T00:00:00.000Z",
+      "title": "Understanding the logging architecture"
     },
     {
       "fileName": "prompt-engineering",
-      "publishDate": "2023-11-19T00:00:00.000Z"
+      "publishDate": "2023-11-19T00:00:00.000Z",
+      "title": "The Art and Science of Prompt Engineering"
     },
     {
       "fileName": "working-with-global-teams",
-      "publishDate": "2023-11-17T00:00:00.000Z"
+      "publishDate": "2023-11-17T00:00:00.000Z",
+      "title": "Embracing Global Diversity"
     },
     {
       "fileName": "fido",
-      "publishDate": "2023-11-15T00:00:00.000Z"
+      "publishDate": "2023-11-15T00:00:00.000Z",
+      "title": "Embracing Passwordless Authentication with FIDO"
     },
     {
       "fileName": "crafting-api-magic",
-      "publishDate": "2023-11-10T00:00:00.000Z"
+      "publishDate": "2023-11-10T00:00:00.000Z",
+      "title": "Unveiling the Art and Essentials of API Design"
     },
     {
       "fileName": "the-technology-of-modern-banks",
-      "publishDate": "2023-11-08T00:00:00.000Z"
+      "publishDate": "2023-11-08T00:00:00.000Z",
+      "title": "The technology of modern banks"
     },
     {
       "fileName": "large-language-models",
-      "publishDate": "2023-11-05T00:00:00.000Z"
+      "publishDate": "2023-11-05T00:00:00.000Z",
+      "title": "Unlocking the Power of Large Language Models in the World of IT"
     },
     {
       "fileName": "technologies",
-      "publishDate": "2023-11-01T00:00:00.000Z"
+      "publishDate": "2023-11-01T00:00:00.000Z",
+      "title": "Unveiling the Tech Ecosystem - A Techie's Take on Software Development"
     }
   ],
-  "timestamp": "2024-01-06T06:22:11.202Z"
+  "timestamp": "2024-01-18T18:42:55.102Z"
 }
