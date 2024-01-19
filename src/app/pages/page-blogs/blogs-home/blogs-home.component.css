@@ -44,7 +44,7 @@
  * This padding sets alignment of the nested nodes.
  */
 .blog-tree .mat-nested-tree-node div[role=group] {
-  padding-left: 40px;
+  padding-left: 10px;
 }
 
 /*
@@ -53,5 +53,6 @@
  * under the same parent.
  */
 .blog-tree div[role=group] > .mat-tree-node {
-  padding-left: 40px;
+  padding-left: 10px;
+  margin-bottom: 5px;
 }

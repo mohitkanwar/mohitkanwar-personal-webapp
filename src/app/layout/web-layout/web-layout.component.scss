@@ -46,7 +46,7 @@ main {
     transition: color 0.3s ease;
   }
   
-  @media (min-width: 768px) {
+  @media (min-width: 959px) {
     .footer-content-web {
       display: flex;
     }
@@ -55,7 +55,7 @@ main {
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 960px) {
     .menu-footer {
       display: none;
     }
@@ -65,6 +65,11 @@ main {
     .footer-links-web {
       display: none;
     }
+    .fill-remaining-space {
+      /*This fills the remaining space, by using flexbox.  
+     Every toolbar row uses a flexbox row layout. */
+     flex: 1 1 auto;
+   }
   }
   
   
