@@ -1,6 +1,11 @@
 {
   "blogs": [
     {
+      "fileName": "kareena-kapoor-controllers",
+      "publishDate": "2024-01-19T00:00:00.000Z",
+      "title": "Kareena Kapoor Controllers and the Fluffy Services"
+    },
+    {
       "fileName": "cost-of-software",
       "publishDate": "2024-01-01T00:00:00.000Z",
       "title": "Cost of developing a software"
@@ -56,5 +61,5 @@
       "title": "Unveiling the Tech Ecosystem - A Techie's Take on Software Development"
     }
   ],
-  "timestamp": "2024-01-18T18:32:39.853Z"
+  "timestamp": "2024-01-20T16:48:04.895Z"
 }
