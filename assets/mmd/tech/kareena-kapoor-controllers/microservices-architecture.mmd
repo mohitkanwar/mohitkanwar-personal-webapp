@@ -1,0 +1,32 @@
+
+sequenceDiagram
+    autonumber
+    box lightyellow users
+        participant Client
+    end
+    box azure server
+        participant Controller
+        participant Service
+        participant Repository
+    end
+    box pink Database
+        participant Database
+    end
+    
+    
+
+    Client->>Controller: HTTP Request
+    note left of Controller : Request model
+    Controller->>Service: Process Request
+    note left of Service: Data Transfer Object (DTO)
+    Service->>Repository: Fetch/Modify Data
+    note left of Repository : Entity model
+
+    Repository->>Database: Perform Database Operations
+    Database-->>Repository: Return Result
+    Repository-->>Service: Return Result
+    note left of Repository : Entity model
+    Service-->>Controller: Return Result
+    note left of Service : DTO
+    Controller-->>Client: HTTP Response
+    note left of Controller : Response model

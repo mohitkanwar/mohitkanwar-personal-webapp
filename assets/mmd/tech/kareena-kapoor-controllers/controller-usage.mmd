@@ -1,0 +1,24 @@
+---
+title: A better usage of controller
+---
+classDiagram
+     LoginController <|-- CacheService
+     LoginController <|-- KeycloakWrapper
+     LoginController <|-- TnCService
+     LoginController <|-- CustomerProfileService
+    class LoginController{
+        +login()
+    }
+    class CacheService{
+        +getDataFromCache()
+    }
+    class KeycloakWrapper{
+        +validateCredentials()
+    }
+    class TnCService{
+        +hasUserAcceptedTerms()
+    }
+    class CustomerProfileService{
+        +isPwdUpdateRequired()
+        +getCustomerProfile()
+    }

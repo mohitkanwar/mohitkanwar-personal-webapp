@@ -6,6 +6,10 @@
         "name": "Jan",
         "children": [
           {
+            "name": "Kareena Kapoor Controllers and the Fluffy Services",
+            "link": "kareena-kapoor-controllers"
+          },
+          {
             "name": "Cost of developing a software",
             "link": "cost-of-software"
           }
