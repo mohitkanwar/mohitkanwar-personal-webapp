@@ -11,7 +11,7 @@
     "increment-version": "node increment-version.js",
     "build": "npm run preprocess && ng build --configuration production",
     "build-dev": "npm run preprocess && npm run increment-version && ng build --configuration development",
-    "scully": "npx scully --project=\"mohitkanwar-app\"",
+    "scully": "npx scully --project=\"mohitkanwar-app\" -- --scanRoutes",
     "scully:serve": "npx scully serve --project=\"mohitkanwar-app\"",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
