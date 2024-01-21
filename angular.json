@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mohitkanwar-app",
+            "outputPath": "dist/mohitkanwar-app/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mohitkanwar-app:build:production"
+              "buildTarget": "mohitkanwar-app:build:production"
             },
             "development": {
-              "browserTarget": "mohitkanwar-app:build:development"
+              "buildTarget": "mohitkanwar-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mohitkanwar-app:build"
+            "buildTarget": "mohitkanwar-app:build"
           }
         },
         "test": {
@@ -105,6 +105,72 @@
             ],
             "scripts": []
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/mohitkanwar-app/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ]
+            },
+            "development": {
+              "buildOptimizer": false,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.dev.ts"
+                }
+              ],
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@angular-devkit/build-angular:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "buildTarget": "mohitkanwar-app:build:development",
+              "serverTarget": "mohitkanwar-app:server:development"
+            },
+            "production": {
+              "buildTarget": "mohitkanwar-app:build:production",
+              "serverTarget": "mohitkanwar-app:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "mohitkanwar-app:build:production",
+              "serverTarget": "mohitkanwar-app:server:production"
+            },
+            "development": {
+              "buildTarget": "mohitkanwar-app:build:development",
+              "serverTarget": "mohitkanwar-app:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
